@@ -1,1 +1,55 @@
-# taiwan-drive
+# 島行 · Taiwan Drive
+
+桌面瀏覽器北海岸自駕原型：白沙灣 ↔ 石門洞，真實 OSM 台 2 雙向有向路線，約 5.41／5.43 km。TypeScript strict、Three.js、Vite、DOM UI、Web Audio，無後端。由本輪從 README 獨立編寫，未繼承舊任務代碼／測試，未使用工作電腦。
+
+## 執行
+
+需要 Node 22.12+（本輪 Node 24.19.0）。
+
+```sh
+npm ci
+npm run dev
+npm test
+npm run build
+```
+
+正式包在 `dist/`，預設子目錄 `/taiwan-drive/`。要用其他相對前綴，可執行 `npx vite build --base=./`；不要直接以 file:// 打開。`npm run preview` 提供本地檢視，沒有公開部署。
+
+Playwright 使用本環境 `/usr/bin/chromium`、單 worker、SwiftShader。其他設備請改 playwright.config.ts 的 executablePath，或安裝受支援 Chromium。生產測試需另起本地伺服器，把 dist 掛到 `/taiwan-drive/`：
+
+```sh
+mkdir -p work/production
+ln -s ../../dist work/production/taiwan-drive
+python3 -m http.server 5174 --bind 127.0.0.1 --directory work/production
+```
+
+保留上述伺服器運行，在另一個終端執行 `npx playwright test`。測試配置會啟動開發伺服器；先完成 `npm run build` 才能驗證正式包。
+
+雲端命令層需要允許網路執行才能 listen localhost；環境 sidecar 代理與 TLS 驗證仍需保留。npm 快取可用 `--cache ./work/npm-cache`，避免寫入不可寫的家目錄。未擴大網域白名單。
+
+## 操作
+
+W 加速，S 煞停後持續按住倒車；A/D 漸進轉向，放開回正。選單可調轉向與回正速度。滑鼠模式：相對水平移動轉輪，停移保持轉角，反移回正；左鍵油門，右鍵煞停後持續倒車，雙鍵只煞停。中鍵點按暫停／按住移動環顧（水平轉頭、垂直抬高第三人稱視角），放開視線回正。Esc 也可暫停。
+
+優先 Pointer Lock；失敗提示視窗內相對位移模式，離開有效畫面、失焦、頁面隱藏、失去鎖定會清除輸入與暫停。選單可用純滑鼠。第三人稱／原創簡化駕駛艙可切換。距終點 35m 內停穩後，在暫停選單點擊完成；可切換返程、重開、調音量及匯入／匯出 JSON。localStorage 使用獨立鍵 `island-drive:save:v1`，刷新恢復時暫停。無效舊存檔會停止自動覆寫，原始字串可備份；明確重新開始或成功匯入才恢復自動儲存。320×568 只驗證選單，不宣稱手機駕駛。
+
+車速、位置、車身朝向分開以固定 1/60s 積分，包含軸距、速度限制轉角、抓地限制偏航、坡度、阻力、煞車與倒車。單幀累積上限 0.2s 防失控；超慢 headless 會丟棄模擬時間，報告保留真實 elapsed 和原始 frame times，不當玩家 FPS。遊戲沒有生產自動駕駛。`scripts/drive.mjs` 是測試端僅用 mouse 和唯讀 snapshot 的路線追蹤器，不能代表人類手感評價。
+
+## 資料、驗收與交付
+
+- [來源及估算](SOURCES.md)：授權、端點、處理方法與地圖物件來源。
+- `source-data/` 保存限定區域 OSM gzip、HGT gzip 與上游高程授權文件。`python3 scripts/map.py` 可離線重建 world.json；`python3 scripts/audit.py` 驗證有向道路與統計。
+- `reports/` 跟蹤緊湊驗收文檔、兩向完整原始駕駛 JSON、性能／地圖／高程／擺放記錄。截圖、伺服器日誌與打包產物不進 Git。檢查點匯入截圖不算連續駕駛。
+- 開發模式有不可直接寫入的 `window.__drive.snapshot()`，回傳深拷貝；正式 build 完全不暴露該掛鉤。
+- 所有視覺資產與聲音為原創程序生成，無外部模型／紋理請求。OSM 與高程均隨靜態包載入。字型使用裝置系統字型。
+- 本倉庫保存可復現的源碼、依賴鎖檔與限定區域資料快取；`dist/` 由 `npm run build` 生成，依 `.gitignore` 不跟蹤。未公開部署或建立 PR。
+
+這是可執行的早期原型，首 500m 尚未達精做樣板或 Slow Roads 成熟度。詳見驗收報告的已完成與缺口，不能把單元測試或 headless 截圖視作完整遊戲手感驗收。
+
+## 本輪凍結驗收
+
+同一遊戲集合完成純鼠標去程5405.214m／480.883s與返程5402.966m／635.732s；兩趟停穩後點完成，零道路邊界碰撞計數、零記錄錯誤，全部src/public前後哈希一致，dist也維持清單。11單元、7瀏覽器及額外輪輻回歸通過。完整原始幀與範圍限制在reports/ACCEPTANCE.md；不能換算成玩家FPS或人類手感。
+
+源碼可從本倉庫取得；靜態版本以 `npm ci`、`npm run build` 重建。完整許可文本在 `licenses/`，來源帳本在 `SOURCES.md`。
+
+高程統計須區分估算中點與實際車道：1.661m／低坡0.450m是中點剖面的最大修整，不代表全車道。去程／返程對各自平滑DEM最大3.274／2.172m（p95 2.132／1.725m），詳見 [完整高程審計](reports/elevation-full-audit.json) 和 [來源帳本](SOURCES.md)。父对话代理独立验收仅是隔离下载静态包的短程UI及地图核验；不是用户本人试玩，也不证明整趟、所有OS组合或人类手感。

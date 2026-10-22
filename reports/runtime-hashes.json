@@ -1,0 +1,22 @@
+{
+  "label": "revised frozen build; trip reports delivered separately",
+  "files": {
+    "dist/assets/index-C4m-q2hu.css": "a7143a2b0db31280253f20f1ccbe6685a9a0744154d0e192e73dd8d6cfc9bea7",
+    "dist/assets/index-zg6XA4W9.js": "43a61a4ad3309448a17ab014537a5ac63d77bdc7aff684a98835ebb08810f39f",
+    "dist/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "dist/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "dist/index.html": "20be3040cbff113d1837a3bc7f2180b78f77882f105fee455d48cca1189175a5",
+    "public/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "public/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "src/core.ts": "0c5e77dec9452844d0c441bee3d07faec8e2b44d74e76e2a11601aefd15fc7e9",
+    "src/facilities.ts": "1afcd937102b41fcaa4270e03f63262a85fa8841e3f52a03c78ce30dda591cc5",
+    "src/geography.ts": "b7331dcb4e73fea544c3440dcd26803077951b495b8d6cfab3c34db0bdbeb73e",
+    "src/main.ts": "f2efc7a644ed570a3f0d14fac6f05b4590a007222d41f812e855e4f8abce8f50",
+    "src/scene.ts": "15edce394d5306965d95ebc58bd153e498d6f15fa4a3152aab219bdd8ed39b68",
+    "src/style.css": "ab4428a85cc4137898273a661a76e222a8daa1c51b709f14b71bcc9493869e3d",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  "source_sha256": "a28283c7fde0b410f248b924775a8cb55d2f5a99aed8be9232b4d0c5f678ee99",
+  "data_sha256": "979674a224739c4f6da8cf115f4e96274cbec526aa008cd961fa399dd426b430",
+  "dist_sha256": "4d4d506de3a583a4adb794ee2cade938df8d22a41a43d311c59ef9c954e01f66"
+}

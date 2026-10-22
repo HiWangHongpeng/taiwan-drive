@@ -1,0 +1,64 @@
+{
+  "scope": "Read-only post-freeze elevation audit at every actual directed route XY. Raw Skadi bilinear sample plus estimated 0.2m road offset. Own-road moving51point (~250m) average is a comparison reference, not the final midpoint treatment. No survey claim.",
+  "midpoint_profile_statistics": {
+    "method": "Estimated midpoint of original directed carriageways; 250m DEM average; only local profile constraints on both projections",
+    "estimated": true,
+    "soft_grade_goal": 0.06,
+    "iterations": 600,
+    "residual_amplitude_factor": 1,
+    "difference_to_raw_dem": {
+      "max_m": 9.531687719997834,
+      "p95_m": 5.205230010213455
+    },
+    "difference_to_smoothed_dem": {
+      "max_m": 1.6614358697678284,
+      "p95_m": 0.850783199661592
+    },
+    "low_initial_grade_under_2pct_change": {
+      "max_m": 0.44995027354587425,
+      "p95_m": 4.80161748956931e-05
+    },
+    "actual_max_grade": [
+      0.06172862102293668,
+      0.060504768484765215
+    ]
+  },
+  "directed_roads": [
+    {
+      "direction": 0,
+      "actual_road_to_raw_DEM_plus_0_2m": {
+        "count": 1154,
+        "max_m": 9.531687719997834,
+        "p95_m": 5.101935407329963
+      },
+      "actual_road_to_own_250m_smoothed_DEM": {
+        "count": 1154,
+        "max_m": 3.2739586939595284,
+        "p95_m": 2.1323648320110404
+      },
+      "own_initial_grade_under_2pct_delta": {
+        "count": 625,
+        "max_m": 2.2638471286106583,
+        "p95_m": 1.7257788714234348
+      }
+    },
+    {
+      "direction": 1,
+      "actual_road_to_raw_DEM_plus_0_2m": {
+        "count": 1173,
+        "max_m": 9.175525070790147,
+        "p95_m": 5.293121630057069
+      },
+      "actual_road_to_own_250m_smoothed_DEM": {
+        "count": 1173,
+        "max_m": 2.172291372834154,
+        "p95_m": 1.7253519296876263
+      },
+      "own_initial_grade_under_2pct_delta": {
+        "count": 677,
+        "max_m": 2.172291372834154,
+        "p95_m": 1.6636661237652746
+      }
+    }
+  ]
+}

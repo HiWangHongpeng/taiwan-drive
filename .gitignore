@@ -1,0 +1,27 @@
+node_modules/
+work/
+dist/
+test-results/
+playwright-report/
+__pycache__/
+*.zip
+*.log
+
+# One-off delivery bundler and generated evidence stay in the cloud workspace.
+/scripts/package.py
+/reports/*
+!/reports/ACCEPTANCE.md
+!/reports/TESTING.md
+!/reports/PERFORMANCE.md
+!/reports/route-audit.json
+!/reports/geometry-regression.json
+!/reports/elevation-revised.json
+!/reports/elevation-full-audit.json
+!/reports/stop-placement.json
+!/reports/driving-outbound.json
+!/reports/driving-return.json
+!/reports/perf-baseline.json
+!/reports/perf-chunk-only.json
+!/reports/perf-chunk512-fog.json
+!/reports/perf-final-revised.json
+!/reports/runtime-hashes.json

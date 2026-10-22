@@ -1,0 +1,1 @@
+Dependency license texts copied from installed locked package versions. Runtime library: Three.js (MIT). Other packages are build/test tools. Package metadata: ../THIRD_PARTY.json. OSM and elevation terms are documented separately in SOURCES.md.

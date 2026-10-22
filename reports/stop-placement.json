@@ -1,0 +1,2287 @@
+{
+  "method": "Original source point retained. Estimated shelter runs parallel to road; smallest outward 0.1m step retreat to >=6m centerline distance, roof transverse halfwidth1m, legs along road +/-1.9m. Source is platform, not stop_position. No surveyed facility placement.",
+  "rows": [
+    {
+      "sourceId": "3437584560",
+      "sourceRole": "platform",
+      "original": [
+        6053.131259999451,
+        4.356040000016947,
+        -1254.3426279999996
+      ],
+      "point": [
+        6053.131259999451,
+        5.009729254400041,
+        -1254.3426279999996
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437584560",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437584561",
+      "sourceRole": "platform",
+      "original": [
+        7045.973054999836,
+        11.637789806427902,
+        -755.3395960000735
+      ],
+      "point": [
+        7045.973054999836,
+        8.878748523196268,
+        -755.3395960000735
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437584561",
+      "shelter": "yes",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437584562",
+      "sourceRole": "platform",
+      "original": [
+        7011.933224999672,
+        5.570245887973561,
+        -783.5146880002843
+      ],
+      "point": [
+        7011.933224999672,
+        7.447453849585558,
+        -783.5146880002843
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437584562",
+      "shelter": "yes",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437584572",
+      "sourceRole": "platform",
+      "original": [
+        -235.14859500103498,
+        16.074800000135838,
+        216.7845679998689
+      ],
+      "point": [
+        -235.14859500103498,
+        16.619269309062574,
+        216.7845679998689
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437584572",
+      "shelter": "yes",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437584573",
+      "sourceRole": "platform",
+      "original": [
+        -243.1502700008572,
+        18.879698835281534,
+        191.8934160000677
+      ],
+      "point": [
+        -243.1502700008572,
+        19.045238292675013,
+        191.8934160000677
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437584573",
+      "shelter": "yes",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437584574",
+      "sourceRole": "platform",
+      "original": [
+        6082.037939999701,
+        9.839163775905693,
+        -1207.9333200002657
+      ],
+      "point": [
+        6082.037939999701,
+        11.763753104037956,
+        -1207.9333200002657
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437584574",
+      "shelter": "yes",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585096",
+      "sourceRole": "platform",
+      "original": [
+        961.4087999999334,
+        13.45375500800595,
+        -395.5978840001352
+      ],
+      "point": [
+        961.4087999999334,
+        9.607959131927233,
+        -395.5978840001352
+      ],
+      "yaw": 2.3993186210670356,
+      "offset_m": 0,
+      "center_road_distance_m": 11.01503956695739,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585096",
+      "modelFootDistances_m": [
+        11.015039566957395,
+        11.01503956695739
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585097",
+      "sourceRole": "platform",
+      "original": [
+        990.8791199996188,
+        6.272065023992022,
+        -448.39696000018887
+      ],
+      "point": [
+        988.8859813257136,
+        9.293847186879178,
+        -451.1514832305472
+      ],
+      "yaw": -0.9444145833367666,
+      "offset_m": 3.400000000000034,
+      "center_road_distance_m": 6.035408317682102,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585097",
+      "modelFootDistances_m": [
+        6.035408317682056,
+        6.035408317682102
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585098",
+      "sourceRole": "platform",
+      "original": [
+        1736.212499998993,
+        33.38654399998005,
+        -620.586736000172
+      ],
+      "point": [
+        1737.3232531423978,
+        33.41930932771777,
+        -617.6925647104215
+      ],
+      "yaw": 1.9372506834595318,
+      "offset_m": 3.099999999999921,
+      "center_road_distance_m": 6.068132772698761,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585098",
+      "shelter": "yes",
+      "modelFootDistances_m": [
+        6.068132772698761,
+        6.067858255705942
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585099",
+      "sourceRole": "platform",
+      "original": [
+        1729.599794999669,
+        29.135217432007888,
+        -639.3664200001374
+      ],
+      "point": [
+        1729.599794999669,
+        33.364327149615214,
+        -639.3664200001374
+      ],
+      "yaw": -1.2679365531525209,
+      "offset_m": 0,
+      "center_road_distance_m": 6.727880225665983,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585099",
+      "shelter": "yes",
+      "modelFootDistances_m": [
+        6.727880225666092,
+        6.727880225665983
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585100",
+      "sourceRole": "platform",
+      "original": [
+        5327.968139999784,
+        10.586874713607486,
+        -1502.3969840002549
+      ],
+      "point": [
+        5327.968139999784,
+        10.428904814757717,
+        -1502.3969840002549
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585100",
+      "shelter": "yes",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585101",
+      "sourceRole": "platform",
+      "original": [
+        5342.773754999021,
+        8.242039999992812,
+        -1526.4421040000566
+      ],
+      "point": [
+        5342.773754999021,
+        8.046563545206237,
+        -1526.4421040000566
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585101",
+      "shelter": "yes",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585102",
+      "sourceRole": "platform",
+      "original": [
+        3061.279814999902,
+        15.706194563203532,
+        -767.7851719999741
+      ],
+      "point": [
+        3062.9803510340375,
+        13.183219168920393,
+        -765.4360919254326
+      ],
+      "yaw": 2.1973934521429803,
+      "offset_m": 2.900000000000139,
+      "center_road_distance_m": 6.057700545996436,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585102",
+      "modelFootDistances_m": [
+        6.057700545996344,
+        6.057700545996436
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585103",
+      "sourceRole": "platform",
+      "original": [
+        3047.249204998996,
+        13.739246550369732,
+        -786.9322120002776
+      ],
+      "point": [
+        3047.249204998996,
+        13.183663744238304,
+        -786.9322120002776
+      ],
+      "yaw": -0.9115725564921072,
+      "offset_m": 0,
+      "center_road_distance_m": 10.702217660970655,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585103",
+      "shelter": "yes",
+      "modelFootDistances_m": [
+        10.702217660970565,
+        10.702217660971023
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585110",
+      "sourceRole": "platform",
+      "original": [
+        308.66335499908143,
+        15.46007746247802,
+        -120.68201199999123
+      ],
+      "point": [
+        308.35690436289593,
+        16.033782456495544,
+        -118.90829048645493
+      ],
+      "yaw": 1.3997126007030816,
+      "offset_m": 1.800000000000002,
+      "center_road_distance_m": 6.066224369131052,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585110",
+      "modelFootDistances_m": [
+        6.066224369131039,
+        6.066224369131052
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585111",
+      "sourceRole": "platform",
+      "original": [
+        308.7136799989544,
+        9.797533926484482,
+        -141.22055199994534
+      ],
+      "point": [
+        309.29551693518215,
+        15.84984783568152,
+        -144.57039763514126
+      ],
+      "yaw": -1.7427712891367626,
+      "offset_m": 3.4000000000000106,
+      "center_road_distance_m": 6.0734158515372725,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585111",
+      "shelter": "yes",
+      "modelFootDistances_m": [
+        6.073133226985409,
+        6.0734158515372725
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585116",
+      "sourceRole": "platform",
+      "original": [
+        -1354.5879600004675,
+        32.49952000000667,
+        1853.4557359999683
+      ],
+      "point": [
+        -1354.5879600004675,
+        32.62806669276913,
+        1853.4557359999683
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585116",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585117",
+      "sourceRole": "platform",
+      "original": [
+        -1373.791980000327,
+        31.125760000016726,
+        1841.9341159997914
+      ],
+      "point": [
+        -1373.791980000327,
+        30.904100214368704,
+        1841.9341159997914
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585117",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585126",
+      "sourceRole": "platform",
+      "original": [
+        9229.333244999272,
+        13.078503659211663,
+        559.5722439998202
+      ],
+      "point": [
+        9229.333244999272,
+        121.4328897599928,
+        559.5722439998202
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585126",
+      "shelter": "yes",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585127",
+      "sourceRole": "platform",
+      "original": [
+        9232.030664999327,
+        6.3981894927582355,
+        540.0021879997148
+      ],
+      "point": [
+        9232.030664999327,
+        96.79530808730811,
+        540.0021879997148
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585127",
+      "shelter": "yes",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585142",
+      "sourceRole": "platform",
+      "original": [
+        -44.02431000098659,
+        16.571389177482658,
+        -19.447604000256433
+      ],
+      "point": [
+        -44.02431000098659,
+        16.187367454672284,
+        -19.447604000256433
+      ],
+      "yaw": -0.6317987531187792,
+      "offset_m": 0,
+      "center_road_distance_m": 63.76209319148896,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585142",
+      "shelter": "no",
+      "modelFootDistances_m": [
+        65.59993321470503,
+        61.92800512325974
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585143",
+      "sourceRole": "platform",
+      "original": [
+        -63.01696500052145,
+        10.393340592031045,
+        -34.17523999993222
+      ],
+      "point": [
+        -63.01696500052145,
+        11.09681925995455,
+        -34.17523999993222
+      ],
+      "yaw": -0.6317987531187792,
+      "offset_m": 0,
+      "center_road_distance_m": 61.421361282935045,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585143",
+      "shelter": "yes",
+      "modelFootDistances_m": [
+        63.30713290062905,
+        59.53649441812774
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585145",
+      "sourceRole": "platform",
+      "original": [
+        4379.78474999993,
+        13.025113680007333,
+        -805.4335960001545
+      ],
+      "point": [
+        4380.767467750285,
+        9.539518342746577,
+        -801.4531103736086
+      ],
+      "yaw": 1.8128400310456185,
+      "offset_m": 4.100000000000047,
+      "center_road_distance_m": 6.081081673624815,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585145",
+      "modelFootDistances_m": [
+        6.081030440724322,
+        6.081081673624815
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585146",
+      "sourceRole": "platform",
+      "original": [
+        4374.651600000017,
+        12.108175103998644,
+        -820.5285880001684
+      ],
+      "point": [
+        4374.169184398364,
+        9.561763322524067,
+        -822.4695349822578
+      ],
+      "yaw": -1.327186119878458,
+      "offset_m": 2.0000000000000107,
+      "center_road_distance_m": 6.0109541645074,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585146",
+      "modelFootDistances_m": [
+        6.0109541645074,
+        6.0112154156551085
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585147",
+      "sourceRole": "platform",
+      "original": [
+        4583.943209999968,
+        5.2858567040351465,
+        -858.7224799999999
+      ],
+      "point": [
+        4583.943209999968,
+        6.639848187612449,
+        -858.7224799999999
+      ],
+      "yaw": 2.144848289908764,
+      "offset_m": 0,
+      "center_road_distance_m": 6.730152729532059,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585147",
+      "modelFootDistances_m": [
+        6.730152729531964,
+        6.77052923551811
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585148",
+      "sourceRole": "platform",
+      "original": [
+        4595.729324999676,
+        5.947984960000273,
+        -911.4881600000588
+      ],
+      "point": [
+        4595.729324999676,
+        7.394155672387881,
+        -911.4881600000588
+      ],
+      "yaw": -0.287673682153351,
+      "offset_m": 0,
+      "center_road_distance_m": 10.97439828581247,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585148",
+      "modelFootDistances_m": [
+        10.97439828581334,
+        10.974375245203564
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585149",
+      "sourceRole": "platform",
+      "original": [
+        4666.999589999384,
+        6.137397132780028,
+        -1213.5215840003152
+      ],
+      "point": [
+        4666.999589999384,
+        9.341841425633735,
+        -1213.5215840003152
+      ],
+      "yaw": -0.10575496743682954,
+      "offset_m": 0,
+      "center_road_distance_m": 8.552856366852993,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585149",
+      "modelFootDistances_m": [
+        8.552856366852993,
+        8.552853864918768
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585150",
+      "sourceRole": "platform",
+      "original": [
+        4694.305934998811,
+        7.804748017425468,
+        -1262.7138920001416
+      ],
+      "point": [
+        4694.305934998811,
+        8.683774282792898,
+        -1262.7138920001416
+      ],
+      "yaw": 3.0381370708674926,
+      "offset_m": 0,
+      "center_road_distance_m": 45.79053197643701,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585150",
+      "shelter": "yes",
+      "modelFootDistances_m": [
+        47.67467716342366,
+        43.90775324169446
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585151",
+      "sourceRole": "platform",
+      "original": [
+        4863.23689499911,
+        7.581995071953907,
+        -1410.8696800000578
+      ],
+      "point": [
+        4863.23689499911,
+        9.543524814596314,
+        -1410.8696800000578
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585151",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585152",
+      "sourceRole": "platform",
+      "original": [
+        4960.4044049989425,
+        7.096773486380556,
+        -1447.7945240000874
+      ],
+      "point": [
+        4960.4044049989425,
+        7.573342898990614,
+        -1447.7945240000874
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585152",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585182",
+      "sourceRole": "platform",
+      "original": [
+        2405.1122699991083,
+        9,
+        -584.8084880000948
+      ],
+      "point": [
+        2405.1122699991083,
+        9,
+        -584.8084880000948
+      ],
+      "yaw": -0.7895931337269668,
+      "offset_m": 0,
+      "center_road_distance_m": 182.00579954776944,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585182",
+      "shelter": "no",
+      "modelFootDistances_m": [
+        181.8980568158645,
+        182.13330026290686
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585183",
+      "sourceRole": "platform",
+      "original": [
+        2381.137439999279,
+        9,
+        -579.465128000139
+      ],
+      "point": [
+        2381.137439999279,
+        8.987002610403378,
+        -579.465128000139
+      ],
+      "yaw": -2.05551704907007,
+      "offset_m": 0,
+      "center_road_distance_m": 170.42197211677075,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585183",
+      "shelter": "yes",
+      "modelFootDistances_m": [
+        170.42230720507217,
+        170.4219720682358
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585191",
+      "sourceRole": "platform",
+      "original": [
+        8598.459045000127,
+        8.624102041569895,
+        384.454752000031
+      ],
+      "point": [
+        8598.459045000127,
+        103.93083415680786,
+        384.454752000031
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585191",
+      "shelter": "yes",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585192",
+      "sourceRole": "platform",
+      "original": [
+        8635.890779999165,
+        4.708915270419799,
+        379.3006359999137
+      ],
+      "point": [
+        8635.890779999165,
+        63.10969528621341,
+        379.3006359999137
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585192",
+      "shelter": "yes",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585200",
+      "sourceRole": "platform",
+      "original": [
+        -866.3549400004854,
+        54.859976486401564,
+        1118.3875119998906
+      ],
+      "point": [
+        -866.3549400004854,
+        54.79997752078437,
+        1118.3875119998906
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585200",
+      "shelter": "no",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585201",
+      "sourceRole": "platform",
+      "original": [
+        -791.1090000008023,
+        57.00054528000015,
+        1032.6265839998468
+      ],
+      "point": [
+        -791.1090000008023,
+        56.9718267071972,
+        1032.6265839998468
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585201",
+      "shelter": "yes",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585204",
+      "sourceRole": "platform",
+      "original": [
+        2156.0035200001357,
+        11.752560000030371,
+        -685.3081839999445
+      ],
+      "point": [
+        2156.0035200001357,
+        11.681095704328884,
+        -685.3081839999445
+      ],
+      "yaw": -2.055039090091423,
+      "offset_m": 0,
+      "center_road_distance_m": 161.31932079691168,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585204",
+      "shelter": "no",
+      "modelFootDistances_m": [
+        161.1626669578518,
+        161.49817740081883
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585205",
+      "sourceRole": "platform",
+      "original": [
+        2151.6856349990226,
+        11.243519999990895,
+        -696.2732039999446
+      ],
+      "point": [
+        2151.6856349990226,
+        11.091547619550642,
+        -696.2732039999446
+      ],
+      "yaw": -2.055039090091423,
+      "offset_m": 0,
+      "center_road_distance_m": 168.4673875012613,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585205",
+      "shelter": "no",
+      "modelFootDistances_m": [
+        168.41811580921203,
+        168.53806564178643
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585211",
+      "sourceRole": "platform",
+      "original": [
+        -495.09735000010124,
+        56.88992123200174,
+        792.1197239999941
+      ],
+      "point": [
+        -495.09735000010124,
+        56.42757135800319,
+        792.1197239999941
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585211",
+      "shelter": "no",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "3437585212",
+      "sourceRole": "platform",
+      "original": [
+        -499.92855000077657,
+        56.315760000026785,
+        753.7811160000534
+      ],
+      "point": [
+        -499.92855000077657,
+        56.123072702025645,
+        753.7811160000534
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/3437585212",
+      "shelter": "yes",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8041323964",
+      "sourceRole": "platform",
+      "original": [
+        4631.439944999339,
+        11.032959999989544,
+        -940.2309840001808
+      ],
+      "point": [
+        4631.439944999339,
+        8.785045697878692,
+        -940.2309840001808
+      ],
+      "yaw": 2.891813609908365,
+      "offset_m": 0,
+      "center_road_distance_m": 7.90775626757691,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8041323964",
+      "modelFootDistances_m": [
+        7.907756267576,
+        7.907413037792937
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8111998676",
+      "sourceRole": "platform",
+      "original": [
+        1794.8813849987637,
+        36.29262923686338,
+        -554.1175640001454
+      ],
+      "point": [
+        1794.8813849987637,
+        36.409625519348566,
+        -554.1175640001454
+      ],
+      "yaw": 1.7651772190618575,
+      "offset_m": 0,
+      "center_road_distance_m": 83.5820386684672,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8111998676",
+      "modelFootDistances_m": [
+        83.54916000668827,
+        83.58204152944343
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8111998677",
+      "sourceRole": "platform",
+      "original": [
+        1797.0453599990215,
+        37.06456000004073,
+        -529.0149040002455
+      ],
+      "point": [
+        1797.0453599990215,
+        36.915453620958104,
+        -529.0149040002455
+      ],
+      "yaw": 1.7651381582826418,
+      "offset_m": 0,
+      "center_road_distance_m": 108.62997801992422,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8111998677",
+      "modelFootDistances_m": [
+        108.63001714550484,
+        108.62997801992422
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8111998678",
+      "sourceRole": "platform",
+      "original": [
+        1543.2765149992279,
+        58.614376233620774,
+        -27.67415200028907
+      ],
+      "point": [
+        1543.2765149992279,
+        58.68921305258784,
+        -27.67415200028907
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8111998678",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8111998679",
+      "sourceRole": "platform",
+      "original": [
+        1517.9026499994982,
+        58.967848784001085,
+        -16.597812000174486
+      ],
+      "point": [
+        1517.9026499994982,
+        58.96482418062943,
+        -16.597812000174486
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8111998679",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8111998688",
+      "sourceRole": "platform",
+      "original": [
+        1470.254939999078,
+        84.78735999998707,
+        613.5401799996913
+      ],
+      "point": [
+        1470.254939999078,
+        83.58422668001784,
+        613.5401799996913
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8111998688",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8111998689",
+      "sourceRole": "platform",
+      "original": [
+        1456.616864999183,
+        84.29955999999083,
+        603.5547760000654
+      ],
+      "point": [
+        1456.616864999183,
+        83.91534442961161,
+        603.5547760000654
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8111998689",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8111998691",
+      "sourceRole": "platform",
+      "original": [
+        1564.3324949992746,
+        84.88978569277211,
+        1068.4827560000438
+      ],
+      "point": [
+        1564.3324949992746,
+        84.19930800895285,
+        1068.4827560000438
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8111998691",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8111998692",
+      "sourceRole": "platform",
+      "original": [
+        1543.2765149992279,
+        83.37704902077071,
+        1061.202427999995
+      ],
+      "point": [
+        1543.2765149992279,
+        83.21542349892609,
+        1061.202427999995
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8111998692",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8111998693",
+      "sourceRole": "platform",
+      "original": [
+        1716.1932149989034,
+        106.11213549762694,
+        1418.4171760000645
+      ],
+      "point": [
+        1716.1932149989034,
+        105.4513290736586,
+        1418.4171760000645
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8111998693",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8111998694",
+      "sourceRole": "platform",
+      "original": [
+        1729.9621349996123,
+        105.85206294398078,
+        1421.1111199999073
+      ],
+      "point": [
+        1729.9621349996123,
+        105.10953272101814,
+        1421.1111199999073
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8111998694",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8111998695",
+      "sourceRole": "platform",
+      "original": [
+        1438.8018149998218,
+        112.55462582881182,
+        1493.3466679996918
+      ],
+      "point": [
+        1438.8018149998218,
+        112.23298821398012,
+        1493.3466679996918
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8111998695",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8111998696",
+      "sourceRole": "platform",
+      "original": [
+        1431.1121550000698,
+        112.7435287584078,
+        1503.4656559996924
+      ],
+      "point": [
+        1431.1121550000698,
+        112.35758599157015,
+        1503.4656559996924
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8111998696",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8111998698",
+      "sourceRole": "platform",
+      "original": [
+        1335.675824999013,
+        106.44619176000242,
+        1541.0027599997584
+      ],
+      "point": [
+        1335.675824999013,
+        107.45300878496542,
+        1541.0027599997584
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8111998698",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8111998699",
+      "sourceRole": "platform",
+      "original": [
+        1322.9838599987318,
+        107.31550700163164,
+        1555.0402120000692
+      ],
+      "point": [
+        1322.9838599987318,
+        107.9491431983744,
+        1555.0402120000692
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8111998699",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8111998700",
+      "sourceRole": "platform",
+      "original": [
+        903.4645950000495,
+        122.98494419197759,
+        1636.1813599999123
+      ],
+      "point": [
+        903.4645950000495,
+        123.07019726999846,
+        1636.1813599999123
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8111998700",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8111998704",
+      "sourceRole": "platform",
+      "original": [
+        920.0617799987668,
+        122.26980000002709,
+        1639.5543559997807
+      ],
+      "point": [
+        920.0617799987668,
+        122.534965656852,
+        1639.5543559997807
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8111998704",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8111998705",
+      "sourceRole": "platform",
+      "original": [
+        876.1985099996622,
+        133.15776000003189,
+        1876.6214279997755
+      ],
+      "point": [
+        876.1985099996622,
+        132.76906521675292,
+        1876.6214279997755
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8111998705",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8111998706",
+      "sourceRole": "platform",
+      "original": [
+        887.8034550001132,
+        134.8220385792945,
+        1865.0107519997443
+      ],
+      "point": [
+        887.8034550001132,
+        134.21963405521294,
+        1865.0107519997443
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8111998706",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400031",
+      "sourceRole": "platform",
+      "original": [
+        -1176.3267450005542,
+        31.738916147196655,
+        1725.2818879998295
+      ],
+      "point": [
+        -1176.3267450005542,
+        31.0045745963653,
+        1725.2818879998295
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400031",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400135",
+      "sourceRole": "platform",
+      "original": [
+        -1151.2347000012576,
+        31.71213504004966,
+        1736.3693600000743
+      ],
+      "point": [
+        -1151.2347000012576,
+        31.399487923996382,
+        1736.3693600000743
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400135",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400137",
+      "sourceRole": "platform",
+      "original": [
+        -550.2233549999488,
+        88.31363839998737,
+        2048.2879999999723
+      ],
+      "point": [
+        -550.2233549999488,
+        88.27053090500492,
+        2048.2879999999723
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400137",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400138",
+      "sourceRole": "platform",
+      "original": [
+        -1471.50300000079,
+        11.55679999999893,
+        833.564159999845
+      ],
+      "point": [
+        -1471.50300000079,
+        12.494847120012217,
+        833.564159999845
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400138",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400680",
+      "sourceRole": "platform",
+      "original": [
+        951.3437999995994,
+        14.230376960008138,
+        -384.72191999998927
+      ],
+      "point": [
+        951.3437999995994,
+        9.552515366042241,
+        -384.72191999998927
+      ],
+      "yaw": 2.399318621067053,
+      "offset_m": 0,
+      "center_road_distance_m": 10.949521052404261,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400680",
+      "modelFootDistances_m": [
+        10.949512953590881,
+        10.949521052404261
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400707",
+      "sourceRole": "platform",
+      "original": [
+        6985.109999998739,
+        13.289919999958329,
+        -717.4573999999296
+      ],
+      "point": [
+        6985.109999998739,
+        9.123965919999943,
+        -717.4573999999296
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400707",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400708",
+      "sourceRole": "platform",
+      "original": [
+        7002.9250499995305,
+        14.434025920012399,
+        -720.6856800000843
+      ],
+      "point": [
+        7002.9250499995305,
+        9.126548544000068,
+        -720.6856800000843
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400708",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400709",
+      "sourceRole": "platform",
+      "original": [
+        7473.26249999921,
+        41.8679999999793,
+        232.6587999998928
+      ],
+      "point": [
+        7473.26249999921,
+        85.86416520000225,
+        232.6587999998928
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400709",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400710",
+      "sourceRole": "platform",
+      "original": [
+        7479.301499999697,
+        44.849952000059496,
+        241.56439999995115
+      ],
+      "point": [
+        7479.301499999697,
+        85.67714760000102,
+        241.56439999995115
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400710",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400711",
+      "sourceRole": "platform",
+      "original": [
+        8145.101249999343,
+        158.61267600000332,
+        2092.4820399999207
+      ],
+      "point": [
+        8145.101249999343,
+        172.89320044000308,
+        2092.4820399999207
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400711",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400712",
+      "sourceRole": "platform",
+      "original": [
+        7101.853934999208,
+        153.50585319999968,
+        1538.9990000000714
+      ],
+      "point": [
+        7101.853934999208,
+        141.44026819999513,
+        1538.9990000000714
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400712",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400713",
+      "sourceRole": "platform",
+      "original": [
+        7077.506700000033,
+        159.31719999997495,
+        1599.7797200000643
+      ],
+      "point": [
+        7077.506700000033,
+        144.52303844000494,
+        1599.7797200000643
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400713",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400716",
+      "sourceRole": "platform",
+      "original": [
+        8548.53664499887,
+        60.53612320028139,
+        1135.4639999997266
+      ],
+      "point": [
+        8548.53664499887,
+        97.0619407999912,
+        1135.4639999997266
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400716",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400718",
+      "sourceRole": "platform",
+      "original": [
+        7038.454499999938,
+        116.63334400004086,
+        503.1663999999347
+      ],
+      "point": [
+        7038.454499999938,
+        114.19356095999045,
+        503.1663999999347
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400718",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400719",
+      "sourceRole": "platform",
+      "original": [
+        7048.519499998842,
+        116.09860799999953,
+        490.9212000000028
+      ],
+      "point": [
+        7048.519499998842,
+        113.28150728000014,
+        490.9212000000028
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400719",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400721",
+      "sourceRole": "platform",
+      "original": [
+        7337.183699999499,
+        64.92400000000589,
+        836.4584800000517
+      ],
+      "point": [
+        7337.183699999499,
+        98.01893982399348,
+        836.4584800000517
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400721",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400723",
+      "sourceRole": "platform",
+      "original": [
+        7341.209699999346,
+        65.22405408002963,
+        848.3697200000358
+      ],
+      "point": [
+        7341.209699999346,
+        96.51574133599549,
+        848.3697200000358
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400723",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400724",
+      "sourceRole": "platform",
+      "original": [
+        7333.057049999906,
+        65.4819999998158,
+        830.7811599997525
+      ],
+      "point": [
+        7333.057049999906,
+        98.73541760803124,
+        830.7811599997525
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400724",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400727",
+      "sourceRole": "platform",
+      "original": [
+        2101.3203749997424,
+        18.989360000022316,
+        -540.035584000105
+      ],
+      "point": [
+        2101.3203749997424,
+        18.898955175471297,
+        -540.035584000105
+      ],
+      "yaw": -2.042456374336482,
+      "offset_m": 0,
+      "center_road_distance_m": 6.553355176002478,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400727",
+      "modelFootDistances_m": [
+        6.553355176002171,
+        6.55525738606777
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400728",
+      "sourceRole": "platform",
+      "original": [
+        4499.759549998821,
+        181.6747631999994,
+        1982.6091999996902
+      ],
+      "point": [
+        4499.759549998821,
+        181.28973991992856,
+        1982.6091999996902
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400728",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400729",
+      "sourceRole": "platform",
+      "original": [
+        4518.681749999678,
+        181.4825519999866,
+        1982.6091999996902
+      ],
+      "point": [
+        4518.681749999678,
+        180.83573764000278,
+        1982.6091999996902
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400729",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400730",
+      "sourceRole": "platform",
+      "original": [
+        4678.654859999708,
+        114.90339865596685,
+        968.1500399997725
+      ],
+      "point": [
+        4678.654859999708,
+        114.90251841199202,
+        968.1500399997725
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400730",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400731",
+      "sourceRole": "platform",
+      "original": [
+        4679.460059999105,
+        117.06256000005988,
+        977.2782800000597
+      ],
+      "point": [
+        4679.460059999105,
+        116.81008901207271,
+        977.2782800000597
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400731",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400733",
+      "sourceRole": "platform",
+      "original": [
+        4521.781770000147,
+        146.768160000056,
+        1400.8508800000416
+      ],
+      "point": [
+        4521.781770000147,
+        147.11262212801373,
+        1400.8508800000416
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400733",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400734",
+      "sourceRole": "platform",
+      "original": [
+        4530.961050000143,
+        147.29728128006968,
+        1391.945279999983
+      ],
+      "point": [
+        4530.961050000143,
+        147.3922922080115,
+        1391.945279999983
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400734",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400737",
+      "sourceRole": "platform",
+      "original": [
+        4320.834044999727,
+        72.32383841915771,
+        -136.21115199993724
+      ],
+      "point": [
+        4320.834044999727,
+        72.23101221016731,
+        -136.21115199993724
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400737",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400738",
+      "sourceRole": "platform",
+      "original": [
+        4332.982499999378,
+        70.65865600002448,
+        -140.70848000028903
+      ],
+      "point": [
+        4332.982499999378,
+        70.232424541733,
+        -140.70848000028903
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400738",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400739",
+      "sourceRole": "platform",
+      "original": [
+        4594.944254999083,
+        121.01759999999376,
+        877.6468800000744
+      ],
+      "point": [
+        4594.944254999083,
+        121.34009094998653,
+        877.6468800000744
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400739",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400740",
+      "sourceRole": "platform",
+      "original": [
+        4606.277444999934,
+        121.36679999999433,
+        866.8488400000481
+      ],
+      "point": [
+        4606.277444999934,
+        120.75464054800801,
+        866.8488400000481
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400740",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400747",
+      "sourceRole": "platform",
+      "original": [
+        4390.383195000061,
+        104.83135754235829,
+        483.6631359998188
+      ],
+      "point": [
+        4390.383195000061,
+        104.31228174367205,
+        483.6631359998188
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400747",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400748",
+      "sourceRole": "platform",
+      "original": [
+        4397.398499999799,
+        102.86759423996165,
+        464.0708159998486
+      ],
+      "point": [
+        4397.398499999799,
+        102.60674763839032,
+        464.0708159998486
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400748",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400749",
+      "sourceRole": "platform",
+      "original": [
+        2637.02999999886,
+        17.178800000035608,
+        142.82355999969482
+      ],
+      "point": [
+        2637.02999999886,
+        17.1290854800586,
+        142.82355999969482
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400749",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400750",
+      "sourceRole": "platform",
+      "original": [
+        2095.7041049999048,
+        107.99144000002889,
+        1517.514239999738
+      ],
+      "point": [
+        2095.7041049999048,
+        109.04257494598566,
+        1517.514239999738
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400750",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400751",
+      "sourceRole": "platform",
+      "original": [
+        1236.4852499991387,
+        16.99657279992796,
+        -476.8948800002174
+      ],
+      "point": [
+        1236.4852499991387,
+        12.637357116121612,
+        -476.8948800002174
+      ],
+      "yaw": 2.165890587380191,
+      "offset_m": 0,
+      "center_road_distance_m": 27.045252716974343,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400751",
+      "modelFootDistances_m": [
+        27.045252716974343,
+        27.045252716974343
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    },
+    {
+      "sourceId": "8432400752",
+      "sourceRole": "platform",
+      "original": [
+        2490.936525000118,
+        141.22296864000373,
+        1784.236959999844
+      ],
+      "point": [
+        2490.936525000118,
+        141.4914209239655,
+        1784.236959999844
+      ],
+      "yaw": 0,
+      "offset_m": 0,
+      "center_road_distance_m": null,
+      "estimated": true,
+      "sourceURL": "https://www.openstreetmap.org/node/8432400752",
+      "modelFootDistances_m": [
+        null,
+        null
+      ],
+      "roadHalfWidth_estimated_m": 3.8
+    }
+  ]
+}

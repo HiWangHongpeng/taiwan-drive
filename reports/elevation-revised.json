@@ -1,0 +1,23 @@
+{
+  "method": "Estimated midpoint of original directed carriageways; 250m DEM average; only local profile constraints on both projections",
+  "estimated": true,
+  "soft_grade_goal": 0.06,
+  "iterations": 600,
+  "residual_amplitude_factor": 1,
+  "difference_to_raw_dem": {
+    "max_m": 9.531687719997834,
+    "p95_m": 5.205230010213455
+  },
+  "difference_to_smoothed_dem": {
+    "max_m": 1.6614358697678284,
+    "p95_m": 0.850783199661592
+  },
+  "low_initial_grade_under_2pct_change": {
+    "max_m": 0.44995027354587425,
+    "p95_m": 4.80161748956931e-05
+  },
+  "actual_max_grade": [
+    0.06172862102293668,
+    0.060504768484765215
+  ]
+}
