@@ -2,6 +2,10 @@
 
 桌面瀏覽器北海岸自駕原型：白沙灣 ↔ 石門洞，真實 OSM 台 2 雙向有向路線，約 5.41／5.43 km。TypeScript strict、Three.js、Vite、DOM UI、Web Audio，無後端。由本輪從 README 獨立編寫，未繼承舊任務代碼／測試，未使用工作電腦。
 
+[▶ 線上遊玩 島行 Taiwan Drive](https://hiwanghongpeng.github.io/taiwan-drive/)
+
+推送 `main` 後，GitHub Actions 會自動測試、構建並更新網站；等待 [部署流程](https://github.com/HiWangHongpeng/taiwan-drive/actions/workflows/pages.yml) 成功後刷新遊戲即可。駕駛使用 W/S、A/D，Esc 暫停。
+
 ## 執行
 
 需要 Node 22.12+（本輪 Node 24.19.0）。
@@ -13,7 +17,7 @@ npm test
 npm run build
 ```
 
-正式包在 `dist/`，預設子目錄 `/taiwan-drive/`。要用其他相對前綴，可執行 `npx vite build --base=./`；不要直接以 file:// 打開。`npm run preview` 提供本地檢視，沒有公開部署。
+正式包在 `dist/`，預設子目錄 `/taiwan-drive/`。要用其他相對前綴，可執行 `npx vite build --base=./`；不要直接以 file:// 打開。`npm run preview` 提供本地檢視；線上版本由 GitHub Pages 發布。
 
 Playwright 使用本環境 `/usr/bin/chromium`、單 worker、SwiftShader。其他設備請改 playwright.config.ts 的 executablePath，或安裝受支援 Chromium。生產測試需另起本地伺服器，把 dist 掛到 `/taiwan-drive/`：
 
@@ -29,7 +33,7 @@ python3 -m http.server 5174 --bind 127.0.0.1 --directory work/production
 
 ## GitHub Pages 網頁託管
 
-部署流程在 `.github/workflows/pages.yml`：推送 `main` 後以 Node 24、`npm ci`、單元測試和正式構建產生靜態站點，只發布 `dist/` 與來源帳本／依賴許可，不發布原始 OSM／HGT 快取、報告、存檔或私有交付記錄。GitHub Pages 成功啟用和部署後，預期遊玩網址為 https://hiwanghongpeng.github.io/taiwan-drive/ ，不需要本地安裝。此網址目前尚未確認上線。
+部署流程在 `.github/workflows/pages.yml`：推送 `main` 後以 Node 24、`npm ci`、單元測試和正式構建產生靜態站點，只發布 `dist/` 與來源帳本／依賴許可，不發布原始 OSM／HGT 快取、報告、存檔或私有交付記錄。GitHub Pages 成功啟用和部署後，預期遊玩網址為 https://hiwanghongpeng.github.io/taiwan-drive/ ，不需要本地安裝。Pages 已啟用且首次部署成功；目前部署狀態以 GitHub Actions 為準。
 
 本專案選擇公開倉庫與公開遊戲網頁，可使用 GitHub Free。首次啟用時先在倉庫 Settings → General → Danger Zone 將可見性設為 Public，再到 Settings → Pages → Build and deployment 選擇 **GitHub Actions**；若首次 workflow 已因尚未啟用 Pages 而失敗，啟用後重跑即可。後續 `main` 推送自動更新。網頁、瀏覽器端 JS 與地圖可由訪客下載；不自動購買或變更帳號方案。
 
@@ -48,7 +52,7 @@ W 加速，S 煞停後持續按住倒車；A/D 漸進轉向，放開平順回正
 - `reports/` 跟蹤緊湊驗收文檔、兩向完整原始駕駛 JSON、性能／地圖／高程／擺放記錄。截圖、伺服器日誌與打包產物不進 Git。檢查點匯入截圖不算連續駕駛。
 - 開發模式有不可直接寫入的 `window.__drive.snapshot()`，回傳深拷貝；正式 build 完全不暴露該掛鉤。
 - 所有視覺資產與聲音為原創程序生成，無外部模型／紋理請求。OSM 與高程均隨靜態包載入。字型使用裝置系統字型。
-- 本倉庫保存可復現的源碼、依賴鎖檔與限定區域資料快取；`dist/` 由 `npm run build` 生成，依 `.gitignore` 不跟蹤。未公開部署或建立 PR。
+- 本倉庫保存可復現的源碼、依賴鎖檔與限定區域資料快取；`dist/` 由 `npm run build` 生成，依 `.gitignore` 不跟蹤。網站透過 GitHub Pages 發布；未建立 PR。
 
 這是可執行的早期原型，首 500m 尚未達精做樣板或 Slow Roads 成熟度。詳見驗收報告的已完成與缺口，不能把單元測試或 headless 截圖視作完整遊戲手感驗收。
 
