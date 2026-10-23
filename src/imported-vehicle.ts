@@ -31,7 +31,7 @@ export async function loadImportedVehicle(url:string,contact:T.Texture,environme
  const originals=new Map<T.Mesh,T.MeshStandardMaterial|T.MeshStandardMaterial[]>();group.traverse(o=>{if(o instanceof T.Mesh)originals.set(o,o.material);});
  const shadow=new T.Mesh(new T.PlaneGeometry(3,5.3),new T.MeshBasicMaterial({map:contact,transparent:true,depthWrite:false,opacity:.65,polygonOffset:true,polygonOffsetFactor:-1}));shadow.rotation.x=-Math.PI/2;shadow.position.y=.008;group.add(shadow);
  return{group,wheels,frontWheels,steering,marker,steeringAxis,wheelRadius:metadata.wheelRadius,eye:new T.Vector3(...metadata.eye),lookAt:new T.Vector3(...metadata.lookAt),triangles,meshes,updateDashboard,dashboard:()=>({speed:dashboardSpeed,gear:dashboardGear}),
-  setQuality(quality:Quality){for(const [mesh,materials]of originals){const pick=(m:T.MeshStandardMaterial)=>{const pair=pairs.get(m);return pair?(quality==='high'?pair.original:pair.standard):m;};mesh.material=Array.isArray(materials)?materials.map(pick):pick(materials);mesh.castShadow=quality==='high'&&!(Array.isArray(mesh.material)?mesh.material[0]:mesh.material).transparent;}
+  setQuality(quality:Quality){for(const [mesh,materials]of originals){const pick=(m:T.MeshStandardMaterial)=>{const pair=pairs.get(m);return pair?(quality==='high'?pair.original:pair.standard):m;};mesh.material=Array.isArray(materials)?materials.map(pick):pick(materials);mesh.castShadow=quality!=='low'&&!(Array.isArray(mesh.material)?mesh.material[0]:mesh.material).transparent;}
    for(const pair of pairs.values())for(const m of [pair.original,pair.standard])m.needsUpdate=true;
   }
  };

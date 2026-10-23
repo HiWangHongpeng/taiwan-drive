@@ -1,0 +1,84 @@
+{
+  "method": "Reproduces scene.ts bounded deterministic placement, including global caps and source-feature order. Local metric projects onto the original outbound route and uses its first 550 metres, not visible-tree count. Original procedural vegetation; estimated positions inside OSM woodland only. Same canopy clearance/exclusion rules, no surveyed individual trees.",
+  "before": {
+    "route_bands_within180m": [
+      {
+        "start_m": 0,
+        "end_m": 550,
+        "trees": 696,
+        "shrubs": 375
+      },
+      {
+        "start_m": 550,
+        "end_m": 2000,
+        "trees": 367,
+        "shrubs": 130
+      },
+      {
+        "start_m": 2000,
+        "end_m": 4000,
+        "trees": 190,
+        "shrubs": 0
+      },
+      {
+        "start_m": 4000,
+        "end_m": 6000,
+        "trees": 205,
+        "shrubs": 0
+      }
+    ],
+    "spacing_m": 11,
+    "tree_count": 11000,
+    "shrub_count": 2000,
+    "first550m_within180m": {
+      "trees": 696,
+      "shrubs": 375
+    },
+    "in_detail": {
+      "trees": 4526,
+      "shrubs": 1993
+    },
+    "exclusion_failures": 0
+  },
+  "after": {
+    "route_bands_within180m": [
+      {
+        "start_m": 0,
+        "end_m": 550,
+        "trees": 1154,
+        "shrubs": 714
+      },
+      {
+        "start_m": 550,
+        "end_m": 2000,
+        "trees": 556,
+        "shrubs": 210
+      },
+      {
+        "start_m": 2000,
+        "end_m": 4000,
+        "trees": 190,
+        "shrubs": 0
+      },
+      {
+        "start_m": 4000,
+        "end_m": 6000,
+        "trees": 205,
+        "shrubs": 0
+      }
+    ],
+    "spacing_m": 8.5,
+    "tree_count": 15000,
+    "shrub_count": 3000,
+    "first550m_within180m": {
+      "trees": 1154,
+      "shrubs": 714
+    },
+    "in_detail": {
+      "trees": 7593,
+      "shrubs": 2972
+    },
+    "exclusion_failures": 0
+  },
+  "world_sha256": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d"
+}

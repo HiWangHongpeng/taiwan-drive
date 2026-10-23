@@ -1,0 +1,2017 @@
+{
+  "method": "Fresh context, real W/S/A/D/Esc plus UI settings, readonly snapshot pursuit, no Game writes/imports. 1280x800 DPR1 standard, Chromium154 SwiftShader. Test-harness WebGL draw/rAF interception counts all passes, including cached-shadow refreshes; renderer.info alone excludes shadow passes. Fixed real elapsed budget; different progress is reported, not hidden. Instrumented JS wall time is not GPU timing or player FPS. All frames retained.",
+  "label": "road-revision",
+  "requested_seconds": 90,
+  "elapsed": 90.086954558,
+  "initial": {
+    "car": {
+      "x": 1.943,
+      "y": 10.2314,
+      "z": -87.208,
+      "yaw": 2.3618601519491116,
+      "speed": 0,
+      "travel": 0,
+      "collisions": 0,
+      "reverseHold": 0
+    },
+    "direction": 0,
+    "paused": true,
+    "screenRoadAhead": [
+      0.0000540000024646338,
+      0.12001616411274095,
+      0.9948564774102904
+    ],
+    "stats": {
+      "constructionMs": 8332.80000000447,
+      "renderTimes": [
+        764.1000000014901,
+        545.2999999970198,
+        8.300000004470348,
+        7.800000004470348,
+        16.200000002980232
+      ],
+      "frameDiagnostics": [
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 1,
+          "lod_ms": 0,
+          "render_ms": 761.3999999985099,
+          "total_ms": 764.1000000014901,
+          "shadow_update": true,
+          "calls": 409,
+          "triangles": 692730
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 1,
+          "lod_ms": 0,
+          "render_ms": 544.2000000029802,
+          "total_ms": 545.2999999970198,
+          "shadow_update": true,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 6.800000004470348,
+          "total_ms": 8.300000004470348,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 6.800000004470348,
+          "total_ms": 7.800000004470348,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.016700000000000728,
+          "lod_ms": 0,
+          "render_ms": 11.800000004470348,
+          "total_ms": 16.200000002980232,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        }
+      ],
+      "info": {
+        "render": {
+          "frame": 32,
+          "calls": 435,
+          "triangles": 802479,
+          "points": 0,
+          "lines": 832
+        },
+        "memory": {
+          "geometries": 452,
+          "textures": 26
+        }
+      },
+      "instances": 33000,
+      "instanceGroups": 156,
+      "submittedInstances": 13282,
+      "meshes": 1339,
+      "vehicle": {
+        "loaded": true,
+        "active": true,
+        "contacts": [
+          {
+            "x": 2.1260486738052884,
+            "y": 10.265689178312579,
+            "z": -88.78092579194343,
+            "surface_y": 10.265689178657315,
+            "gap_m": -3.447357954655672e-10,
+            "suspension_m": -0.000005432080849965271
+          },
+          {
+            "x": 3.513034904269071,
+            "y": 10.26571760850278,
+            "z": -87.40716000216565,
+            "surface_y": 10.26571760814495,
+            "gap_m": 3.5782932172878645e-10,
+            "suspension_m": 0.000005638372708394179
+          },
+          {
+            "x": 0.15260167196224583,
+            "y": 10.2764,
+            "z": -86.79497463188022,
+            "surface_y": 10.2764,
+            "gap_m": 0,
+            "suspension_m": 0.000005528276975641511
+          },
+          {
+            "x": 1.5493606346895903,
+            "y": 10.2764,
+            "z": -85.41395373949554,
+            "surface_y": 10.2764,
+            "gap_m": 0,
+            "suspension_m": -0.0000054151794035006695
+          }
+        ],
+        "triangles": 111561,
+        "meshes": 45,
+        "dashboard": {
+          "speed": 0,
+          "gear": "D"
+        },
+        "wheelRadius": 0.38400009518171924,
+        "frontWheels": [
+          {
+            "position": [
+              0.9757409920580492,
+              0.38399466310086927,
+              1.2472187876701355
+            ],
+            "angle": 0
+          },
+          {
+            "position": [
+              -0.9764271149747268,
+              0.38400567394978286,
+              1.2455067038536072
+            ],
+            "angle": 0
+          }
+        ],
+        "wheelSpin": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "steeringAngle": 0,
+        "steeringCenter": [
+          -0.00017587099456610954,
+          -0.2716175705937149,
+          0.9794184114450643
+        ],
+        "steeringMarker": [
+          -0.00017590670515119395,
+          -0.24774782490820255,
+          0.9794237133215923
+        ]
+      },
+      "terrainMesh": {
+        "detailStep_m": 4,
+        "channelStep_m": 1,
+        "corridorRoadStep_m": 4,
+        "roadRefinementRadius_m": 32,
+        "adaptive": false
+      },
+      "diagnostics": {
+        "trees": 15000,
+        "shrubs": 3000,
+        "treeGroups": 81,
+        "buildingParts": 3472,
+        "buildings": 264,
+        "parkingLots": 24,
+        "paths": 136,
+        "steps": 26,
+        "busStops": 94,
+        "shelters": 20,
+        "lamps": 97,
+        "roadTerrainClearanceMin": 0.21327181800896078,
+        "waterTerrainGapMax": 0.0350000000000108,
+        "buildingFootingMax": 0,
+        "terrainTriangles": 517026,
+        "refinedRoadCells": 771
+      },
+      "graphics": {
+        "quality": "standard",
+        "budget": {
+          "pixelRatio": 1.5,
+          "shadowSize": 1024
+        },
+        "shadowUpdates": 2,
+        "treeRepresentation": "stable-instanced-cluster-cards",
+        "canopyInstances": 15000,
+        "pixelRatio": 1,
+        "textureSource": "original deterministic Canvas rasters"
+      }
+    },
+    "completed": false,
+    "storageBlocked": false,
+    "presentationAlpha": 1,
+    "elapsed": 0,
+    "simulationElapsed": 0,
+    "droppedSimulationTime": 0,
+    "controls": {
+      "throttle": false,
+      "brake": false,
+      "left": false,
+      "right": false,
+      "steer": 0,
+      "turnRate": 0.4,
+      "returnRate": 0.4
+    },
+    "nearest": {
+      "distance": 0,
+      "index": 0,
+      "t": 0,
+      "x": 1.943,
+      "y": 10.2314,
+      "z": -87.208,
+      "heading": 2.3618601519491116,
+      "progress": 0,
+      "total": 5410.712305733549
+    },
+    "frameTimes": [
+      12219.29999999851,
+      550,
+      16.700000000000728
+    ]
+  },
+  "end": {
+    "car": {
+      "x": 99.31598661911757,
+      "y": 10.637362010450605,
+      "z": -150.59030439556082,
+      "yaw": 1.8131348881316136,
+      "speed": 12.109430969503192,
+      "travel": 118.17692227545253,
+      "collisions": 0,
+      "reverseHold": 0
+    },
+    "direction": 0,
+    "paused": true,
+    "screenRoadAhead": [
+      0.0752858221747998,
+      0.09995081352758615,
+      0.9942658242205077
+    ],
+    "stats": {
+      "constructionMs": 8332.80000000447,
+      "renderTimes": [
+        764.1000000014901,
+        545.2999999970198,
+        8.300000004470348,
+        7.800000004470348,
+        16.200000002980232,
+        5.600000001490116,
+        9.200000002980232,
+        12.600000001490116,
+        18.5,
+        21.69999999552965,
+        7.799999997019768,
+        23.600000001490116,
+        12.5,
+        9.600000001490116,
+        11.199999995529652,
+        8.800000004470348,
+        9.5,
+        7,
+        7.9000000059604645,
+        5.800000004470348,
+        6.5999999940395355,
+        5.4000000059604645,
+        7.199999995529652,
+        5.299999997019768,
+        5.699999995529652,
+        9,
+        8.399999998509884,
+        4.700000002980232,
+        6.200000002980232,
+        6.5,
+        6,
+        8.100000001490116,
+        6,
+        7.200000002980232,
+        4.300000004470348,
+        6.799999997019768,
+        8.299999997019768,
+        7.300000004470348,
+        10.600000001490116,
+        29.799999997019768,
+        5.5,
+        5.100000001490116,
+        5.899999998509884,
+        4.600000001490116,
+        8.100000001490116,
+        6.100000001490116,
+        12.300000004470348,
+        5.200000002980232,
+        7.5999999940395355,
+        7.4000000059604645,
+        5.700000002980232,
+        5.600000001490116,
+        5.600000001490116,
+        9,
+        6.899999998509884,
+        7.299999997019768,
+        14.200000002980232,
+        23.600000001490116,
+        4.699999995529652,
+        6.9000000059604645,
+        4.899999998509884,
+        5.700000002980232,
+        5.9000000059604645,
+        6,
+        6.699999995529652,
+        8.200000002980232
+      ],
+      "frameDiagnostics": [
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 1,
+          "lod_ms": 0,
+          "render_ms": 761.3999999985099,
+          "total_ms": 764.1000000014901,
+          "shadow_update": true,
+          "calls": 409,
+          "triangles": 692730
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 1,
+          "lod_ms": 0,
+          "render_ms": 544.2000000029802,
+          "total_ms": 545.2999999970198,
+          "shadow_update": true,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 6.800000004470348,
+          "total_ms": 8.300000004470348,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 6.800000004470348,
+          "total_ms": 7.800000004470348,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.016700000000000728,
+          "lod_ms": 0,
+          "render_ms": 11.800000004470348,
+          "total_ms": 16.200000002980232,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.399999998509884,
+          "total_ms": 5.600000001490116,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 8.100000001490116,
+          "total_ms": 9.200000002980232,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.9874187472022469,
+          "z": -87.25292494375155,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 11.100000001490116,
+          "total_ms": 12.600000001490116,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 2.128075734871243,
+          "z": -87.39518486005497,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 16.700000002980232,
+          "total_ms": 18.5,
+          "shadow_update": true,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 2.3647941720729575,
+          "z": -87.63460094326466,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 20.099999994039536,
+          "total_ms": 21.69999999552965,
+          "shadow_update": true,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 2.6973200665296466,
+          "z": -87.97091630660402,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 6.399999998509884,
+          "total_ms": 7.799999997019768,
+          "shadow_update": true,
+          "calls": 434,
+          "triangles": 791943
+        },
+        {
+          "x": 3.1252959743047244,
+          "z": -88.40376943270132,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 22.200000002980232,
+          "total_ms": 23.600000001490116,
+          "shadow_update": true,
+          "calls": 434,
+          "triangles": 791943
+        },
+        {
+          "x": 3.648262535354648,
+          "z": -88.93269572664072,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 10.600000001490116,
+          "total_ms": 12.5,
+          "shadow_update": true,
+          "calls": 434,
+          "triangles": 791943
+        },
+        {
+          "x": 4.265660438599059,
+          "z": -89.5571295034264,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 7.600000001490116,
+          "total_ms": 9.600000001490116,
+          "shadow_update": true,
+          "calls": 433,
+          "triangles": 791931
+        },
+        {
+          "x": 4.976832798734769,
+          "z": -90.27640639188273,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 9.399999998509884,
+          "total_ms": 11.199999995529652,
+          "shadow_update": true,
+          "calls": 433,
+          "triangles": 791931
+        },
+        {
+          "x": 5.781008749713095,
+          "z": -91.08974674116281,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 6.800000004470348,
+          "total_ms": 8.800000004470348,
+          "shadow_update": true,
+          "calls": 431,
+          "triangles": 791883
+        },
+        {
+          "x": 6.677142559883282,
+          "z": -91.99609290244602,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 7.600000001490116,
+          "total_ms": 9.5,
+          "shadow_update": true,
+          "calls": 433,
+          "triangles": 792003
+        },
+        {
+          "x": 7.664251832219058,
+          "z": -92.99445128329843,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 6.199999995529652,
+          "total_ms": 7,
+          "shadow_update": true,
+          "calls": 432,
+          "triangles": 787613
+        },
+        {
+          "x": 8.74132412393465,
+          "z": -94.08379790312472,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 7.200000002980232,
+          "total_ms": 7.9000000059604645,
+          "shadow_update": true,
+          "calls": 432,
+          "triangles": 787613
+        },
+        {
+          "x": 9.907194630972686,
+          "z": -95.26295468374721,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5,
+          "total_ms": 5.800000004470348,
+          "shadow_update": true,
+          "calls": 429,
+          "triangles": 787485
+        },
+        {
+          "x": 11.16054254569186,
+          "z": -96.53058576558568,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5.799999997019768,
+          "total_ms": 6.5999999940395355,
+          "shadow_update": true,
+          "calls": 429,
+          "triangles": 787485
+        },
+        {
+          "x": 12.50012754367366,
+          "z": -97.8854366894704,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.600000001490116,
+          "total_ms": 5.4000000059604645,
+          "shadow_update": true,
+          "calls": 429,
+          "triangles": 787485
+        },
+        {
+          "x": 13.924091370735432,
+          "z": -99.32562802453288,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 6.199999995529652,
+          "total_ms": 7.199999995529652,
+          "shadow_update": true,
+          "calls": 429,
+          "triangles": 787485
+        },
+        {
+          "x": 15.43061222341871,
+          "z": -100.84931720602165,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.5,
+          "total_ms": 5.299999997019768,
+          "shadow_update": true,
+          "calls": 428,
+          "triangles": 787395
+        },
+        {
+          "x": 17.022548673410604,
+          "z": -102.45060439309775,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.899999998509884,
+          "total_ms": 5.699999995529652,
+          "shadow_update": true,
+          "calls": 425,
+          "triangles": 786827
+        },
+        {
+          "x": 18.712289929567863,
+          "z": -104.11311551741265,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 8.299999997019768,
+          "total_ms": 9,
+          "shadow_update": true,
+          "calls": 428,
+          "triangles": 803283
+        },
+        {
+          "x": 20.44573268854645,
+          "z": -105.79992179492035,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 7.699999995529652,
+          "total_ms": 8.399999998509884,
+          "shadow_update": true,
+          "calls": 428,
+          "triangles": 806924
+        },
+        {
+          "x": 22.179098322901194,
+          "z": -107.4491365585844,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.100000001490116,
+          "total_ms": 4.700000002980232,
+          "shadow_update": true,
+          "calls": 426,
+          "triangles": 806134
+        },
+        {
+          "x": 23.902787037045975,
+          "z": -109.07106801337783,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5.5,
+          "total_ms": 6.200000002980232,
+          "shadow_update": true,
+          "calls": 426,
+          "triangles": 806134
+        },
+        {
+          "x": 25.625435000528128,
+          "z": -110.65625379879269,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5.800000004470348,
+          "total_ms": 6.5,
+          "shadow_update": true,
+          "calls": 427,
+          "triangles": 807460
+        },
+        {
+          "x": 27.337911183232382,
+          "z": -112.21484215992501,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5.299999997019768,
+          "total_ms": 6,
+          "shadow_update": true,
+          "calls": 427,
+          "triangles": 808423
+        },
+        {
+          "x": 29.094606244122826,
+          "z": -113.77840814425123,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 7.200000002980232,
+          "total_ms": 8.100000001490116,
+          "shadow_update": true,
+          "calls": 428,
+          "triangles": 807254
+        },
+        {
+          "x": 30.894407821763664,
+          "z": -115.3627166813645,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5.399999998509884,
+          "total_ms": 6,
+          "shadow_update": true,
+          "calls": 429,
+          "triangles": 808515
+        },
+        {
+          "x": 32.69035353795509,
+          "z": -116.90830601785214,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5.799999997019768,
+          "total_ms": 7.200000002980232,
+          "shadow_update": true,
+          "calls": 430,
+          "triangles": 808527
+        },
+        {
+          "x": 34.473371533019304,
+          "z": -118.42575849586521,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 3.7000000029802322,
+          "total_ms": 4.300000004470348,
+          "shadow_update": true,
+          "calls": 429,
+          "triangles": 807201
+        },
+        {
+          "x": 36.25145274951988,
+          "z": -119.90538945426098,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 6.100000001490116,
+          "total_ms": 6.799999997019768,
+          "shadow_update": true,
+          "calls": 429,
+          "triangles": 807201
+        },
+        {
+          "x": 38.06397826655457,
+          "z": -121.3968192049748,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 7.5999999940395355,
+          "total_ms": 8.299999997019768,
+          "shadow_update": true,
+          "calls": 431,
+          "triangles": 807229
+        },
+        {
+          "x": 39.93532084395679,
+          "z": -122.88496690084021,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 6.700000002980232,
+          "total_ms": 7.300000004470348,
+          "shadow_update": true,
+          "calls": 435,
+          "triangles": 807682
+        },
+        {
+          "x": 41.82323594187142,
+          "z": -124.30220197363766,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 9.699999995529652,
+          "total_ms": 10.600000001490116,
+          "shadow_update": true,
+          "calls": 436,
+          "triangles": 798494
+        },
+        {
+          "x": 43.71006705228092,
+          "z": -125.67013285299876,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 29,
+          "total_ms": 29.799999997019768,
+          "shadow_update": true,
+          "calls": 435,
+          "triangles": 798158
+        },
+        {
+          "x": 45.6304949412497,
+          "z": -127.04625449487074,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.799999997019768,
+          "total_ms": 5.5,
+          "shadow_update": true,
+          "calls": 436,
+          "triangles": 798989
+        },
+        {
+          "x": 47.60783463197184,
+          "z": -128.41366606100826,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.5,
+          "total_ms": 5.100000001490116,
+          "shadow_update": true,
+          "calls": 437,
+          "triangles": 800447
+        },
+        {
+          "x": 49.59541339158079,
+          "z": -129.70757962709712,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5.199999995529652,
+          "total_ms": 5.899999998509884,
+          "shadow_update": true,
+          "calls": 437,
+          "triangles": 800691
+        },
+        {
+          "x": 51.583613161526735,
+          "z": -130.94008464108194,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.100000001490116,
+          "total_ms": 4.600000001490116,
+          "shadow_update": true,
+          "calls": 439,
+          "triangles": 801155
+        },
+        {
+          "x": 53.57735420441314,
+          "z": -132.1011183560887,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 6.300000004470348,
+          "total_ms": 8.100000001490116,
+          "shadow_update": true,
+          "calls": 442,
+          "triangles": 802395
+        },
+        {
+          "x": 55.616778215656666,
+          "z": -133.2440077249785,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5.300000004470348,
+          "total_ms": 6.100000001490116,
+          "shadow_update": true,
+          "calls": 442,
+          "triangles": 802395
+        },
+        {
+          "x": 57.69822600679809,
+          "z": -134.3955239395992,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 11.700000002980232,
+          "total_ms": 12.300000004470348,
+          "shadow_update": true,
+          "calls": 443,
+          "triangles": 803837
+        },
+        {
+          "x": 59.7634100954953,
+          "z": -135.50816610761692,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.300000004470348,
+          "total_ms": 5.200000002980232,
+          "shadow_update": true,
+          "calls": 444,
+          "triangles": 804236
+        },
+        {
+          "x": 61.806019744046324,
+          "z": -136.59424829923145,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 6.799999997019768,
+          "total_ms": 7.5999999940395355,
+          "shadow_update": true,
+          "calls": 444,
+          "triangles": 804236
+        },
+        {
+          "x": 63.88713514596756,
+          "z": -137.67140195184072,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 6.600000001490116,
+          "total_ms": 7.4000000059604645,
+          "shadow_update": true,
+          "calls": 446,
+          "triangles": 804440
+        },
+        {
+          "x": 66.00980537642273,
+          "z": -138.75536140158337,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5,
+          "total_ms": 5.700000002980232,
+          "shadow_update": true,
+          "calls": 446,
+          "triangles": 804440
+        },
+        {
+          "x": 68.11417399220664,
+          "z": -139.80054960152043,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.800000004470348,
+          "total_ms": 5.600000001490116,
+          "shadow_update": true,
+          "calls": 445,
+          "triangles": 804438
+        },
+        {
+          "x": 70.19424968623063,
+          "z": -140.81949303552386,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.200000002980232,
+          "total_ms": 5.600000001490116,
+          "shadow_update": true,
+          "calls": 445,
+          "triangles": 804438
+        },
+        {
+          "x": 72.31691119176169,
+          "z": -141.81583443407234,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 8.100000001490116,
+          "total_ms": 9,
+          "shadow_update": true,
+          "calls": 443,
+          "triangles": 803221
+        },
+        {
+          "x": 74.50155511999242,
+          "z": -142.76812003723745,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 6.200000002980232,
+          "total_ms": 6.899999998509884,
+          "shadow_update": true,
+          "calls": 444,
+          "triangles": 803477
+        },
+        {
+          "x": 76.67455686910786,
+          "z": -143.65848497520594,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 6.399999998509884,
+          "total_ms": 7.299999997019768,
+          "shadow_update": true,
+          "calls": 446,
+          "triangles": 805295
+        },
+        {
+          "x": 78.83994029700776,
+          "z": -144.47658494255037,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 13.399999998509884,
+          "total_ms": 14.200000002980232,
+          "shadow_update": true,
+          "calls": 447,
+          "triangles": 805307
+        },
+        {
+          "x": 81.04577393466559,
+          "z": -145.26846824293366,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 22.69999999552965,
+          "total_ms": 23.600000001490116,
+          "shadow_update": true,
+          "calls": 447,
+          "triangles": 805307
+        },
+        {
+          "x": 83.29234603256117,
+          "z": -146.06111126602053,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.100000001490116,
+          "total_ms": 4.699999995529652,
+          "shadow_update": true,
+          "calls": 447,
+          "triangles": 805307
+        },
+        {
+          "x": 85.51920138444652,
+          "z": -146.80538919736523,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 6,
+          "total_ms": 6.9000000059604645,
+          "shadow_update": true,
+          "calls": 449,
+          "triangles": 810849
+        },
+        {
+          "x": 87.734816153125,
+          "z": -147.47842297693424,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.299999997019768,
+          "total_ms": 4.899999998509884,
+          "shadow_update": true,
+          "calls": 447,
+          "triangles": 809313
+        },
+        {
+          "x": 89.99115024377778,
+          "z": -148.12319065868584,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.9000000059604645,
+          "total_ms": 5.700000002980232,
+          "shadow_update": true,
+          "calls": 449,
+          "triangles": 809361
+        },
+        {
+          "x": 92.29266511680406,
+          "z": -148.767238591261,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5.300000004470348,
+          "total_ms": 5.9000000059604645,
+          "shadow_update": true,
+          "calls": 449,
+          "triangles": 809361
+        },
+        {
+          "x": 94.57212011660151,
+          "z": -149.37773784212652,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5,
+          "total_ms": 6,
+          "shadow_update": true,
+          "calls": 449,
+          "triangles": 809361
+        },
+        {
+          "x": 96.82662320447443,
+          "z": -149.96829385635496,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 6.100000001490116,
+          "total_ms": 6.699999995529652,
+          "shadow_update": true,
+          "calls": 450,
+          "triangles": 809571
+        },
+        {
+          "x": 99.12006017610904,
+          "z": -150.54187201843908,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 7.5,
+          "total_ms": 8.200000002980232,
+          "shadow_update": true,
+          "calls": 450,
+          "triangles": 809571
+        }
+      ],
+      "info": {
+        "render": {
+          "frame": 93,
+          "calls": 450,
+          "triangles": 809571,
+          "points": 0,
+          "lines": 832
+        },
+        "memory": {
+          "geometries": 491,
+          "textures": 26
+        }
+      },
+      "instances": 33000,
+      "instanceGroups": 156,
+      "submittedInstances": 13996,
+      "meshes": 1339,
+      "vehicle": {
+        "loaded": true,
+        "active": true,
+        "contacts": [
+          {
+            "x": 100.09667869924822,
+            "y": 10.694766047058792,
+            "z": -151.78840039634505,
+            "surface_y": 10.694766047021869,
+            "gap_m": 3.6923353263773606e-11,
+            "suspension_m": 0.0000060296258876380016
+          },
+          {
+            "x": 100.56348529894326,
+            "y": 10.695109368513862,
+            "z": -149.89286492315912,
+            "surface_y": 10.695109368550993,
+            "gap_m": -3.7131187013983435e-11,
+            "suspension_m": -0.000006063105051634654
+          },
+          {
+            "x": 97.37706972662028,
+            "y": 10.687836755775745,
+            "z": -151.12335241169092,
+            "surface_y": 10.687836755835587,
+            "gap_m": -5.984190920571564e-11,
+            "suspension_m": -0.0000060147828566115
+          },
+          {
+            "x": 97.84843009203193,
+            "y": 10.68821074945585,
+            "z": -149.21652951188196,
+            "surface_y": 10.688210749418765,
+            "gap_m": 3.708500173615903e-11,
+            "suspension_m": 0.000006055627729928403
+          }
+        ],
+        "triangles": 111561,
+        "meshes": 45,
+        "dashboard": {
+          "speed": 43,
+          "gear": "D"
+        },
+        "wheelRadius": 0.38400009518171924,
+        "frontWheels": [
+          {
+            "position": [
+              0.9757409920580492,
+              0.3840061248076069,
+              1.2472187876701355
+            ],
+            "angle": -0.0023333333333328717
+          },
+          {
+            "position": [
+              -0.9764271149747268,
+              0.3839939724720228,
+              1.2455067038536072
+            ],
+            "angle": -0.0023333333333328717
+          }
+        ],
+        "wheelSpin": [
+          310.114567392033,
+          310.114567392033,
+          310.114567392033,
+          310.114567392033
+        ],
+        "steeringAngle": 0.015999999999991164,
+        "steeringCenter": [
+          -0.0016673178175053412,
+          -0.23233263688702943,
+          0.9812943696575256
+        ],
+        "steeringMarker": [
+          -0.0014499113745179285,
+          -0.21063411996622305,
+          0.9813000045561228
+        ]
+      },
+      "terrainMesh": {
+        "detailStep_m": 4,
+        "channelStep_m": 1,
+        "corridorRoadStep_m": 4,
+        "roadRefinementRadius_m": 32,
+        "adaptive": false
+      },
+      "diagnostics": {
+        "trees": 15000,
+        "shrubs": 3000,
+        "treeGroups": 81,
+        "buildingParts": 3472,
+        "buildings": 264,
+        "parkingLots": 24,
+        "paths": 136,
+        "steps": 26,
+        "busStops": 94,
+        "shelters": 20,
+        "lamps": 97,
+        "roadTerrainClearanceMin": 0.21327181800896078,
+        "waterTerrainGapMax": 0.0350000000000108,
+        "buildingFootingMax": 0,
+        "terrainTriangles": 517026,
+        "refinedRoadCells": 771
+      },
+      "graphics": {
+        "quality": "standard",
+        "budget": {
+          "pixelRatio": 1.5,
+          "shadowSize": 1024
+        },
+        "shadowUpdates": 60,
+        "treeRepresentation": "stable-instanced-cluster-cards",
+        "canopyInstances": 15000,
+        "pixelRatio": 1,
+        "textureSource": "original deterministic Canvas rasters"
+      }
+    },
+    "completed": false,
+    "storageBlocked": false,
+    "presentationAlpha": 1.9609314172441827e-13,
+    "elapsed": 89.7631,
+    "simulationElapsed": 11.800000000000166,
+    "droppedSimulationTime": 77.96309999999995,
+    "controls": {
+      "throttle": false,
+      "brake": false,
+      "left": false,
+      "right": false,
+      "steer": 0,
+      "turnRate": 0.4,
+      "returnRate": 0.4
+    },
+    "nearest": {
+      "distance": 0.8304652312623659,
+      "index": 24,
+      "t": 0.4056373136913485,
+      "x": 99.45671962053656,
+      "y": 10.637362010450605,
+      "z": -149.77185053452328,
+      "heading": 1.741080933038522,
+      "progress": 118.0545739456494,
+      "total": 5410.712305733549
+    },
+    "frameTimes": [
+      12219.29999999851,
+      550,
+      16.700000000000728,
+      3716.499999999998,
+      1333.300000000003,
+      1433.199999999997,
+      1500,
+      1616.6000000000022,
+      1466.5999999999985,
+      1666.6000000000022,
+      1683.2999999999993,
+      1549.8999999999978,
+      1733.2000000000007,
+      1583.2999999999993,
+      1533.300000000003,
+      1566.5999999999985,
+      1483.300000000003,
+      1533.2999999999956,
+      1516.5999999999985,
+      1516.6000000000058,
+      1533.2999999999956,
+      1499.9000000000015,
+      1533.300000000003,
+      1483.199999999997,
+      1450,
+      1399.9000000000015,
+      1533.2999999999956,
+      1400,
+      1399.9000000000015,
+      1399.9000000000015,
+      1533.300000000003,
+      1483.199999999997,
+      1433.4000000000015,
+      1499.9000000000015,
+      1383.199999999997,
+      1316.699999999997,
+      1549.9000000000087,
+      1566.5999999999913,
+      1366.6000000000058,
+      1433.300000000003,
+      1500,
+      1483.199999999997,
+      1516.5999999999913,
+      1566.7000000000116,
+      1516.5,
+      1550,
+      1616.5,
+      1483.2999999999884,
+      1433.300000000003,
+      1416.699999999997,
+      1483.2000000000116,
+      1533.2999999999884,
+      2733.2000000000116,
+      233.29999999998836,
+      1583.300000000003,
+      1450,
+      1599.9000000000087,
+      1666.5,
+      1566.699999999997,
+      1616.5999999999913,
+      1733.300000000003,
+      1549.9000000000087,
+      1633.199999999997,
+      1716.699999999997
+    ]
+  },
+  "gl_probe": [
+    {
+      "now": 12375.9,
+      "duration_ms": 9.700000002980232,
+      "draw_calls": 435,
+      "triangles": 802479
+    },
+    {
+      "now": 12925.9,
+      "duration_ms": 8.800000004470348,
+      "draw_calls": 435,
+      "triangles": 802479
+    },
+    {
+      "now": 12942.6,
+      "duration_ms": 16.600000001490116,
+      "draw_calls": 435,
+      "triangles": 802479
+    },
+    {
+      "now": 16659.1,
+      "duration_ms": 6,
+      "draw_calls": 435,
+      "triangles": 802479
+    },
+    {
+      "now": 17992.4,
+      "duration_ms": 9.699999995529652,
+      "draw_calls": 435,
+      "triangles": 802479
+    },
+    {
+      "now": 19425.6,
+      "duration_ms": 18.399999998509884,
+      "draw_calls": 435,
+      "triangles": 802479
+    },
+    {
+      "now": 20925.6,
+      "duration_ms": 19.899999998509884,
+      "draw_calls": 514,
+      "triangles": 1087257
+    },
+    {
+      "now": 22542.2,
+      "duration_ms": 24.19999999552965,
+      "draw_calls": 514,
+      "triangles": 1087257
+    },
+    {
+      "now": 24008.8,
+      "duration_ms": 9.199999995529652,
+      "draw_calls": 513,
+      "triangles": 1076721
+    },
+    {
+      "now": 25675.4,
+      "duration_ms": 25.5,
+      "draw_calls": 513,
+      "triangles": 1076721
+    },
+    {
+      "now": 27358.7,
+      "duration_ms": 14,
+      "draw_calls": 513,
+      "triangles": 1076721
+    },
+    {
+      "now": 28908.6,
+      "duration_ms": 11.699999995529652,
+      "draw_calls": 512,
+      "triangles": 1076709
+    },
+    {
+      "now": 30641.8,
+      "duration_ms": 15.200000002980232,
+      "draw_calls": 512,
+      "triangles": 1076709
+    },
+    {
+      "now": 32225.1,
+      "duration_ms": 10.299999997019768,
+      "draw_calls": 510,
+      "triangles": 1076661
+    },
+    {
+      "now": 33758.4,
+      "duration_ms": 10.799999997019768,
+      "draw_calls": 512,
+      "triangles": 1076781
+    },
+    {
+      "now": 35325,
+      "duration_ms": 10.300000004470348,
+      "draw_calls": 511,
+      "triangles": 1072391
+    },
+    {
+      "now": 36808.3,
+      "duration_ms": 9.899999998509884,
+      "draw_calls": 511,
+      "triangles": 1072391
+    },
+    {
+      "now": 38341.6,
+      "duration_ms": 7.299999997019768,
+      "draw_calls": 508,
+      "triangles": 1072263
+    },
+    {
+      "now": 39858.2,
+      "duration_ms": 8.700000002980232,
+      "draw_calls": 508,
+      "triangles": 1072263
+    },
+    {
+      "now": 41374.8,
+      "duration_ms": 7.699999995529652,
+      "draw_calls": 506,
+      "triangles": 1071449
+    },
+    {
+      "now": 42908.1,
+      "duration_ms": 9.799999997019768,
+      "draw_calls": 506,
+      "triangles": 1071449
+    },
+    {
+      "now": 44408,
+      "duration_ms": 6.799999997019768,
+      "draw_calls": 504,
+      "triangles": 1071347
+    },
+    {
+      "now": 45941.3,
+      "duration_ms": 7.399999998509884,
+      "draw_calls": 498,
+      "triangles": 1070071
+    },
+    {
+      "now": 47424.5,
+      "duration_ms": 10.799999997019768,
+      "draw_calls": 501,
+      "triangles": 1086527
+    },
+    {
+      "now": 48874.5,
+      "duration_ms": 10.199999995529652,
+      "draw_calls": 501,
+      "triangles": 1090168
+    },
+    {
+      "now": 50274.4,
+      "duration_ms": 6.299999997019768,
+      "draw_calls": 499,
+      "triangles": 1089378
+    },
+    {
+      "now": 51807.7,
+      "duration_ms": 8.300000004470348,
+      "draw_calls": 498,
+      "triangles": 1089354
+    },
+    {
+      "now": 53207.7,
+      "duration_ms": 9,
+      "draw_calls": 498,
+      "triangles": 1089978
+    },
+    {
+      "now": 54607.6,
+      "duration_ms": 7.600000001490116,
+      "draw_calls": 498,
+      "triangles": 1090941
+    },
+    {
+      "now": 56007.5,
+      "duration_ms": 9.399999998509884,
+      "draw_calls": 498,
+      "triangles": 1050172
+    },
+    {
+      "now": 57540.8,
+      "duration_ms": 7.899999998509884,
+      "draw_calls": 498,
+      "triangles": 1042103
+    },
+    {
+      "now": 59024,
+      "duration_ms": 8.600000001490116,
+      "draw_calls": 497,
+      "triangles": 1025595
+    },
+    {
+      "now": 60457.4,
+      "duration_ms": 6.5,
+      "draw_calls": 496,
+      "triangles": 1024269
+    },
+    {
+      "now": 61957.3,
+      "duration_ms": 9.300000004470348,
+      "draw_calls": 496,
+      "triangles": 1024269
+    },
+    {
+      "now": 63340.5,
+      "duration_ms": 9.799999997019768,
+      "draw_calls": 498,
+      "triangles": 1024297
+    },
+    {
+      "now": 64657.2,
+      "duration_ms": 8.899999998509884,
+      "draw_calls": 502,
+      "triangles": 1024750
+    },
+    {
+      "now": 66207.1,
+      "duration_ms": 13.899999998509884,
+      "draw_calls": 503,
+      "triangles": 1015562
+    },
+    {
+      "now": 67773.7,
+      "duration_ms": 31.5,
+      "draw_calls": 502,
+      "triangles": 1015226
+    },
+    {
+      "now": 69140.3,
+      "duration_ms": 7.5,
+      "draw_calls": 503,
+      "triangles": 1016057
+    },
+    {
+      "now": 70573.6,
+      "duration_ms": 6.899999998509884,
+      "draw_calls": 504,
+      "triangles": 1017515
+    },
+    {
+      "now": 72073.6,
+      "duration_ms": 7,
+      "draw_calls": 504,
+      "triangles": 1017759
+    },
+    {
+      "now": 73556.8,
+      "duration_ms": 6.5,
+      "draw_calls": 506,
+      "triangles": 1018223
+    },
+    {
+      "now": 75073.4,
+      "duration_ms": 11.899999998509884,
+      "draw_calls": 509,
+      "triangles": 1019463
+    },
+    {
+      "now": 76640.1,
+      "duration_ms": 7.5,
+      "draw_calls": 509,
+      "triangles": 1019463
+    },
+    {
+      "now": 78156.6,
+      "duration_ms": 14.100000001490116,
+      "draw_calls": 510,
+      "triangles": 1020905
+    },
+    {
+      "now": 79706.6,
+      "duration_ms": 6.799999997019768,
+      "draw_calls": 511,
+      "triangles": 1021304
+    },
+    {
+      "now": 81323.1,
+      "duration_ms": 9.700000002980232,
+      "draw_calls": 511,
+      "triangles": 1021304
+    },
+    {
+      "now": 82806.4,
+      "duration_ms": 9,
+      "draw_calls": 513,
+      "triangles": 1021508
+    },
+    {
+      "now": 84239.7,
+      "duration_ms": 7.5,
+      "draw_calls": 513,
+      "triangles": 1021508
+    },
+    {
+      "now": 85656.4,
+      "duration_ms": 7.399999998509884,
+      "draw_calls": 512,
+      "triangles": 1021506
+    },
+    {
+      "now": 87139.6,
+      "duration_ms": 7,
+      "draw_calls": 511,
+      "triangles": 1021338
+    },
+    {
+      "now": 88672.9,
+      "duration_ms": 12.399999998509884,
+      "draw_calls": 509,
+      "triangles": 1020121
+    },
+    {
+      "now": 91406.1,
+      "duration_ms": 10.899999998509884,
+      "draw_calls": 510,
+      "triangles": 1020377
+    },
+    {
+      "now": 91639.4,
+      "duration_ms": 9,
+      "draw_calls": 511,
+      "triangles": 1022125
+    },
+    {
+      "now": 93222.7,
+      "duration_ms": 17,
+      "draw_calls": 512,
+      "triangles": 1022137
+    },
+    {
+      "now": 94672.7,
+      "duration_ms": 26.200000002980232,
+      "draw_calls": 512,
+      "triangles": 1022137
+    },
+    {
+      "now": 96272.6,
+      "duration_ms": 7.5,
+      "draw_calls": 512,
+      "triangles": 1022137
+    },
+    {
+      "now": 97939.1,
+      "duration_ms": 9.399999998509884,
+      "draw_calls": 514,
+      "triangles": 1027679
+    },
+    {
+      "now": 99505.8,
+      "duration_ms": 7.600000001490116,
+      "draw_calls": 510,
+      "triangles": 1026095
+    },
+    {
+      "now": 101122.4,
+      "duration_ms": 7.399999998509884,
+      "draw_calls": 511,
+      "triangles": 1026059
+    },
+    {
+      "now": 102855.7,
+      "duration_ms": 8.600000001490116,
+      "draw_calls": 511,
+      "triangles": 1026059
+    },
+    {
+      "now": 104405.6,
+      "duration_ms": 7.600000001490116,
+      "draw_calls": 511,
+      "triangles": 1026059
+    },
+    {
+      "now": 106038.8,
+      "duration_ms": 9.300000004470348,
+      "draw_calls": 511,
+      "triangles": 1026179
+    },
+    {
+      "now": 107755.5,
+      "duration_ms": 10.399999998509884,
+      "draw_calls": 511,
+      "triangles": 1026179
+    }
+  ],
+  "log": [
+    {
+      "elapsed": 0.004838762999999744,
+      "car": {
+        "x": 1.943,
+        "y": 10.2314,
+        "z": -87.208,
+        "yaw": 2.3618601519491116,
+        "speed": 0,
+        "travel": 0,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "progress": 0,
+      "lateral": 0
+    },
+    {
+      "elapsed": 5.045774821000003,
+      "car": {
+        "x": 2.388849600640254,
+        "y": 10.220869819973483,
+        "z": -87.65893050777004,
+        "yaw": 2.3618601519491116,
+        "speed": 2.052834350180512,
+        "travel": 0.6341294735531822,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "progress": 0.6341294735531686,
+      "lateral": 1.699765591301329e-14
+    },
+    {
+      "elapsed": 10.115382129000002,
+      "car": {
+        "x": 3.696114030276862,
+        "y": 10.189994543273519,
+        "z": -88.98109253774439,
+        "yaw": 2.3618601519491116,
+        "speed": 4.083535332118531,
+        "travel": 2.4934445954459195,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "progress": 2.4934445954459106,
+      "lateral": 7.105427357601002e-15
+    },
+    {
+      "elapsed": 15.126976771999999,
+      "car": {
+        "x": 5.852188582233431,
+        "y": 10.139640515511116,
+        "z": -91.16173773986571,
+        "yaw": 2.3618601519491116,
+        "speed": 6.0743214293215235,
+        "travel": 5.560017759603168,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "progress": 5.560017759603173,
+      "lateral": 1.7763568394002505e-15
+    },
+    {
+      "elapsed": 20.162159579000004,
+      "car": {
+        "x": 8.835107294150102,
+        "y": 10.073438416463166,
+        "z": -94.1786498274167,
+        "yaw": 2.3618601519491116,
+        "speed": 8.003237720272496,
+        "travel": 9.802606896664905,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "progress": 9.802606896664868,
+      "lateral": 4.5496934130773415e-14
+    },
+    {
+      "elapsed": 25.165716628,
+      "car": {
+        "x": 14.04650052426198,
+        "y": 9.972251754860645,
+        "z": -99.449432154168,
+        "yaw": 2.3618601519491116,
+        "speed": 10.446112586721819,
+        "travel": 17.214743277955392,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "progress": 17.214743328593208,
+      "lateral": 0.0007111016385891501
+    },
+    {
+      "elapsed": 30.26112588,
+      "car": {
+        "x": 18.857061260967722,
+        "y": 9.906821286410633,
+        "z": -104.2547775002453,
+        "yaw": 2.3453395152770233,
+        "speed": 12.153052324059908,
+        "travel": 24.01436100488178,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "progress": 24.014097296489307,
+      "lateral": 0.040354302298613656
+    },
+    {
+      "elapsed": 35.266047138,
+      "car": {
+        "x": 25.76850158152847,
+        "y": 9.848794979884484,
+        "z": -110.78717845954057,
+        "yaw": 2.311908470863736,
+        "speed": 11.635872472998777,
+        "travel": 33.52487747331907,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "progress": 33.518697668788334,
+      "lateral": 0.3614539425121244
+    },
+    {
+      "elapsed": 40.289286237000006,
+      "car": {
+        "x": 31.0442599856378,
+        "y": 9.833183240327752,
+        "z": -115.49295827623212,
+        "yaw": 2.286294256332499,
+        "speed": 11.912462322506816,
+        "travel": 40.59458013761465,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "progress": 40.574377373702895,
+      "lateral": 0.8041774300739125
+    },
+    {
+      "elapsed": 45.365907377,
+      "car": {
+        "x": 38.21953286284011,
+        "y": 9.853623532179514,
+        "z": -121.52319198081341,
+        "yaw": 2.2530535024483345,
+        "speed": 12.025070446171279,
+        "travel": 49.967710877644656,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "progress": 50.165775538925175,
+      "lateral": 0.3704935848699053
+    },
+    {
+      "elapsed": 50.37293190400001,
+      "car": {
+        "x": 43.86651298323525,
+        "y": 9.896661627506314,
+        "z": -125.78289955472924,
+        "yaw": 2.195348047134689,
+        "speed": 11.57108335432984,
+        "travel": 57.04240013917528,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "progress": 57.198135405317835,
+      "lateral": 0.39074882899391883
+    },
+    {
+      "elapsed": 55.378391447,
+      "car": {
+        "x": 49.76107835085582,
+        "y": 9.965698541801776,
+        "z": -129.81266034132645,
+        "yaw": 2.1360528965241414,
+        "speed": 11.770837134391634,
+        "travel": 64.1841748707897,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "progress": 64.325085740121,
+      "lateral": 0.8268408977618293
+    },
+    {
+      "elapsed": 60.46560402900001,
+      "car": {
+        "x": 57.87097340795171,
+        "y": 10.080325950012003,
+        "z": -134.4896796514892,
+        "yaw": 2.0698300556237497,
+        "speed": 11.804451095780653,
+        "travel": 73.54783562894582,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "progress": 73.68592693772052,
+      "lateral": 0.6827530985866459
+    },
+    {
+      "elapsed": 65.48089470100001,
+      "car": {
+        "x": 64.0649268829044,
+        "y": 10.173033840997874,
+        "z": -137.76281201727068,
+        "yaw": 2.045692827302172,
+        "speed": 11.99485416442296,
+        "travel": 80.55362310628783,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "progress": 80.59793276254793,
+      "lateral": 0.7601907038835107
+    },
+    {
+      "elapsed": 70.56135830800001,
+      "car": {
+        "x": 70.36677314002587,
+        "y": 10.278245752413582,
+        "z": -140.90268114863912,
+        "yaw": 2.020090122850359,
+        "speed": 11.49193523229449,
+        "travel": 87.59455750194961,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "progress": 87.61632433263124,
+      "lateral": 1.3185588867084128
+    },
+    {
+      "elapsed": 75.561920431,
+      "car": {
+        "x": 79.01977337532637,
+        "y": 10.438768984802117,
+        "z": -144.54213540230515,
+        "yaw": 1.9203362868433749,
+        "speed": 11.484444949313815,
+        "travel": 96.98582379981973,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "progress": 97.00281741161888,
+      "lateral": 1.462732800914157
+    },
+    {
+      "elapsed": 80.63182498600001,
+      "car": {
+        "x": 85.70430030683828,
+        "y": 10.553209894502249,
+        "z": -146.86413043793652,
+        "yaw": 1.8780940580851735,
+        "speed": 11.6517689597774,
+        "travel": 104.0626018566842,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "progress": 104.07080509274434,
+      "lateral": 1.1199851922492343
+    },
+    {
+      "elapsed": 85.660703122,
+      "car": {
+        "x": 92.4834688510462,
+        "y": 10.611272987716774,
+        "z": -148.8193388098237,
+        "yaw": 1.837354876167936,
+        "speed": 11.867341403622573,
+        "travel": 111.11843232864065,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "progress": 111.08946282716676,
+      "lateral": 0.40151766299356684
+    }
+  ],
+  "errors": [],
+  "before": {
+    "dist/assets/index-BEu9jlj3.css": "76699c185ed68dc12c77424b130eccaf7196d2392e41ee1032009cf61603984a",
+    "dist/assets/index-CLDDd4Y8.js": "922b5ee7bc3f5bc2e82702e5fcecd73149f493bcadf42b73b73784995341b177",
+    "dist/credits/carconcept.txt": "4e2a8d3b2834f5ad49678eed485c3271aa89a7500f127a5fa15b7332ef2ae22f",
+    "dist/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "dist/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "dist/index.html": "7928022b3848c1cfe196046eff05eae989e67c803fad6c8fe430efc224b3eb12",
+    "dist/models/carconcept.glb": "788e856fdf6e4976fde2c55973cba2162044b0e001d61145bc175696d7e73a44",
+    "public/credits/carconcept.txt": "4e2a8d3b2834f5ad49678eed485c3271aa89a7500f127a5fa15b7332ef2ae22f",
+    "public/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "public/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "public/models/carconcept.glb": "788e856fdf6e4976fde2c55973cba2162044b0e001d61145bc175696d7e73a44",
+    "scripts/rolling-diagnostics.mjs": "71618c0d101cd08dff9413d3e97a09de98758d2bd725650bae0424dca4287f5d",
+    "src/core.ts": "2d92ca99d5c20e64b8a2c4df311bc6b046f7bee1e754f078858c870eb2dbb2c3",
+    "src/facilities.ts": "0cb5c619a8f9f0794a20ddc32388a9f8740db89883cb475e2560ac80df529f79",
+    "src/geography.ts": "e020b5b56b8f0fad64a058e16fe9c698dae34de4d4c74869beb4a15eb9573e86",
+    "src/imported-vehicle.ts": "6f32692f65f7bdc4dad9fed47ae9880ac31e7f5282b437e1d997c918795a907e",
+    "src/main.ts": "fdd8122526df680ac41f8d38fe06f85f3d10a9d34b2c9fc0b3bbc935b66d14b1",
+    "src/presentation.ts": "c2be1ea7d50b778f08258ec52019fdc1318785080a1bab6acd4c4ed577afe397",
+    "src/road-surface.ts": "388c8453507bd6c6f66ab14490f122300881d561d8b57977256d0c80aaa320e6",
+    "src/scene.ts": "13c384072a7c3671c47b631563e600f67ebef1749134a2ae7edfd410761ac4bb",
+    "src/startup.ts": "2af7b0a695713c1aab569969b49148005f82a3fbf7e44d66eaa55f08c40e0dbd",
+    "src/style.css": "53dad1deb0fe6adebbb930d25628e9948d5ae4920e8fd9c48e98f48567270e25",
+    "src/surfaces.ts": "8bd8a6afa632cc7b821cdd100f1ccbad8dc6fd480ab90f9a5f91a158bdb5fbd5",
+    "src/vehicle-grounding.ts": "105a25c85cad1aa64c28fb0e9dc44cd8e5225f734121fe33b27d172301871d72",
+    "src/vehicle.ts": "225b7e0d1e4fae189faf7bb2aba6fd568716e6f347576c1221fcf06b5a068ce4",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  "after": {
+    "dist/assets/index-BEu9jlj3.css": "76699c185ed68dc12c77424b130eccaf7196d2392e41ee1032009cf61603984a",
+    "dist/assets/index-CLDDd4Y8.js": "922b5ee7bc3f5bc2e82702e5fcecd73149f493bcadf42b73b73784995341b177",
+    "dist/credits/carconcept.txt": "4e2a8d3b2834f5ad49678eed485c3271aa89a7500f127a5fa15b7332ef2ae22f",
+    "dist/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "dist/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "dist/index.html": "7928022b3848c1cfe196046eff05eae989e67c803fad6c8fe430efc224b3eb12",
+    "dist/models/carconcept.glb": "788e856fdf6e4976fde2c55973cba2162044b0e001d61145bc175696d7e73a44",
+    "public/credits/carconcept.txt": "4e2a8d3b2834f5ad49678eed485c3271aa89a7500f127a5fa15b7332ef2ae22f",
+    "public/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "public/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "public/models/carconcept.glb": "788e856fdf6e4976fde2c55973cba2162044b0e001d61145bc175696d7e73a44",
+    "scripts/rolling-diagnostics.mjs": "71618c0d101cd08dff9413d3e97a09de98758d2bd725650bae0424dca4287f5d",
+    "src/core.ts": "2d92ca99d5c20e64b8a2c4df311bc6b046f7bee1e754f078858c870eb2dbb2c3",
+    "src/facilities.ts": "0cb5c619a8f9f0794a20ddc32388a9f8740db89883cb475e2560ac80df529f79",
+    "src/geography.ts": "e020b5b56b8f0fad64a058e16fe9c698dae34de4d4c74869beb4a15eb9573e86",
+    "src/imported-vehicle.ts": "6f32692f65f7bdc4dad9fed47ae9880ac31e7f5282b437e1d997c918795a907e",
+    "src/main.ts": "fdd8122526df680ac41f8d38fe06f85f3d10a9d34b2c9fc0b3bbc935b66d14b1",
+    "src/presentation.ts": "c2be1ea7d50b778f08258ec52019fdc1318785080a1bab6acd4c4ed577afe397",
+    "src/road-surface.ts": "388c8453507bd6c6f66ab14490f122300881d561d8b57977256d0c80aaa320e6",
+    "src/scene.ts": "13c384072a7c3671c47b631563e600f67ebef1749134a2ae7edfd410761ac4bb",
+    "src/startup.ts": "2af7b0a695713c1aab569969b49148005f82a3fbf7e44d66eaa55f08c40e0dbd",
+    "src/style.css": "53dad1deb0fe6adebbb930d25628e9948d5ae4920e8fd9c48e98f48567270e25",
+    "src/surfaces.ts": "8bd8a6afa632cc7b821cdd100f1ccbad8dc6fd480ab90f9a5f91a158bdb5fbd5",
+    "src/vehicle-grounding.ts": "105a25c85cad1aa64c28fb0e9dc44cd8e5225f734121fe33b27d172301871d72",
+    "src/vehicle.ts": "225b7e0d1e4fae189faf7bb2aba6fd568716e6f347576c1221fcf06b5a068ce4",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  "unchanged": true
+}

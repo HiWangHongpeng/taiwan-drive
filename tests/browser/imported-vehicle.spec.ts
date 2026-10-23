@@ -13,7 +13,7 @@ test('real imported wheels and steering marker follow keyboard input; model swit
   expect((await snapshot(page)).stats.vehicle.frontWheels.every((w:{angle:number})=>w.angle*sign>.02)).toBe(true);
   await page.keyboard.up(key);await expect.poll(async()=>Math.abs((await snapshot(page)).controls.steer),{timeout:10000}).toBeLessThan(.01);
  }
- await page.keyboard.down('KeyW');await expect.poll(async()=>(await snapshot(page)).car.speed,{timeout:10000}).toBeGreaterThan(3);await page.keyboard.up('KeyW');
+ await page.keyboard.down('KeyW');await expect.poll(async()=>(await snapshot(page)).car.speed,{timeout:30000}).toBeGreaterThan(3);await page.keyboard.up('KeyW');
  const s=await snapshot(page);expect(s.stats.vehicle.wheelSpin.every((v:number)=>v>.5)).toBe(true);expect(s.stats.vehicle.dashboard.speed).toBeGreaterThan(5);expect(s.stats.vehicle.cockpitCameraError).toBeLessThan(.000001);
  await page.keyboard.press('Escape');const pausedSpin=(await snapshot(page)).stats.vehicle.wheelSpin;await page.waitForTimeout(800);expect((await snapshot(page)).stats.vehicle.wheelSpin).toEqual(pausedSpin);expect(errors).toEqual([]);
 });

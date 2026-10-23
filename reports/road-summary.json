@@ -1,0 +1,571 @@
+{
+  "method": "Current road refinement evidence. Runtime plus four actual probe/driver script hashes frozen before screenshots, rolling probe and stopped keyboard segment. Historical 7ca50f1 rolling-after report is the same-settings baseline; host load cannot be identical and SwiftShader wall time is not player GPU FPS.",
+  "runtime_hashes": {
+    "dist/assets/index-BEu9jlj3.css": "76699c185ed68dc12c77424b130eccaf7196d2392e41ee1032009cf61603984a",
+    "dist/credits/carconcept.txt": "4e2a8d3b2834f5ad49678eed485c3271aa89a7500f127a5fa15b7332ef2ae22f",
+    "dist/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "dist/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "dist/index.html": "7928022b3848c1cfe196046eff05eae989e67c803fad6c8fe430efc224b3eb12",
+    "dist/models/carconcept.glb": "788e856fdf6e4976fde2c55973cba2162044b0e001d61145bc175696d7e73a44",
+    "public/credits/carconcept.txt": "4e2a8d3b2834f5ad49678eed485c3271aa89a7500f127a5fa15b7332ef2ae22f",
+    "public/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "public/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "public/models/carconcept.glb": "788e856fdf6e4976fde2c55973cba2162044b0e001d61145bc175696d7e73a44",
+    "scripts/comfort-checkpoints.mjs": "907ed8180e6a3fc0f7a6f7f36fefde676080fcbcc54c8f0e1c9f032aa76c9229",
+    "scripts/comfort-ui.mjs": "69b1722065c3af2991c53bc74b3c14d6a76d2ca5e26c1b368e280919ca56e52b",
+    "scripts/drive-comfort.mjs": "3d58c8e04670867ed43eeb0eb9dc84d73f1eeac096cde19ab5c31a78a32c753d",
+    "scripts/rolling-diagnostics.mjs": "71618c0d101cd08dff9413d3e97a09de98758d2bd725650bae0424dca4287f5d",
+    "src/core.ts": "2d92ca99d5c20e64b8a2c4df311bc6b046f7bee1e754f078858c870eb2dbb2c3",
+    "src/facilities.ts": "0cb5c619a8f9f0794a20ddc32388a9f8740db89883cb475e2560ac80df529f79",
+    "src/geography.ts": "e020b5b56b8f0fad64a058e16fe9c698dae34de4d4c74869beb4a15eb9573e86",
+    "src/imported-vehicle.ts": "6f32692f65f7bdc4dad9fed47ae9880ac31e7f5282b437e1d997c918795a907e",
+    "src/main.ts": "fdd8122526df680ac41f8d38fe06f85f3d10a9d34b2c9fc0b3bbc935b66d14b1",
+    "src/presentation.ts": "c2be1ea7d50b778f08258ec52019fdc1318785080a1bab6acd4c4ed577afe397",
+    "src/road-surface.ts": "388c8453507bd6c6f66ab14490f122300881d561d8b57977256d0c80aaa320e6",
+    "src/scene.ts": "13c384072a7c3671c47b631563e600f67ebef1749134a2ae7edfd410761ac4bb",
+    "src/startup.ts": "2af7b0a695713c1aab569969b49148005f82a3fbf7e44d66eaa55f08c40e0dbd",
+    "src/style.css": "53dad1deb0fe6adebbb930d25628e9948d5ae4920e8fd9c48e98f48567270e25",
+    "src/surfaces.ts": "8bd8a6afa632cc7b821cdd100f1ccbad8dc6fd480ab90f9a5f91a158bdb5fbd5",
+    "src/vehicle-grounding.ts": "105a25c85cad1aa64c28fb0e9dc44cd8e5225f734121fe33b27d172301871d72",
+    "src/vehicle.ts": "225b7e0d1e4fae189faf7bb2aba6fd568716e6f347576c1221fcf06b5a068ce4",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "dist/assets/index-CLDDd4Y8.js": "922b5ee7bc3f5bc2e82702e5fcecd73149f493bcadf42b73b73784995341b177"
+  },
+  "frozen_files_unchanged": true,
+  "unit_tests": {
+    "passed": 25,
+    "log_sha256": "89b8b0b6076e78a8c787a686d648cba2b3012dec702f366e13e4d3534cc4c088"
+  },
+  "build": {
+    "passed": true,
+    "log_sha256": "17c448ab53ece57c3752ec9a5f0193fc0b06565225dee75a0a27d833504fa0a8",
+    "warning": "Vite >500kB JavaScript chunk warning remains"
+  },
+  "browser": {
+    "stats": {
+      "startTime": "2026-10-23T12:45:00.798Z",
+      "duration": 805419.388,
+      "expected": 22,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "cases": [
+      {
+        "file": "baseline.spec.ts",
+        "title": "keyboard W/S brakes, reverses and brakes with W+S; views and return remain clickable",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 72728
+      },
+      {
+        "file": "baseline.spec.ts",
+        "title": "invalid import preserves good save; export and reload use unchanged v1 schema",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 38851
+      },
+      {
+        "file": "baseline.spec.ts",
+        "title": "endpoint uses Esc pause and clickable completion after a labeled save checkpoint",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 24937
+      },
+      {
+        "file": "comfort.spec.ts",
+        "title": "moving tyres stay on rendered asphalt; interpolation, both directions and reset remain safe",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 42040
+      },
+      {
+        "file": "graphics.spec.ts",
+        "title": "graphics quality persists independently; static shadows cache and stable tree instances remain complete",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 33707
+      },
+      {
+        "file": "graphics.spec.ts",
+        "title": "stable canopy geometry stays complete on both route checkpoint transitions; invalid graphics preferences fall back safely",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 15279
+      },
+      {
+        "file": "graphics.spec.ts",
+        "title": "switching shadow algorithms recompiles every receiving material",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 49331
+      },
+      {
+        "file": "graphics.spec.ts",
+        "title": "standard moving shadows refresh within the first 16 metres and freeze on pause",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 27149
+      },
+      {
+        "file": "imported-vehicle.spec.ts",
+        "title": "real imported wheels and steering marker follow keyboard input; model switching preserves the car and save",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 43486
+      },
+      {
+        "file": "imported-vehicle.spec.ts",
+        "title": "an unavailable model falls back to the original car and leaves keyboard driving usable",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 22266
+      },
+      {
+        "file": "keyboard-safety.spec.ts",
+        "title": "moving mouse and all canvas buttons cannot supply driving inputs or capture pointer",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 36600
+      },
+      {
+        "file": "keyboard-safety.spec.ts",
+        "title": "keyboard blur/hidden safety clears held keys and requires explicit resume",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 21063
+      },
+      {
+        "file": "keyboard-safety.spec.ts",
+        "title": "existing v1 save loads unchanged and paused, then keyboard driving and autosave continue",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 44940
+      },
+      {
+        "file": "layout.spec.ts",
+        "title": "desktop cockpit HUD is clear; 320px keyboard menu controls and help remain readable",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 68765
+      },
+      {
+        "file": "production.spec.ts",
+        "title": "production loads its static world under /taiwan-drive/ without debug hooks",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 26996
+      },
+      {
+        "file": "startup.spec.ts",
+        "title": "production can start and drive when audio constructor fails",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 21673
+      },
+      {
+        "file": "startup.spec.ts",
+        "title": "production can start and drive when audio resume fails",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 22158
+      },
+      {
+        "file": "startup.spec.ts",
+        "title": "map failure offers a working reload and preserves the saved raw value",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 12956
+      },
+      {
+        "file": "startup.spec.ts",
+        "title": "unavailable WebGL displays an actionable message instead of an endless loading screen",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 3960
+      },
+      {
+        "file": "steering.spec.ts",
+        "title": "keyboard A/D match screen heading and wheel spokes; release progressively centers",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 67613
+      },
+      {
+        "file": "storage-raw.spec.ts",
+        "title": "invalid stored raw survives refresh, autosave intervals and pause until explicit restart",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 62118
+      },
+      {
+        "file": "verge.spec.ts",
+        "title": "fresh real-keyboard verge contact stays bounded, brakes and safely pauses without a save checkpoint",
+        "expected": "passed",
+        "actual": [
+          "passed"
+        ],
+        "duration_ms": 44194
+      }
+    ]
+  },
+  "rolling_before": {
+    "file": "reports/rolling-after.json",
+    "sha256": "29f70aee0ed28ee1deccd25602dbb91b0eb4fa09e6ce334ea527d852c03a6403",
+    "elapsed_s": 90.12053717500001,
+    "travel_m": 189.3152166670399,
+    "collisions": 0,
+    "errors": [],
+    "hashes_unchanged": true,
+    "all_frames_ms": {
+      "count": 94,
+      "median": 999.8999999999978,
+      "p95": 1600,
+      "max": 10211
+    },
+    "all_pass_calls": {
+      "count": 94,
+      "median": 455,
+      "p95": 544,
+      "max": 549
+    },
+    "all_pass_triangles": {
+      "count": 94,
+      "median": 678418,
+      "p95": 982243,
+      "max": 1067579
+    },
+    "js_render_ms": {
+      "count": 96,
+      "median": 8.900000002235174,
+      "p95": 27,
+      "max": 856.6999999992549
+    },
+    "shadow_updates": 16,
+    "construction_ms": 6205.900000002235,
+    "terrain_triangles": 480018,
+    "instance_groups": 126,
+    "instances": 24000,
+    "renderer_info": {
+      "render": {
+        "frame": 123,
+        "calls": 463,
+        "triangles": 637998,
+        "points": 0,
+        "lines": 816
+      },
+      "memory": {
+        "geometries": 530,
+        "textures": 27
+      }
+    }
+  },
+  "rolling_after": {
+    "file": "reports/rolling-road-revision.json",
+    "sha256": "41450a27bf0dd9c43ed24d8858ba9492aca53a619ec3378104a329f272469ff5",
+    "elapsed_s": 90.086954558,
+    "travel_m": 118.17692227545253,
+    "collisions": 0,
+    "errors": [],
+    "hashes_unchanged": true,
+    "all_frames_ms": {
+      "count": 64,
+      "median": 1516.6000000000058,
+      "p95": 1733.300000000003,
+      "max": 12219.29999999851
+    },
+    "all_pass_calls": {
+      "count": 64,
+      "median": 509,
+      "p95": 513,
+      "max": 514
+    },
+    "all_pass_triangles": {
+      "count": 64,
+      "median": 1026059,
+      "p95": 1089378,
+      "max": 1090941
+    },
+    "js_render_ms": {
+      "count": 66,
+      "median": 6.300000004470348,
+      "p95": 22.69999999552965,
+      "max": 761.3999999985099
+    },
+    "shadow_updates": 60,
+    "construction_ms": 8332.80000000447,
+    "terrain_triangles": 517026,
+    "instance_groups": 156,
+    "instances": 33000,
+    "renderer_info": {
+      "render": {
+        "frame": 93,
+        "calls": 450,
+        "triangles": 809571,
+        "points": 0,
+        "lines": 832
+      },
+      "memory": {
+        "geometries": 491,
+        "textures": 26
+      }
+    }
+  },
+  "driving": {
+    "file": "reports/driving-road-refinement.json",
+    "sha256": "8e7653167484ede25d538c30cd75e40de7abd67067122cd74e75a4fdb42fb25c",
+    "segment_completed": true,
+    "journey_completed": false,
+    "progress_m": 1174.362728320697,
+    "travel_m": 1175.2385336361078,
+    "elapsed_s": 621.4789631070001,
+    "simulation_s": 108.09999999999515,
+    "active_wall_clock_s": 621.4751000000002,
+    "dropped_s": 513.3585999999993,
+    "collisions": 0,
+    "errors": [],
+    "hashes_unchanged": true,
+    "refresh_restores_paused": true,
+    "all_frames_ms": {
+      "count": 556,
+      "median": 1100,
+      "p95": 1566.7000000000698,
+      "max": 11784.69999999553
+    }
+  },
+  "contact": {
+    "method": "Offline reference tyre contact points using actual submitted route ribbon and shoulder triangles, source GLB wheel centers/radius, both routes at every interior source point. Upper rendered asphalt at overlaps; nearest-profile fallback outside ribbons. Not a rigid-body or pixel/tyre-mesh contact proof.",
+    "poses": 2323,
+    "before": {
+      "count": 9292,
+      "max_m": 0.05156481988307959,
+      "p95_m": 0.018426276457741864
+    },
+    "after": {
+      "count": 9292,
+      "max_m": 2.7806543876351952e-05,
+      "p95_m": 4.4261817144786164e-07
+    },
+    "max_suspension_m": 0.007806253838592292,
+    "world_sha256": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d"
+  },
+  "terrain": {
+    "method": "Same analytic Ground.height, source DEM and source road profile. Only 20m corridor cells with centre <32m from the source road are refined to 4m, outside existing DETAIL. Compare actual old20/new4 triangle interpolants at 4m offset-grid samples, not surveyed accuracy. Stitching compares both sides at ±1e-6 m. Asphalt clearance sampled at <=0.5m along rounded visual centreline, using upper asphalt at overlaps; does not prove every shoulder pixel.",
+    "refined_cells": 771,
+    "terrain_triangles_added": 37008,
+    "local_mesh_change": {
+      "count": 19275,
+      "min_m": 0,
+      "p95_m": 1.0619355339314058,
+      "max_m": 4.2175774800532215
+    },
+    "analytic_surface_error_before": {
+      "count": 19275,
+      "min_m": 6.106950110051912e-07,
+      "p95_m": 1.1688022194921626,
+      "max_m": 5.614360990542277
+    },
+    "analytic_surface_error_after": {
+      "count": 19275,
+      "min_m": 0,
+      "p95_m": 0.14075217437535592,
+      "max_m": 3.6302790185572817
+    },
+    "coarse_fine_max_jump_m": 2.00874370293036e-06,
+    "centreline_asphalt_clearance_before": {
+      "count": 23323,
+      "min_m": -0.3396377343117365,
+      "p95_m": 0.2806765891583325,
+      "max_m": 0.5587221693724
+    },
+    "centreline_asphalt_clearance_after": {
+      "count": 23323,
+      "min_m": 0.17353418164477752,
+      "p95_m": 0.2266379546324231,
+      "max_m": 0.2494911212090507
+    },
+    "world_sha256": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d"
+  },
+  "verge": {
+    "method": "Controlled geometry comparison: same current road/terrain/tyre support, asphalt-only fallback versus actual new shoulder triangles. Five source poses, both lateral directions, 0–4m lateral offset at 2cm increments. Reference contact geometry only; not human driving or an all-route pixel proof.",
+    "before": {
+      "samples": 2010,
+      "max_y_change_m_per_2cm": 0.07172840641894496,
+      "max_rotation_change_rad_per_2cm": 0.08160068645891415
+    },
+    "after": {
+      "samples": 2010,
+      "max_y_change_m_per_2cm": 0.0023733731658488466,
+      "max_rotation_change_rad_per_2cm": 0.0024205423315833805
+    }
+  },
+  "vegetation": {
+    "method": "Reproduces scene.ts bounded deterministic placement, including global caps and source-feature order. Local metric projects onto the original outbound route and uses its first 550 metres, not visible-tree count. Original procedural vegetation; estimated positions inside OSM woodland only. Same canopy clearance/exclusion rules, no surveyed individual trees.",
+    "before": {
+      "route_bands_within180m": [
+        {
+          "start_m": 0,
+          "end_m": 550,
+          "trees": 696,
+          "shrubs": 375
+        },
+        {
+          "start_m": 550,
+          "end_m": 2000,
+          "trees": 367,
+          "shrubs": 130
+        },
+        {
+          "start_m": 2000,
+          "end_m": 4000,
+          "trees": 190,
+          "shrubs": 0
+        },
+        {
+          "start_m": 4000,
+          "end_m": 6000,
+          "trees": 205,
+          "shrubs": 0
+        }
+      ],
+      "spacing_m": 11,
+      "tree_count": 11000,
+      "shrub_count": 2000,
+      "first550m_within180m": {
+        "trees": 696,
+        "shrubs": 375
+      },
+      "in_detail": {
+        "trees": 4526,
+        "shrubs": 1993
+      },
+      "exclusion_failures": 0
+    },
+    "after": {
+      "route_bands_within180m": [
+        {
+          "start_m": 0,
+          "end_m": 550,
+          "trees": 1154,
+          "shrubs": 714
+        },
+        {
+          "start_m": 550,
+          "end_m": 2000,
+          "trees": 556,
+          "shrubs": 210
+        },
+        {
+          "start_m": 2000,
+          "end_m": 4000,
+          "trees": 190,
+          "shrubs": 0
+        },
+        {
+          "start_m": 4000,
+          "end_m": 6000,
+          "trees": 205,
+          "shrubs": 0
+        }
+      ],
+      "spacing_m": 8.5,
+      "tree_count": 15000,
+      "shrub_count": 3000,
+      "first550m_within180m": {
+        "trees": 1154,
+        "shrubs": 714
+      },
+      "in_detail": {
+        "trees": 7593,
+        "shrubs": 2972
+      },
+      "exclusion_failures": 0
+    },
+    "world_sha256": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d"
+  },
+  "screenshots": [
+    {
+      "path": "reports/visual/comfort-road-revision-tyres.jpg",
+      "sha256": "59bbbc48f3bf8a7c384958ee2c69f7b974251bc8192ead08c9b06e6ba3832b83",
+      "query": "metres=500&view=side",
+      "construction_ms": 8192.5
+    },
+    {
+      "path": "reports/visual/comfort-road-revision-environment.jpg",
+      "sha256": "6a958af832b2d4be8273d73f72e99f6bc0e40481e576d4ada318dc420ca61c8b",
+      "query": "metres=500&view=environment",
+      "construction_ms": 7872.39999999851
+    },
+    {
+      "path": "reports/visual/comfort-road-revision-start.jpg",
+      "sha256": "1513bddec2cccbd338ac6fa09a7605858bf13b70c44c1e15abe489aec96317df",
+      "query": "metres=0&view=environment",
+      "construction_ms": 7831.39999999851
+    },
+    {
+      "path": "reports/visual/comfort-road-revision-transition.jpg",
+      "sha256": "08f0c6cd37199a5bddd7f5789c0426fba0e1f4cd8961544bd5fd61d7a00c0b93",
+      "query": "metres=3400&view=environment",
+      "construction_ms": 7992.39999999851
+    }
+  ],
+  "gpu_availability": {
+    "method": "Separate fresh Chromium154 launched with --no-sandbox only, no forced SwiftShader/ANGLE flags.1x1 standalone WebGL2 availability query, not Game or performance measurement.",
+    "dri_device_directory_present": false,
+    "webgl": {
+      "webgl2": true,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "vendor": "Google Inc. (Google)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    }
+  },
+  "former_occlusion_checkpoint": {
+    "report": "reports/road-former-occlusion.json",
+    "image": "reports/visual/road-former-occlusion.jpg",
+    "sha256": "94dbcd1d4c04d16df0b59f98083c92ea7247d8a65a99133e64f6b2918ab08679",
+    "world_sha256": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "frozen_files_unchanged": true
+  }
+}

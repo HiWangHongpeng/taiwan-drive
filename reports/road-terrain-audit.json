@@ -1,0 +1,37 @@
+{
+  "method": "Same analytic Ground.height, source DEM and source road profile. Only 20m corridor cells with centre <32m from the source road are refined to 4m, outside existing DETAIL. Compare actual old20/new4 triangle interpolants at 4m offset-grid samples, not surveyed accuracy. Stitching compares both sides at ±1e-6 m. Asphalt clearance sampled at <=0.5m along rounded visual centreline, using upper asphalt at overlaps; does not prove every shoulder pixel.",
+  "refined_cells": 771,
+  "terrain_triangles_added": 37008,
+  "local_mesh_change": {
+    "count": 19275,
+    "min_m": 0,
+    "p95_m": 1.0619355339314058,
+    "max_m": 4.2175774800532215
+  },
+  "analytic_surface_error_before": {
+    "count": 19275,
+    "min_m": 6.106950110051912e-7,
+    "p95_m": 1.1688022194921626,
+    "max_m": 5.614360990542277
+  },
+  "analytic_surface_error_after": {
+    "count": 19275,
+    "min_m": 0,
+    "p95_m": 0.14075217437535592,
+    "max_m": 3.6302790185572817
+  },
+  "coarse_fine_max_jump_m": 0.00000200874370293036,
+  "centreline_asphalt_clearance_before": {
+    "count": 23323,
+    "min_m": -0.3396377343117365,
+    "p95_m": 0.2806765891583325,
+    "max_m": 0.5587221693724
+  },
+  "centreline_asphalt_clearance_after": {
+    "count": 23323,
+    "min_m": 0.17353418164477752,
+    "p95_m": 0.2266379546324231,
+    "max_m": 0.2494911212090507
+  },
+  "world_sha256": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d"
+}

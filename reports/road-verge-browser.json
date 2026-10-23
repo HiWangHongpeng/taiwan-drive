@@ -1,0 +1,1134 @@
+{
+  "method": "Fresh browser, real W+A until verge contact, W+S braking, Esc pause; readonly snapshots; no imported saves or Game mutation. This deliberately contacts the boundary and is not a completed journey.",
+  "initial": {
+    "car": {
+      "x": 1.943,
+      "y": 10.2314,
+      "z": -87.208,
+      "yaw": 2.3618601519491116,
+      "speed": 0,
+      "travel": 0,
+      "collisions": 0,
+      "reverseHold": 0
+    },
+    "direction": 0,
+    "paused": true,
+    "screenRoadAhead": [
+      0.0000540000024646338,
+      0.12001616411274095,
+      0.9948564774102904
+    ],
+    "stats": {
+      "constructionMs": 8173.5,
+      "renderTimes": [
+        650.8000000044703,
+        554.2000000029802,
+        8.099999994039536,
+        6.700000002980232,
+        12.199999995529652
+      ],
+      "frameDiagnostics": [
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 1,
+          "lod_ms": 0,
+          "render_ms": 648.2000000029802,
+          "total_ms": 650.8000000044703,
+          "shadow_update": true,
+          "calls": 409,
+          "triangles": 692730
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 1,
+          "lod_ms": 0,
+          "render_ms": 553.2000000029802,
+          "total_ms": 554.2000000029802,
+          "shadow_update": true,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 7.0999999940395355,
+          "total_ms": 8.099999994039536,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5.200000002980232,
+          "total_ms": 6.700000002980232,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.01669999999999891,
+          "lod_ms": 0,
+          "render_ms": 10.299999997019768,
+          "total_ms": 12.199999995529652,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        }
+      ],
+      "info": {
+        "render": {
+          "frame": 32,
+          "calls": 435,
+          "triangles": 802479,
+          "points": 0,
+          "lines": 832
+        },
+        "memory": {
+          "geometries": 452,
+          "textures": 26
+        }
+      },
+      "instances": 33000,
+      "instanceGroups": 156,
+      "submittedInstances": 13282,
+      "meshes": 1339,
+      "vehicle": {
+        "loaded": true,
+        "active": true,
+        "contacts": [
+          {
+            "x": 2.1260486738052884,
+            "y": 10.265689178312579,
+            "z": -88.78092579194343,
+            "surface_y": 10.265689178657315,
+            "gap_m": -3.447357954655672e-10,
+            "suspension_m": -0.000005432080849965271
+          },
+          {
+            "x": 3.513034904269071,
+            "y": 10.26571760850278,
+            "z": -87.40716000216565,
+            "surface_y": 10.26571760814495,
+            "gap_m": 3.5782932172878645e-10,
+            "suspension_m": 0.000005638372708394179
+          },
+          {
+            "x": 0.15260167196224583,
+            "y": 10.2764,
+            "z": -86.79497463188022,
+            "surface_y": 10.2764,
+            "gap_m": 0,
+            "suspension_m": 0.000005528276975641511
+          },
+          {
+            "x": 1.5493606346895903,
+            "y": 10.2764,
+            "z": -85.41395373949554,
+            "surface_y": 10.2764,
+            "gap_m": 0,
+            "suspension_m": -0.0000054151794035006695
+          }
+        ],
+        "triangles": 111561,
+        "meshes": 45,
+        "dashboard": {
+          "speed": 0,
+          "gear": "D"
+        },
+        "wheelRadius": 0.38400009518171924,
+        "frontWheels": [
+          {
+            "position": [
+              0.9757409920580492,
+              0.38399466310086927,
+              1.2472187876701355
+            ],
+            "angle": 0
+          },
+          {
+            "position": [
+              -0.9764271149747268,
+              0.38400567394978286,
+              1.2455067038536072
+            ],
+            "angle": 0
+          }
+        ],
+        "wheelSpin": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "steeringAngle": 0,
+        "steeringCenter": [
+          -0.00017587099456610954,
+          -0.2716175705937149,
+          0.9794184114450643
+        ],
+        "steeringMarker": [
+          -0.00017590670515119395,
+          -0.24774782490820255,
+          0.9794237133215923
+        ]
+      },
+      "terrainMesh": {
+        "detailStep_m": 4,
+        "channelStep_m": 1,
+        "corridorRoadStep_m": 4,
+        "roadRefinementRadius_m": 32,
+        "adaptive": false
+      },
+      "diagnostics": {
+        "trees": 15000,
+        "shrubs": 3000,
+        "treeGroups": 81,
+        "buildingParts": 3472,
+        "buildings": 264,
+        "parkingLots": 24,
+        "paths": 136,
+        "steps": 26,
+        "busStops": 94,
+        "shelters": 20,
+        "lamps": 97,
+        "roadTerrainClearanceMin": 0.21327181800896078,
+        "waterTerrainGapMax": 0.0350000000000108,
+        "buildingFootingMax": 0,
+        "terrainTriangles": 517026,
+        "refinedRoadCells": 771
+      },
+      "graphics": {
+        "quality": "standard",
+        "budget": {
+          "pixelRatio": 1.5,
+          "shadowSize": 1024
+        },
+        "shadowUpdates": 2,
+        "treeRepresentation": "stable-instanced-cluster-cards",
+        "canopyInstances": 15000,
+        "pixelRatio": 1,
+        "textureSource": "original deterministic Canvas rasters"
+      }
+    },
+    "completed": false,
+    "storageBlocked": false,
+    "presentationAlpha": 1,
+    "elapsed": 0,
+    "simulationElapsed": 0,
+    "droppedSimulationTime": 0,
+    "controls": {
+      "throttle": false,
+      "brake": false,
+      "left": false,
+      "right": false,
+      "steer": 0,
+      "turnRate": 1.4,
+      "returnRate": 1.8
+    },
+    "nearest": {
+      "distance": 0,
+      "index": 0,
+      "t": 0,
+      "x": 1.943,
+      "y": 10.2314,
+      "z": -87.208,
+      "heading": 2.3618601519491116,
+      "progress": 0,
+      "total": 5410.712305733549
+    },
+    "frameTimes": [
+      11761.42000000149,
+      583.2800000000007,
+      16.69999999999891
+    ]
+  },
+  "contact": {
+    "car": {
+      "x": 3.7854309114184628,
+      "y": 10.122222089526687,
+      "z": -94.77497951466836,
+      "yaw": 3.4039034028067863,
+      "speed": 7.0745984651053995,
+      "travel": 8.240944434442298,
+      "collisions": 1,
+      "reverseHold": 0
+    },
+    "direction": 0,
+    "paused": false,
+    "screenRoadAhead": [
+      1.1906423161030573,
+      -0.03151831241762377,
+      0.9907695275375695
+    ],
+    "stats": {
+      "constructionMs": 8173.5,
+      "renderTimes": [
+        650.8000000044703,
+        554.2000000029802,
+        8.099999994039536,
+        6.700000002980232,
+        12.199999995529652,
+        5,
+        9.399999998509884,
+        5.399999998509884,
+        10.700000002980232,
+        10.299999997019768,
+        6.200000002980232,
+        6.100000001490116,
+        5.5,
+        5.100000001490116,
+        5.899999998509884,
+        7.5,
+        6.100000001490116,
+        4.799999997019768
+      ],
+      "frameDiagnostics": [
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 1,
+          "lod_ms": 0,
+          "render_ms": 648.2000000029802,
+          "total_ms": 650.8000000044703,
+          "shadow_update": true,
+          "calls": 409,
+          "triangles": 692730
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 1,
+          "lod_ms": 0,
+          "render_ms": 553.2000000029802,
+          "total_ms": 554.2000000029802,
+          "shadow_update": true,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 7.0999999940395355,
+          "total_ms": 8.099999994039536,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5.200000002980232,
+          "total_ms": 6.700000002980232,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.01669999999999891,
+          "lod_ms": 0,
+          "render_ms": 10.299999997019768,
+          "total_ms": 12.199999995529652,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4,
+          "total_ms": 5,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 8.399999998509884,
+          "total_ms": 9.399999998509884,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.987375020104657,
+          "z": -87.25296811449778,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.100000001490116,
+          "total_ms": 5.399999998509884,
+          "shadow_update": false,
+          "calls": 434,
+          "triangles": 791943
+        },
+        {
+          "x": 2.12667729313079,
+          "z": -87.39655184548329,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 9.5,
+          "total_ms": 10.700000002980232,
+          "shadow_update": true,
+          "calls": 430,
+          "triangles": 779076
+        },
+        {
+          "x": 2.354262809933075,
+          "z": -87.64463152017831,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 9.100000001490116,
+          "total_ms": 10.299999997019768,
+          "shadow_update": true,
+          "calls": 426,
+          "triangles": 712743
+        },
+        {
+          "x": 2.653038852689987,
+          "z": -88.01109343422979,
+          "dt": 0.2,
+          "lod_ms": 0.10000000149011612,
+          "render_ms": 5.200000002980232,
+          "total_ms": 6.200000002980232,
+          "shadow_update": true,
+          "calls": 417,
+          "triangles": 605774
+        },
+        {
+          "x": 2.9954923327731544,
+          "z": -88.51396806442237,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5.100000001490116,
+          "total_ms": 6.100000001490116,
+          "shadow_update": true,
+          "calls": 363,
+          "triangles": 605247
+        },
+        {
+          "x": 3.3488705435771418,
+          "z": -89.16777719059895,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.399999998509884,
+          "total_ms": 5.5,
+          "shadow_update": true,
+          "calls": 271,
+          "triangles": 567790
+        },
+        {
+          "x": 3.673596912121443,
+          "z": -89.98240482422729,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.100000001490116,
+          "total_ms": 5.100000001490116,
+          "shadow_update": true,
+          "calls": 207,
+          "triangles": 507734
+        },
+        {
+          "x": 3.924035248611917,
+          "z": -90.96030596035459,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.5,
+          "total_ms": 5.899999998509884,
+          "shadow_update": true,
+          "calls": 180,
+          "triangles": 483522
+        },
+        {
+          "x": 4.050299220228614,
+          "z": -92.09372486581626,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5.9000000059604645,
+          "total_ms": 7.5,
+          "shadow_update": true,
+          "calls": 150,
+          "triangles": 418562
+        },
+        {
+          "x": 4.0013049112106875,
+          "z": -93.36228531506723,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5.299999997019768,
+          "total_ms": 6.100000001490116,
+          "shadow_update": true,
+          "calls": 129,
+          "triangles": 380337
+        },
+        {
+          "x": 3.7927524550510134,
+          "z": -94.68286558534962,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 3.899999998509884,
+          "total_ms": 4.799999997019768,
+          "shadow_update": true,
+          "calls": 125,
+          "triangles": 389162
+        }
+      ],
+      "info": {
+        "render": {
+          "frame": 45,
+          "calls": 125,
+          "triangles": 389162,
+          "points": 0,
+          "lines": 16
+        },
+        "memory": {
+          "geometries": 466,
+          "textures": 26
+        }
+      },
+      "instances": 33000,
+      "instanceGroups": 156,
+      "submittedInstances": 5894,
+      "meshes": 1339,
+      "vehicle": {
+        "loaded": true,
+        "active": true,
+        "contacts": [
+          {
+            "x": 2.54187840460029,
+            "y": 9.952962434694513,
+            "z": -95.64493975891341,
+            "surface_y": 9.952982508889562,
+            "gap_m": -0.0000200741950493466,
+            "suspension_m": -0.03428417864555133
+          },
+          {
+            "x": 4.430511279711222,
+            "y": 10.062716606667461,
+            "z": -96.13146985428986,
+            "surface_y": 10.062269489224793,
+            "gap_m": 0.0004471174426683433,
+            "suspension_m": 0.03447924020909926
+          },
+          {
+            "x": 3.221948814226697,
+            "y": 10.203793778617475,
+            "z": -92.93978210770595,
+            "surface_y": 10.203784941282123,
+            "gap_m": 0.00000883733535239628,
+            "suspension_m": 0.034128176694151524
+          },
+          {
+            "x": 5.126816336278018,
+            "y": 10.177498322147772,
+            "z": -93.42303413929436,
+            "surface_y": 10.177506500119083,
+            "gap_m": -0.000008177971311695842,
+            "suspension_m": -0.03362098262775082
+          }
+        ],
+        "triangles": 111561,
+        "meshes": 45,
+        "dashboard": {
+          "speed": 26,
+          "gear": "D"
+        },
+        "wheelRadius": 0.38400009518171924,
+        "frontWheels": [
+          {
+            "position": [
+              0.9757409920580492,
+              0.3497159165361679,
+              1.2472187876701355
+            ],
+            "angle": 0.35
+          },
+          {
+            "position": [
+              -0.9764271149747268,
+              0.4184792757861737,
+              1.2455067038536072
+            ],
+            "angle": 0.35
+          }
+        ],
+        "wheelSpin": [
+          22.822305181064333,
+          22.822305181064333,
+          22.822305181064333,
+          22.822305181064333
+        ],
+        "steeringAngle": 2.4,
+        "steeringCenter": [
+          0.023286816127973505,
+          -0.2680856343577676,
+          0.9805035878922783
+        ],
+        "steeringMarker": [
+          0.014391712357658184,
+          -0.2848917429455163,
+          0.9803999967478559
+        ]
+      },
+      "terrainMesh": {
+        "detailStep_m": 4,
+        "channelStep_m": 1,
+        "corridorRoadStep_m": 4,
+        "roadRefinementRadius_m": 32,
+        "adaptive": false
+      },
+      "diagnostics": {
+        "trees": 15000,
+        "shrubs": 3000,
+        "treeGroups": 81,
+        "buildingParts": 3472,
+        "buildings": 264,
+        "parkingLots": 24,
+        "paths": 136,
+        "steps": 26,
+        "busStops": 94,
+        "shelters": 20,
+        "lamps": 97,
+        "roadTerrainClearanceMin": 0.21327181800896078,
+        "waterTerrainGapMax": 0.0350000000000108,
+        "buildingFootingMax": 0,
+        "terrainTriangles": 517026,
+        "refinedRoadCells": 771
+      },
+      "graphics": {
+        "quality": "standard",
+        "budget": {
+          "pixelRatio": 1.5,
+          "shadowSize": 1024
+        },
+        "shadowUpdates": 12,
+        "treeRepresentation": "stable-instanced-cluster-cards",
+        "canopyInstances": 15000,
+        "pixelRatio": 1,
+        "textureSource": "original deterministic Canvas rasters"
+      }
+    },
+    "completed": false,
+    "storageBlocked": false,
+    "presentationAlpha": 3.622102617839573e-14,
+    "elapsed": 16.865999999999996,
+    "simulationElapsed": 2.199999999999997,
+    "droppedSimulationTime": 14.665999999999993,
+    "controls": {
+      "throttle": true,
+      "brake": false,
+      "left": true,
+      "right": false,
+      "steer": 1,
+      "turnRate": 1.4,
+      "returnRate": 1.8
+    },
+    "nearest": {
+      "distance": 4.010106128646025,
+      "index": 1,
+      "t": 0.3373287608897754,
+      "x": 6.637023950723112,
+      "y": 10.122222089526687,
+      "z": -91.9555171011587,
+      "heading": 2.361860151949114,
+      "progress": 6.676284855797913,
+      "total": 5410.712305733549
+    },
+    "frameTimes": [
+      11761.42000000149,
+      583.2800000000007,
+      16.69999999999891,
+      3449.800000000001,
+      1416.6000000000004,
+      1550,
+      1416.5,
+      1600,
+      1816.5999999999985,
+      1683.2999999999993,
+      1666.6000000000022,
+      1499.8999999999978,
+      1400,
+      1483.2000000000007,
+      1349.8999999999978,
+      1400
+    ]
+  },
+  "end": {
+    "car": {
+      "x": 4.12599511697434,
+      "y": 10.111978005018834,
+      "z": -95.3614630540362,
+      "yaw": 3.546824746924662,
+      "speed": 0,
+      "travel": 9.761551866237767,
+      "collisions": 1,
+      "reverseHold": 0
+    },
+    "direction": 0,
+    "paused": true,
+    "screenRoadAhead": [
+      1.6934548911566163,
+      -0.14391711422557593,
+      0.9873360727530747
+    ],
+    "stats": {
+      "constructionMs": 8173.5,
+      "renderTimes": [
+        650.8000000044703,
+        554.2000000029802,
+        8.099999994039536,
+        6.700000002980232,
+        12.199999995529652,
+        5,
+        9.399999998509884,
+        5.399999998509884,
+        10.700000002980232,
+        10.299999997019768,
+        6.200000002980232,
+        6.100000001490116,
+        5.5,
+        5.100000001490116,
+        5.899999998509884,
+        7.5,
+        6.100000001490116,
+        4.799999997019768,
+        4,
+        5.399999998509884,
+        4.899999998509884
+      ],
+      "frameDiagnostics": [
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 1,
+          "lod_ms": 0,
+          "render_ms": 648.2000000029802,
+          "total_ms": 650.8000000044703,
+          "shadow_update": true,
+          "calls": 409,
+          "triangles": 692730
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 1,
+          "lod_ms": 0,
+          "render_ms": 553.2000000029802,
+          "total_ms": 554.2000000029802,
+          "shadow_update": true,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 7.0999999940395355,
+          "total_ms": 8.099999994039536,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5.200000002980232,
+          "total_ms": 6.700000002980232,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.01669999999999891,
+          "lod_ms": 0,
+          "render_ms": 10.299999997019768,
+          "total_ms": 12.199999995529652,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4,
+          "total_ms": 5,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.943,
+          "z": -87.208,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 8.399999998509884,
+          "total_ms": 9.399999998509884,
+          "shadow_update": false,
+          "calls": 435,
+          "triangles": 802479
+        },
+        {
+          "x": 1.987375020104657,
+          "z": -87.25296811449778,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.100000001490116,
+          "total_ms": 5.399999998509884,
+          "shadow_update": false,
+          "calls": 434,
+          "triangles": 791943
+        },
+        {
+          "x": 2.12667729313079,
+          "z": -87.39655184548329,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 9.5,
+          "total_ms": 10.700000002980232,
+          "shadow_update": true,
+          "calls": 430,
+          "triangles": 779076
+        },
+        {
+          "x": 2.354262809933075,
+          "z": -87.64463152017831,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 9.100000001490116,
+          "total_ms": 10.299999997019768,
+          "shadow_update": true,
+          "calls": 426,
+          "triangles": 712743
+        },
+        {
+          "x": 2.653038852689987,
+          "z": -88.01109343422979,
+          "dt": 0.2,
+          "lod_ms": 0.10000000149011612,
+          "render_ms": 5.200000002980232,
+          "total_ms": 6.200000002980232,
+          "shadow_update": true,
+          "calls": 417,
+          "triangles": 605774
+        },
+        {
+          "x": 2.9954923327731544,
+          "z": -88.51396806442237,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5.100000001490116,
+          "total_ms": 6.100000001490116,
+          "shadow_update": true,
+          "calls": 363,
+          "triangles": 605247
+        },
+        {
+          "x": 3.3488705435771418,
+          "z": -89.16777719059895,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.399999998509884,
+          "total_ms": 5.5,
+          "shadow_update": true,
+          "calls": 271,
+          "triangles": 567790
+        },
+        {
+          "x": 3.673596912121443,
+          "z": -89.98240482422729,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.100000001490116,
+          "total_ms": 5.100000001490116,
+          "shadow_update": true,
+          "calls": 207,
+          "triangles": 507734
+        },
+        {
+          "x": 3.924035248611917,
+          "z": -90.96030596035459,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.5,
+          "total_ms": 5.899999998509884,
+          "shadow_update": true,
+          "calls": 180,
+          "triangles": 483522
+        },
+        {
+          "x": 4.050299220228614,
+          "z": -92.09372486581626,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5.9000000059604645,
+          "total_ms": 7.5,
+          "shadow_update": true,
+          "calls": 150,
+          "triangles": 418562
+        },
+        {
+          "x": 4.0013049112106875,
+          "z": -93.36228531506723,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 5.299999997019768,
+          "total_ms": 6.100000001490116,
+          "shadow_update": true,
+          "calls": 129,
+          "triangles": 380337
+        },
+        {
+          "x": 3.7927524550510134,
+          "z": -94.68286558534962,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 3.899999998509884,
+          "total_ms": 4.799999997019768,
+          "shadow_update": true,
+          "calls": 125,
+          "triangles": 389162
+        },
+        {
+          "x": 3.7336111026204337,
+          "z": -95.45958364368914,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 3.3000000044703484,
+          "total_ms": 4,
+          "shadow_update": true,
+          "calls": 125,
+          "triangles": 370931
+        },
+        {
+          "x": 3.839243710232318,
+          "z": -95.61615818643311,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4.700000002980232,
+          "total_ms": 5.399999998509884,
+          "shadow_update": true,
+          "calls": 125,
+          "triangles": 371117
+        },
+        {
+          "x": 4.102291729018808,
+          "z": -95.38489936156405,
+          "dt": 0.2,
+          "lod_ms": 0,
+          "render_ms": 4,
+          "total_ms": 4.899999998509884,
+          "shadow_update": true,
+          "calls": 126,
+          "triangles": 372638
+        }
+      ],
+      "info": {
+        "render": {
+          "frame": 48,
+          "calls": 126,
+          "triangles": 372638,
+          "points": 0,
+          "lines": 16
+        },
+        "memory": {
+          "geometries": 472,
+          "textures": 26
+        }
+      },
+      "instances": 33000,
+      "instanceGroups": 156,
+      "submittedInstances": 5894,
+      "meshes": 1339,
+      "vehicle": {
+        "loaded": true,
+        "active": true,
+        "contacts": [
+          {
+            "x": 2.715431396251862,
+            "y": 9.944351058407591,
+            "z": -96.14179792645905,
+            "surface_y": 9.94435987948615,
+            "gap_m": -0.000008821078559151374,
+            "suspension_m": -0.010921616068270024
+          },
+          {
+            "x": 4.509538373305857,
+            "y": 9.959100059087081,
+            "z": -96.91147801443829,
+            "surface_y": 9.958941447457853,
+            "gap_m": 0.00015861162922803373,
+            "suspension_m": 0.011023069750206949
+          },
+          {
+            "x": 3.8093373125127648,
+            "y": 10.190266705970133,
+            "z": -93.57626032855312,
+            "surface_y": 10.190260977368428,
+            "gap_m": 0.000005728601705001779,
+            "suspension_m": 0.01094222165298786
+          },
+          {
+            "x": 5.6150585916574745,
+            "y": 10.161870825485485,
+            "z": -94.34902566086453,
+            "surface_y": 10.161876173236497,
+            "gap_m": -0.000005347751011797186,
+            "suspension_m": -0.010214757443132383
+          }
+        ],
+        "triangles": 111561,
+        "meshes": 45,
+        "dashboard": {
+          "speed": 0,
+          "gear": "D"
+        },
+        "wheelRadius": 0.38400009518171924,
+        "frontWheels": [
+          {
+            "position": [
+              0.9757409920580492,
+              0.3730784791134492,
+              1.2472187876701355
+            ],
+            "angle": 0
+          },
+          {
+            "position": [
+              -0.9764271149747268,
+              0.3950231053272814,
+              1.2455067038536072
+            ],
+            "angle": 0
+          }
+        ],
+        "wheelSpin": [
+          25.411403029301656,
+          25.411403029301656,
+          25.411403029301656,
+          25.411403029301656
+        ],
+        "steeringAngle": 0,
+        "steeringCenter": [
+          0.006545074214462393,
+          -0.2948299678904828,
+          0.9794620584062277
+        ],
+        "steeringMarker": [
+          0.006551484824165955,
+          -0.270793771485553,
+          0.9794908065829498
+        ]
+      },
+      "terrainMesh": {
+        "detailStep_m": 4,
+        "channelStep_m": 1,
+        "corridorRoadStep_m": 4,
+        "roadRefinementRadius_m": 32,
+        "adaptive": false
+      },
+      "diagnostics": {
+        "trees": 15000,
+        "shrubs": 3000,
+        "treeGroups": 81,
+        "buildingParts": 3472,
+        "buildings": 264,
+        "parkingLots": 24,
+        "paths": 136,
+        "steps": 26,
+        "busStops": 94,
+        "shelters": 20,
+        "lamps": 97,
+        "roadTerrainClearanceMin": 0.21327181800896078,
+        "waterTerrainGapMax": 0.0350000000000108,
+        "buildingFootingMax": 0,
+        "terrainTriangles": 517026,
+        "refinedRoadCells": 771
+      },
+      "graphics": {
+        "quality": "standard",
+        "budget": {
+          "pixelRatio": 1.5,
+          "shadowSize": 1024
+        },
+        "shadowUpdates": 15,
+        "treeRepresentation": "stable-instanced-cluster-cards",
+        "canopyInstances": 15000,
+        "pixelRatio": 1,
+        "textureSource": "original deterministic Canvas rasters"
+      }
+    },
+    "completed": false,
+    "storageBlocked": false,
+    "presentationAlpha": 4.621303340002214e-14,
+    "elapsed": 20.832499999999996,
+    "simulationElapsed": 2.799999999999995,
+    "droppedSimulationTime": 18.03249999999999,
+    "controls": {
+      "throttle": false,
+      "brake": false,
+      "left": false,
+      "right": false,
+      "steer": 0,
+      "turnRate": 1.4,
+      "returnRate": 1.8
+    },
+    "nearest": {
+      "distance": 4.180280621663915,
+      "index": 1,
+      "t": 0.4688317712601595,
+      "x": 7.0985995171231595,
+      "y": 10.111978005018834,
+      "z": -92.42235278797357,
+      "heading": 2.361860151949114,
+      "progress": 7.332781285324709,
+      "total": 5410.712305733549
+    },
+    "frameTimes": [
+      11761.42000000149,
+      583.2800000000007,
+      16.69999999999891,
+      3449.800000000001,
+      1416.6000000000004,
+      1550,
+      1416.5,
+      1600,
+      1816.5999999999985,
+      1683.2999999999993,
+      1666.6000000000022,
+      1499.8999999999978,
+      1400,
+      1483.2000000000007,
+      1349.8999999999978,
+      1400,
+      1383.300000000003,
+      1350,
+      1233.199999999997
+    ]
+  },
+  "errors": []
+}

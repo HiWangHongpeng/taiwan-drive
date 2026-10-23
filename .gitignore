@@ -59,3 +59,15 @@ __pycache__/
 !/reports/rolling-after.json
 !/reports/rolling-after-first.json
 !/reports/driving-comfort.json
+
+!/reports/ROAD-REFINEMENT.md
+!/reports/road-contact-audit.json
+!/reports/road-vegetation-audit.json
+!/reports/comfort-road-revision-checkpoints.json
+!/reports/rolling-road-revision.json
+!/reports/road-summary.json
+!/reports/road-terrain-audit.json
+!/reports/road-verge-audit.json
+!/reports/road-verge-browser.json
+!/reports/driving-road-refinement.json
+!/reports/road-former-occlusion.json

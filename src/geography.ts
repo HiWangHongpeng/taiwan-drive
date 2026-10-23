@@ -51,6 +51,7 @@ export class Ground{
   for(const feature of world.features.filter(f=>f.kind==='building'))this.buildings.push(...this.splitBuilding(feature));
   this.buildingIndex=new Polygons(this.buildings,4);
  }
+ private roadRefinementCells=new Map<string,boolean>();
  private median(a:number[]){return a.sort((x,y)=>x-y)[Math.floor(a.length/2)]??0;}
  dem(x:number,z:number){const g=this.world.terrain,fi=clamp((x-g.x)/g.step,0,g.nx-1),fj=clamp((z-g.z)/g.step,0,g.nz-1),i=Math.floor(fi),j=Math.floor(fj),u=fi-i,v=fj-j;const h=(i:number,j:number)=>g.heights[Math.min(g.nz-1,j)*g.nx+Math.min(g.nx-1,i)];return(h(i,j)*(1-u)+h(i+1,j)*u)*(1-v)+(h(i,j+1)*(1-u)+h(i+1,j+1)*u)*v;}
  isLand(x:number,z:number){let xs=this.shoreRows.get(z);if(!xs){xs=[];for(let i=0,j=this.landBoundary.length-1;i<this.landBoundary.length;j=i++){const a=this.landBoundary[i],b=this.landBoundary[j];if((a[2]>z)!==(b[2]>z))xs.push((b[0]-a[0])*(z-a[2])/(b[2]-a[2])+a[0]);}xs.sort((a,b)=>a-b);this.shoreRows.set(z,xs);}return xs.filter(v=>v>x).length%2===1;}
@@ -71,11 +72,21 @@ export class Ground{
   const stream=this.streams.nearest(x,z),park=this.parkIndex.at(x,z).some(p=>inside(x,z,p.points));if(!built&&!park&&stream.distance<4.5){const bed=this.beforeBuildings(stream.x,stream.z)-.55,t=smooth((stream.distance-.65)/3.85);h=bed*(1-t)+h*t;}const r=this.road.nearest(x,z);if(r.distance<7)h=r.y-.17;
   if(this.heights.size<500000)this.heights.set(key,h);return h;
  }
- region(x:number,z:number){if(contains(DETAIL,x,z))return{...DETAIL,step:this.streams.nearest(x,z).distance<10?1:4};if(contains(CORRIDOR,x,z))return{...CORRIDOR,step:20};const g=this.world.terrain;return{minX:g.x,minZ:g.z,maxX:g.x+(g.nx-1)*g.step,maxZ:g.z+(g.nz-1)*g.step,step:50};}
+ /** Refine only existing 20m corridor cells near the real road. DEM/profile unchanged. */
+ roadCellRefined(x0:number,z0:number){const key=`${x0},${z0}`,cached=this.roadRefinementCells.get(key);if(cached!==undefined)return cached;const fine=contains(CORRIDOR,x0+10,z0+10)&&!contains(DETAIL,x0+10,z0+10)&&this.road.nearest(x0+10,z0+10).distance<32;this.roadRefinementCells.set(key,fine);return fine;}
+ /** Fine/coarse shared edges use the coarse endpoint interpolant: no T-junction cracks. */
+ terrainHeight(x:number,z:number){
+  if(!contains(CORRIDOR,x,z)||(x>=DETAIL.minX&&x<=DETAIL.maxX&&z>=DETAIL.minZ&&z<=DETAIL.maxZ))return this.height(x,z);
+  const gx=(x-CORRIDOR.minX)/20,gz=(z-CORRIDOR.minZ)/20,x0=CORRIDOR.minX+Math.floor(gx)*20,z0=CORRIDOR.minZ+Math.floor(gz)*20;
+  if(Math.abs(gx-Math.round(gx))<1e-7&&this.roadCellRefined(x0-20,z0)!==this.roadCellRefined(x0,z0)){const t=(z-z0)/20;return this.height(x,z0)*(1-t)+this.height(x,z0+20)*t;}
+  if(Math.abs(gz-Math.round(gz))<1e-7&&this.roadCellRefined(x0,z0-20)!==this.roadCellRefined(x0,z0)){const t=(x-x0)/20;return this.height(x0,z)*(1-t)+this.height(x0+20,z)*t;}
+  return this.height(x,z);
+ }
+ region(x:number,z:number){if(contains(DETAIL,x,z))return{...DETAIL,step:this.streams.nearest(x,z).distance<10?1:4};if(contains(CORRIDOR,x,z)){const x0=CORRIDOR.minX+Math.floor((x-CORRIDOR.minX)/20)*20,z0=CORRIDOR.minZ+Math.floor((z-CORRIDOR.minZ)/20)*20;return this.roadCellRefined(x0,z0)?{minX:x0,minZ:z0,maxX:x0+20,maxZ:z0+20,step:4}:{...CORRIDOR,step:20};}const g=this.world.terrain;return{minX:g.x,minZ:g.z,maxX:g.x+(g.nx-1)*g.step,maxZ:g.z+(g.nz-1)*g.step,step:50};}
  channel(x:number,z:number){return contains(DETAIL,x,z)&&this.streams.nearest(x,z).distance<4.5&&this.road.nearest(x,z).distance>9&&!this.parkIndex.at(x,z).some(p=>inside(x,z,p.points))&&!this.buildingIndex.at(x,z).some(p=>inside(x,z,p.points));}
  busPlacement(f:Feature){const p=f.points[0],r=this.road.nearest(p[0],p[2]),yaw=Number.isFinite(r.distance)?Math.atan2(r.b[0]-r.a[0],r.b[2]-r.a[2]):0;let x=p[0],z=p[2];if(r.distance<6){const dx=Math.cos(yaw),dz=-Math.sin(yaw),sign=(p[0]-r.x)*dx+(p[2]-r.z)*dz<0?-1:1;for(let offset=.1;offset<30;offset+=.1){x=p[0]+dx*sign*offset;z=p[2]+dz*sign*offset;if(this.road.nearest(x,z).distance>=6)break;}}return {sourceId:f.id,sourceRole:f.tags.public_transport??f.tags.highway,original:p,point:[x,this.renderedHeight(x,z),z] as Point,yaw,offset_m:Math.hypot(x-p[0],z-p[2]),center_road_distance_m:this.road.nearest(x,z).distance,estimated:true};}
  /** Match the submitted ground triangles, rather than floating water on an analytic curve. */
- renderedHeight(x:number,z:number){const r=this.region(x,z),x0=r.minX+Math.floor((x-r.minX)/r.step)*r.step,z0=r.minZ+Math.floor((z-r.minZ)/r.step)*r.step,u=(x-x0)/r.step,v=(z-z0)/r.step;const a=this.height(x0,z0),b=this.height(x0+r.step,z0),c=this.height(x0,z0+r.step),d=this.height(x0+r.step,z0+r.step);return u+v<=1?a+(b-a)*u+(c-a)*v:d+(c-d)*(1-u)+(b-d)*(1-v);}
+ renderedHeight(x:number,z:number){const r=this.region(x,z),x0=r.minX+Math.floor((x-r.minX)/r.step)*r.step,z0=r.minZ+Math.floor((z-r.minZ)/r.step)*r.step,u=(x-x0)/r.step,v=(z-z0)/r.step;const a=this.terrainHeight(x0,z0),b=this.terrainHeight(x0+r.step,z0),c=this.terrainHeight(x0,z0+r.step),d=this.terrainHeight(x0+r.step,z0+r.step);return u+v<=1?a+(b-a)*u+(c-a)*v:d+(c-d)*(1-u)+(b-d)*(1-v);}
  waterHeight(x:number,z:number){const h=this.renderedHeight(x,z)+.035,r=this.road.nearest(x,z);if(r.distance<8)return Math.min(h,r.y-.9);for(const p of this.parkIndex.at(x,z))if(inside(x,z,p.points))return p.floor-.5;return h;}
  color(x:number,z:number){if(this.beaches.at(x,z).some(f=>inside(x,z,f.points)))return'#d8c8a3';if(this.woods.at(x,z).some(f=>inside(x,z,f.points)))return'#809476';if(this.streams.nearest(x,z).distance<3.5)return'#8f9f86';return'#a7ad91';}
  nearbyFeatures(x:number,z:number){return this.allFeatures.at(x,z);}

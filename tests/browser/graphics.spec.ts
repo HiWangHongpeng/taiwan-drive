@@ -43,7 +43,7 @@ test('switching shadow algorithms recompiles every receiving material',async({pa
   WebGL2RenderingContext.prototype.linkProgram=function(program){
    const fragment=(this.getAttachedShaders(program)??[]).map(shader=>sources.get(shader)??'').find(source=>source.includes('gl_FragColor'))??'';
    // Depth/blur passes can carry the same prefix but never sample a directional shadow map.
-   if(/^#define USE_SHADOWMAP\s*$/m.test(fragment)&&fragment.includes('uniform sampler2D directionalShadowMap'))modes.set(program,/^#define SHADOWMAP_TYPE_VSM\s*$/m.test(fragment)?'vsm':/^#define SHADOWMAP_TYPE_PCF_SOFT\s*$/m.test(fragment)?'pcf-soft':'other');
+   if(/^#define USE_SHADOWMAP\s*$/m.test(fragment)&&fragment.includes('uniform sampler2D directionalShadowMap'))modes.set(program,/^#define SHADOWMAP_TYPE_VSM\s*$/m.test(fragment)?'vsm':/^#define SHADOWMAP_TYPE_PCF\s*$/m.test(fragment)?'pcf':/^#define SHADOWMAP_TYPE_PCF_SOFT\s*$/m.test(fragment)?'pcf-soft':'other');
    linkProgram.call(this,program);
   };
   const useProgram=WebGL2RenderingContext.prototype.useProgram;
@@ -51,7 +51,7 @@ test('switching shadow algorithms recompiles every receiving material',async({pa
   WebGL2RenderingContext.prototype.useProgram=function(program){useProgram.call(this,program);if(program&&modes.has(program))(window as any).__observedShadowModes.push(modes.get(program));};
  });
  await page.goto(graphicsURL);await expect(page.locator('#resume')).toBeEnabled({timeout:60000});
- for(const [quality,expected] of [['high','pcf-soft'],['standard','vsm'],['high','pcf-soft'],['standard','vsm']]){
+ for(const [quality,expected] of [['high','pcf-soft'],['standard','pcf'],['high','pcf-soft'],['standard','pcf']]){
   await page.locator('#quality').selectOption(quality);
   await page.evaluate(()=>new Promise<void>(resolve=>requestAnimationFrame(()=>requestAnimationFrame(()=>resolve()))));
   await page.evaluate(()=>(window as any).__observedShadowModes=[]);
@@ -59,4 +59,13 @@ test('switching shadow algorithms recompiles every receiving material',async({pa
   const modes=await page.evaluate(()=>[...new Set((window as any).__observedShadowModes)]);
   expect(modes,quality).toEqual([expected]);
  }
+});
+
+
+test('standard moving shadows refresh within the first 16 metres and freeze on pause',async({page})=>{
+ await page.goto(graphicsURL);await expect(page.locator('#resume')).toBeEnabled({timeout:90000});const first=await snapshot(page);
+ await page.locator('#resume').click();await page.keyboard.down('KeyW');
+ await expect.poll(async()=>(await snapshot(page)).stats.graphics.shadowUpdates,{timeout:30000}).toBeGreaterThan(first.stats.graphics.shadowUpdates+2);
+ await page.keyboard.up('KeyW');await page.keyboard.press('Escape');const end=await snapshot(page);expect(end.car.travel).toBeGreaterThan(.12);expect(end.car.travel).toBeLessThan(16);
+ await page.waitForTimeout(1200);expect((await snapshot(page)).stats.graphics.shadowUpdates).toBe(end.stats.graphics.shadowUpdates);
 });

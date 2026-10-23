@@ -1,0 +1,13 @@
+{
+  "method": "Controlled geometry comparison: same current road/terrain/tyre support, asphalt-only fallback versus actual new shoulder triangles. Five source poses, both lateral directions, 0–4m lateral offset at 2cm increments. Reference contact geometry only; not human driving or an all-route pixel proof.",
+  "before": {
+    "samples": 2010,
+    "max_y_change_m_per_2cm": 0.07172840641894496,
+    "max_rotation_change_rad_per_2cm": 0.08160068645891415
+  },
+  "after": {
+    "samples": 2010,
+    "max_y_change_m_per_2cm": 0.0023733731658488466,
+    "max_rotation_change_rad_per_2cm": 0.0024205423315833805
+  }
+}

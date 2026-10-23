@@ -1,0 +1,870 @@
+{
+  "before": {
+    "public/credits/carconcept.txt": "4e2a8d3b2834f5ad49678eed485c3271aa89a7500f127a5fa15b7332ef2ae22f",
+    "public/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "public/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "public/models/carconcept.glb": "788e856fdf6e4976fde2c55973cba2162044b0e001d61145bc175696d7e73a44",
+    "scripts/comfort-checkpoints.mjs": "907ed8180e6a3fc0f7a6f7f36fefde676080fcbcc54c8f0e1c9f032aa76c9229",
+    "src/core.ts": "2d92ca99d5c20e64b8a2c4df311bc6b046f7bee1e754f078858c870eb2dbb2c3",
+    "src/facilities.ts": "0cb5c619a8f9f0794a20ddc32388a9f8740db89883cb475e2560ac80df529f79",
+    "src/geography.ts": "e020b5b56b8f0fad64a058e16fe9c698dae34de4d4c74869beb4a15eb9573e86",
+    "src/imported-vehicle.ts": "6f32692f65f7bdc4dad9fed47ae9880ac31e7f5282b437e1d997c918795a907e",
+    "src/main.ts": "fdd8122526df680ac41f8d38fe06f85f3d10a9d34b2c9fc0b3bbc935b66d14b1",
+    "src/presentation.ts": "c2be1ea7d50b778f08258ec52019fdc1318785080a1bab6acd4c4ed577afe397",
+    "src/road-surface.ts": "388c8453507bd6c6f66ab14490f122300881d561d8b57977256d0c80aaa320e6",
+    "src/scene.ts": "13c384072a7c3671c47b631563e600f67ebef1749134a2ae7edfd410761ac4bb",
+    "src/startup.ts": "2af7b0a695713c1aab569969b49148005f82a3fbf7e44d66eaa55f08c40e0dbd",
+    "src/style.css": "53dad1deb0fe6adebbb930d25628e9948d5ae4920e8fd9c48e98f48567270e25",
+    "src/surfaces.ts": "8bd8a6afa632cc7b821cdd100f1ccbad8dc6fd480ab90f9a5f91a158bdb5fbd5",
+    "src/vehicle-grounding.ts": "105a25c85cad1aa64c28fb0e9dc44cd8e5225f734121fe33b27d172301871d72",
+    "src/vehicle.ts": "225b7e0d1e4fae189faf7bb2aba6fd568716e6f347576c1221fcf06b5a068ce4",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "tests/fixtures/scene.html": "33d79e842f17469058972f2c0ba9fea812cb61de5724b81b19ad8e6c76d7be36"
+  },
+  "after": {
+    "public/credits/carconcept.txt": "4e2a8d3b2834f5ad49678eed485c3271aa89a7500f127a5fa15b7332ef2ae22f",
+    "public/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "public/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "public/models/carconcept.glb": "788e856fdf6e4976fde2c55973cba2162044b0e001d61145bc175696d7e73a44",
+    "scripts/comfort-checkpoints.mjs": "907ed8180e6a3fc0f7a6f7f36fefde676080fcbcc54c8f0e1c9f032aa76c9229",
+    "src/core.ts": "2d92ca99d5c20e64b8a2c4df311bc6b046f7bee1e754f078858c870eb2dbb2c3",
+    "src/facilities.ts": "0cb5c619a8f9f0794a20ddc32388a9f8740db89883cb475e2560ac80df529f79",
+    "src/geography.ts": "e020b5b56b8f0fad64a058e16fe9c698dae34de4d4c74869beb4a15eb9573e86",
+    "src/imported-vehicle.ts": "6f32692f65f7bdc4dad9fed47ae9880ac31e7f5282b437e1d997c918795a907e",
+    "src/main.ts": "fdd8122526df680ac41f8d38fe06f85f3d10a9d34b2c9fc0b3bbc935b66d14b1",
+    "src/presentation.ts": "c2be1ea7d50b778f08258ec52019fdc1318785080a1bab6acd4c4ed577afe397",
+    "src/road-surface.ts": "388c8453507bd6c6f66ab14490f122300881d561d8b57977256d0c80aaa320e6",
+    "src/scene.ts": "13c384072a7c3671c47b631563e600f67ebef1749134a2ae7edfd410761ac4bb",
+    "src/startup.ts": "2af7b0a695713c1aab569969b49148005f82a3fbf7e44d66eaa55f08c40e0dbd",
+    "src/style.css": "53dad1deb0fe6adebbb930d25628e9948d5ae4920e8fd9c48e98f48567270e25",
+    "src/surfaces.ts": "8bd8a6afa632cc7b821cdd100f1ccbad8dc6fd480ab90f9a5f91a158bdb5fbd5",
+    "src/vehicle-grounding.ts": "105a25c85cad1aa64c28fb0e9dc44cd8e5225f734121fe33b27d172301871d72",
+    "src/vehicle.ts": "225b7e0d1e4fae189faf7bb2aba6fd568716e6f347576c1221fcf06b5a068ce4",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "tests/fixtures/scene.html": "33d79e842f17469058972f2c0ba9fea812cb61de5724b81b19ad8e6c76d7be36"
+  },
+  "unchanged": true,
+  "errors": [],
+  "images": [
+    {
+      "path": "reports/visual/comfort-road-revision-tyres.jpg",
+      "query": "metres=500&view=side",
+      "snapshot": {
+        "method": "Isolated View fixture; source map coordinates; estimated camera; not Game or driving evidence",
+        "car": {
+          "x": 480.055,
+          "y": 15.0675,
+          "z": -103.202,
+          "yaw": 1.6806776239433856,
+          "speed": 0,
+          "travel": 0,
+          "collisions": 0,
+          "reverseHold": 0
+        },
+        "metres": 503.23237702699555,
+        "contacts": [
+          {
+            "x": 481.1854771493769,
+            "y": 15.047959716508803,
+            "z": -104.30838162152492,
+            "surface_y": 15.047959727290898,
+            "gap_m": -1.0782095216654852e-8,
+            "suspension_m": -0.0000030050245445889523
+          },
+          {
+            "x": 481.3978541596267,
+            "y": 15.048075979468681,
+            "z": -102.36779943017552,
+            "surface_y": 15.048075968755441,
+            "gap_m": 1.071324007284602e-8,
+            "suspension_m": 0.0000029920548899609045
+          },
+          {
+            "x": 478.4068320740865,
+            "y": 15.2154285329481,
+            "z": -104.00888948149084,
+            "surface_y": 15.215428522252108,
+            "gap_m": 1.0695991647935443e-8,
+            "suspension_m": 0.0000029821357617199062
+          },
+          {
+            "x": 478.6222285252557,
+            "y": 15.215430345608755,
+            "z": -102.05651690590467,
+            "surface_y": 15.215430357069256,
+            "gap_m": -1.1460500104476523e-8,
+            "suspension_m": -0.0000031952972298632254
+          }
+        ],
+        "stats": {
+          "constructionMs": 8192.5,
+          "renderTimes": [
+            953.1999999955297
+          ],
+          "frameDiagnostics": [
+            {
+              "x": 480.055,
+              "z": -103.202,
+              "dt": 0.016666666666666666,
+              "lod_ms": 0,
+              "render_ms": 951.2999999970198,
+              "total_ms": 953.1999999955297,
+              "shadow_update": true,
+              "calls": 468,
+              "triangles": 702130
+            }
+          ],
+          "info": {
+            "render": {
+              "frame": 29,
+              "calls": 215,
+              "triangles": 790926,
+              "points": 0,
+              "lines": 32
+            },
+            "memory": {
+              "geometries": 562,
+              "textures": 24
+            }
+          },
+          "instances": 33000,
+          "instanceGroups": 156,
+          "submittedInstances": 31056,
+          "meshes": 1339,
+          "vehicle": {
+            "loaded": true,
+            "active": true,
+            "contacts": [
+              {
+                "x": 481.1854771493769,
+                "y": 15.047959716508803,
+                "z": -104.30838162152492,
+                "surface_y": 15.047959727290898,
+                "gap_m": -1.0782095216654852e-8,
+                "suspension_m": -0.0000030050245445889523
+              },
+              {
+                "x": 481.3978541596267,
+                "y": 15.048075979468681,
+                "z": -102.36779943017552,
+                "surface_y": 15.048075968755441,
+                "gap_m": 1.071324007284602e-8,
+                "suspension_m": 0.0000029920548899609045
+              },
+              {
+                "x": 478.4068320740865,
+                "y": 15.2154285329481,
+                "z": -104.00888948149084,
+                "surface_y": 15.215428522252108,
+                "gap_m": 1.0695991647935443e-8,
+                "suspension_m": 0.0000029821357617199062
+              },
+              {
+                "x": 478.6222285252557,
+                "y": 15.215430345608755,
+                "z": -102.05651690590467,
+                "surface_y": 15.215430357069256,
+                "gap_m": -1.1460500104476523e-8,
+                "suspension_m": -0.0000031952972298632254
+              }
+            ],
+            "triangles": 111561,
+            "meshes": 45,
+            "dashboard": {
+              "speed": 0,
+              "gear": "D"
+            },
+            "wheelRadius": 0.38400009518171924,
+            "frontWheels": [
+              {
+                "position": [
+                  0.9757409920580492,
+                  0.38399709015717465,
+                  1.2472187876701355
+                ],
+                "angle": 0
+              },
+              {
+                "position": [
+                  -0.9764271149747268,
+                  0.3840030276319644,
+                  1.2455067038536072
+                ],
+                "angle": 0
+              }
+            ],
+            "wheelSpin": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "steeringAngle": 0,
+            "steeringCenter": [
+              -0.1354506430105537,
+              0.02989738818124071,
+              0.9654565749249293
+            ],
+            "steeringMarker": [
+              -0.14348690476717438,
+              0.08494252791126651,
+              0.9652661719965289
+            ]
+          },
+          "terrainMesh": {
+            "detailStep_m": 4,
+            "channelStep_m": 1,
+            "corridorRoadStep_m": 4,
+            "roadRefinementRadius_m": 32,
+            "adaptive": false
+          },
+          "diagnostics": {
+            "trees": 15000,
+            "shrubs": 3000,
+            "treeGroups": 81,
+            "buildingParts": 3472,
+            "buildings": 264,
+            "parkingLots": 24,
+            "paths": 136,
+            "steps": 26,
+            "busStops": 94,
+            "shelters": 20,
+            "lamps": 97,
+            "roadTerrainClearanceMin": 0.21327181800896078,
+            "waterTerrainGapMax": 0.0350000000000108,
+            "buildingFootingMax": 0,
+            "terrainTriangles": 517026,
+            "refinedRoadCells": 771
+          },
+          "graphics": {
+            "quality": "standard",
+            "budget": {
+              "pixelRatio": 1.5,
+              "shadowSize": 1024
+            },
+            "shadowUpdates": 1,
+            "treeRepresentation": "stable-instanced-cluster-cards",
+            "canopyInstances": 15000,
+            "pixelRatio": 1,
+            "textureSource": "original deterministic Canvas rasters"
+          }
+        }
+      }
+    },
+    {
+      "path": "reports/visual/comfort-road-revision-environment.jpg",
+      "query": "metres=500&view=environment",
+      "snapshot": {
+        "method": "Isolated View fixture; source map coordinates; estimated camera; not Game or driving evidence",
+        "car": {
+          "x": 480.055,
+          "y": 15.0675,
+          "z": -103.202,
+          "yaw": 1.6806776239433856,
+          "speed": 0,
+          "travel": 0,
+          "collisions": 0,
+          "reverseHold": 0
+        },
+        "metres": 503.23237702699555,
+        "contacts": [
+          {
+            "x": 481.1854771493769,
+            "y": 15.047959716508803,
+            "z": -104.30838162152492,
+            "surface_y": 15.047959727290898,
+            "gap_m": -1.0782095216654852e-8,
+            "suspension_m": -0.0000030050245445889523
+          },
+          {
+            "x": 481.3978541596267,
+            "y": 15.048075979468681,
+            "z": -102.36779943017552,
+            "surface_y": 15.048075968755441,
+            "gap_m": 1.071324007284602e-8,
+            "suspension_m": 0.0000029920548899609045
+          },
+          {
+            "x": 478.4068320740865,
+            "y": 15.2154285329481,
+            "z": -104.00888948149084,
+            "surface_y": 15.215428522252108,
+            "gap_m": 1.0695991647935443e-8,
+            "suspension_m": 0.0000029821357617199062
+          },
+          {
+            "x": 478.6222285252557,
+            "y": 15.215430345608755,
+            "z": -102.05651690590467,
+            "surface_y": 15.215430357069256,
+            "gap_m": -1.1460500104476523e-8,
+            "suspension_m": -0.0000031952972298632254
+          }
+        ],
+        "stats": {
+          "constructionMs": 7872.39999999851,
+          "renderTimes": [
+            787.5
+          ],
+          "frameDiagnostics": [
+            {
+              "x": 480.055,
+              "z": -103.202,
+              "dt": 0.016666666666666666,
+              "lod_ms": 0,
+              "render_ms": 785.7000000029802,
+              "total_ms": 787.5,
+              "shadow_update": true,
+              "calls": 468,
+              "triangles": 702130
+            }
+          ],
+          "info": {
+            "render": {
+              "frame": 29,
+              "calls": 468,
+              "triangles": 743445,
+              "points": 0,
+              "lines": 768
+            },
+            "memory": {
+              "geometries": 458,
+              "textures": 24
+            }
+          },
+          "instances": 33000,
+          "instanceGroups": 156,
+          "submittedInstances": 23938,
+          "meshes": 1339,
+          "vehicle": {
+            "loaded": true,
+            "active": true,
+            "contacts": [
+              {
+                "x": 481.1854771493769,
+                "y": 15.047959716508803,
+                "z": -104.30838162152492,
+                "surface_y": 15.047959727290898,
+                "gap_m": -1.0782095216654852e-8,
+                "suspension_m": -0.0000030050245445889523
+              },
+              {
+                "x": 481.3978541596267,
+                "y": 15.048075979468681,
+                "z": -102.36779943017552,
+                "surface_y": 15.048075968755441,
+                "gap_m": 1.071324007284602e-8,
+                "suspension_m": 0.0000029920548899609045
+              },
+              {
+                "x": 478.4068320740865,
+                "y": 15.2154285329481,
+                "z": -104.00888948149084,
+                "surface_y": 15.215428522252108,
+                "gap_m": 1.0695991647935443e-8,
+                "suspension_m": 0.0000029821357617199062
+              },
+              {
+                "x": 478.6222285252557,
+                "y": 15.215430345608755,
+                "z": -102.05651690590467,
+                "surface_y": 15.215430357069256,
+                "gap_m": -1.1460500104476523e-8,
+                "suspension_m": -0.0000031952972298632254
+              }
+            ],
+            "triangles": 111561,
+            "meshes": 45,
+            "dashboard": {
+              "speed": 0,
+              "gear": "D"
+            },
+            "wheelRadius": 0.38400009518171924,
+            "frontWheels": [
+              {
+                "position": [
+                  0.9757409920580492,
+                  0.38399709015717465,
+                  1.2472187876701355
+                ],
+                "angle": 0
+              },
+              {
+                "position": [
+                  -0.9764271149747268,
+                  0.3840030276319644,
+                  1.2455067038536072
+                ],
+                "angle": 0
+              }
+            ],
+            "wheelSpin": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "steeringAngle": 0,
+            "steeringCenter": [
+              -0.00017337778432326668,
+              -0.02161138632669188,
+              0.9796975220052203
+            ],
+            "steeringMarker": [
+              -0.00017362162954839548,
+              0.0018171353010901009,
+              0.9796756583733874
+            ]
+          },
+          "terrainMesh": {
+            "detailStep_m": 4,
+            "channelStep_m": 1,
+            "corridorRoadStep_m": 4,
+            "roadRefinementRadius_m": 32,
+            "adaptive": false
+          },
+          "diagnostics": {
+            "trees": 15000,
+            "shrubs": 3000,
+            "treeGroups": 81,
+            "buildingParts": 3472,
+            "buildings": 264,
+            "parkingLots": 24,
+            "paths": 136,
+            "steps": 26,
+            "busStops": 94,
+            "shelters": 20,
+            "lamps": 97,
+            "roadTerrainClearanceMin": 0.21327181800896078,
+            "waterTerrainGapMax": 0.0350000000000108,
+            "buildingFootingMax": 0,
+            "terrainTriangles": 517026,
+            "refinedRoadCells": 771
+          },
+          "graphics": {
+            "quality": "standard",
+            "budget": {
+              "pixelRatio": 1.5,
+              "shadowSize": 1024
+            },
+            "shadowUpdates": 1,
+            "treeRepresentation": "stable-instanced-cluster-cards",
+            "canopyInstances": 15000,
+            "pixelRatio": 1,
+            "textureSource": "original deterministic Canvas rasters"
+          }
+        }
+      }
+    },
+    {
+      "path": "reports/visual/comfort-road-revision-start.jpg",
+      "query": "metres=0&view=environment",
+      "snapshot": {
+        "method": "Isolated View fixture; source map coordinates; estimated camera; not Game or driving evidence",
+        "car": {
+          "x": 1.943,
+          "y": 10.2314,
+          "z": -87.208,
+          "yaw": 2.3618601519491116,
+          "speed": 0,
+          "travel": 0,
+          "collisions": 0,
+          "reverseHold": 0
+        },
+        "metres": 0,
+        "contacts": [
+          {
+            "x": 2.1260486738052884,
+            "y": 10.265689178312579,
+            "z": -88.78092579194343,
+            "surface_y": 10.265689178657315,
+            "gap_m": -3.447357954655672e-10,
+            "suspension_m": -0.000005432080849965271
+          },
+          {
+            "x": 3.513034904269071,
+            "y": 10.26571760850278,
+            "z": -87.40716000216565,
+            "surface_y": 10.26571760814495,
+            "gap_m": 3.5782932172878645e-10,
+            "suspension_m": 0.000005638372708394179
+          },
+          {
+            "x": 0.15260167196224583,
+            "y": 10.2764,
+            "z": -86.79497463188022,
+            "surface_y": 10.2764,
+            "gap_m": 0,
+            "suspension_m": 0.000005528276975641511
+          },
+          {
+            "x": 1.5493606346895903,
+            "y": 10.2764,
+            "z": -85.41395373949554,
+            "surface_y": 10.2764,
+            "gap_m": 0,
+            "suspension_m": -0.0000054151794035006695
+          }
+        ],
+        "stats": {
+          "constructionMs": 7831.39999999851,
+          "renderTimes": [
+            828.1000000014901
+          ],
+          "frameDiagnostics": [
+            {
+              "x": 1.943,
+              "z": -87.208,
+              "dt": 0.016666666666666666,
+              "lod_ms": 0,
+              "render_ms": 826.3999999985099,
+              "total_ms": 828.1000000014901,
+              "shadow_update": true,
+              "calls": 435,
+              "triangles": 802479
+            }
+          ],
+          "info": {
+            "render": {
+              "frame": 29,
+              "calls": 428,
+              "triangles": 778808,
+              "points": 0,
+              "lines": 832
+            },
+            "memory": {
+              "geometries": 432,
+              "textures": 26
+            }
+          },
+          "instances": 33000,
+          "instanceGroups": 156,
+          "submittedInstances": 25686,
+          "meshes": 1339,
+          "vehicle": {
+            "loaded": true,
+            "active": true,
+            "contacts": [
+              {
+                "x": 2.1260486738052884,
+                "y": 10.265689178312579,
+                "z": -88.78092579194343,
+                "surface_y": 10.265689178657315,
+                "gap_m": -3.447357954655672e-10,
+                "suspension_m": -0.000005432080849965271
+              },
+              {
+                "x": 3.513034904269071,
+                "y": 10.26571760850278,
+                "z": -87.40716000216565,
+                "surface_y": 10.26571760814495,
+                "gap_m": 3.5782932172878645e-10,
+                "suspension_m": 0.000005638372708394179
+              },
+              {
+                "x": 0.15260167196224583,
+                "y": 10.2764,
+                "z": -86.79497463188022,
+                "surface_y": 10.2764,
+                "gap_m": 0,
+                "suspension_m": 0.000005528276975641511
+              },
+              {
+                "x": 1.5493606346895903,
+                "y": 10.2764,
+                "z": -85.41395373949554,
+                "surface_y": 10.2764,
+                "gap_m": 0,
+                "suspension_m": -0.0000054151794035006695
+              }
+            ],
+            "triangles": 111561,
+            "meshes": 45,
+            "dashboard": {
+              "speed": 0,
+              "gear": "D"
+            },
+            "wheelRadius": 0.38400009518171924,
+            "frontWheels": [
+              {
+                "position": [
+                  0.9757409920580492,
+                  0.38399466310086927,
+                  1.2472187876701355
+                ],
+                "angle": 0
+              },
+              {
+                "position": [
+                  -0.9764271149747268,
+                  0.38400567394978286,
+                  1.2455067038536072
+                ],
+                "angle": 0
+              }
+            ],
+            "wheelSpin": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "steeringAngle": 0,
+            "steeringCenter": [
+              -0.0001743053506758359,
+              -0.0175436077033148,
+              0.9796019571853859
+            ],
+            "steeringMarker": [
+              -0.00017472049657465984,
+              0.005872528458264453,
+              0.9795627125901936
+            ]
+          },
+          "terrainMesh": {
+            "detailStep_m": 4,
+            "channelStep_m": 1,
+            "corridorRoadStep_m": 4,
+            "roadRefinementRadius_m": 32,
+            "adaptive": false
+          },
+          "diagnostics": {
+            "trees": 15000,
+            "shrubs": 3000,
+            "treeGroups": 81,
+            "buildingParts": 3472,
+            "buildings": 264,
+            "parkingLots": 24,
+            "paths": 136,
+            "steps": 26,
+            "busStops": 94,
+            "shelters": 20,
+            "lamps": 97,
+            "roadTerrainClearanceMin": 0.21327181800896078,
+            "waterTerrainGapMax": 0.0350000000000108,
+            "buildingFootingMax": 0,
+            "terrainTriangles": 517026,
+            "refinedRoadCells": 771
+          },
+          "graphics": {
+            "quality": "standard",
+            "budget": {
+              "pixelRatio": 1.5,
+              "shadowSize": 1024
+            },
+            "shadowUpdates": 1,
+            "treeRepresentation": "stable-instanced-cluster-cards",
+            "canopyInstances": 15000,
+            "pixelRatio": 1,
+            "textureSource": "original deterministic Canvas rasters"
+          }
+        }
+      }
+    },
+    {
+      "path": "reports/visual/comfort-road-revision-transition.jpg",
+      "query": "metres=3400&view=environment",
+      "snapshot": {
+        "method": "Isolated View fixture; source map coordinates; estimated camera; not Game or driving evidence",
+        "car": {
+          "x": 3017.137,
+          "y": 13.6737,
+          "z": -745.172,
+          "yaw": 2.0990150233270026,
+          "speed": 0,
+          "travel": 0,
+          "collisions": 0,
+          "reverseHold": 0
+        },
+        "metres": 3400.9710361853813,
+        "contacts": [
+          {
+            "x": 3017.7224605090873,
+            "y": 13.72685053522629,
+            "z": -746.6433458228373,
+            "surface_y": 13.726850535226529,
+            "gap_m": -2.3803181647963356e-13,
+            "suspension_m": -1.210893075254127e-7
+          },
+          {
+            "x": 3018.704865946107,
+            "y": 13.726853074026128,
+            "z": -744.9563832249547,
+            "surface_y": 13.72685307402595,
+            "gap_m": 1.7763568394002505e-13,
+            "suspension_m": 9.171134068841624e-8
+          },
+          {
+            "x": 3015.3007689206684,
+            "y": 13.730504372258778,
+            "z": -745.2383524773447,
+            "surface_y": 13.730504372258638,
+            "gap_m": 1.4033219031261979e-13,
+            "suspension_m": 9.119469041030115e-8
+          },
+          {
+            "x": 3016.2907264373953,
+            "y": 13.730504372258777,
+            "z": -743.5418447643889,
+            "surface_y": 13.730504372258869,
+            "gap_m": -9.237055564881302e-14,
+            "suspension_m": -6.106165578723122e-8
+          }
+        ],
+        "stats": {
+          "constructionMs": 7992.39999999851,
+          "renderTimes": [
+            761.6000000014901
+          ],
+          "frameDiagnostics": [
+            {
+              "x": 3017.137,
+              "z": -745.172,
+              "dt": 0.016666666666666666,
+              "lod_ms": 0,
+              "render_ms": 759.6000000014901,
+              "total_ms": 761.6000000014901,
+              "shadow_update": true,
+              "calls": 292,
+              "triangles": 344897
+            }
+          ],
+          "info": {
+            "render": {
+              "frame": 29,
+              "calls": 291,
+              "triangles": 344761,
+              "points": 0,
+              "lines": 320
+            },
+            "memory": {
+              "geometries": 287,
+              "textures": 24
+            }
+          },
+          "instances": 33000,
+          "instanceGroups": 156,
+          "submittedInstances": 5984,
+          "meshes": 1339,
+          "vehicle": {
+            "loaded": true,
+            "active": true,
+            "contacts": [
+              {
+                "x": 3017.7224605090873,
+                "y": 13.72685053522629,
+                "z": -746.6433458228373,
+                "surface_y": 13.726850535226529,
+                "gap_m": -2.3803181647963356e-13,
+                "suspension_m": -1.210893075254127e-7
+              },
+              {
+                "x": 3018.704865946107,
+                "y": 13.726853074026128,
+                "z": -744.9563832249547,
+                "surface_y": 13.72685307402595,
+                "gap_m": 1.7763568394002505e-13,
+                "suspension_m": 9.171134068841624e-8
+              },
+              {
+                "x": 3015.3007689206684,
+                "y": 13.730504372258778,
+                "z": -745.2383524773447,
+                "surface_y": 13.730504372258638,
+                "gap_m": 1.4033219031261979e-13,
+                "suspension_m": 9.119469041030115e-8
+              },
+              {
+                "x": 3016.2907264373953,
+                "y": 13.730504372258777,
+                "z": -743.5418447643889,
+                "surface_y": 13.730504372258869,
+                "gap_m": -9.237055564881302e-14,
+                "suspension_m": -6.106165578723122e-8
+              }
+            ],
+            "triangles": 111561,
+            "meshes": 45,
+            "dashboard": {
+              "speed": 0,
+              "gear": "D"
+            },
+            "wheelRadius": 0.38400009518171924,
+            "frontWheels": [
+              {
+                "position": [
+                  0.9757409920580492,
+                  0.3839999740924117,
+                  1.2472187876701355
+                ],
+                "angle": 0
+              },
+              {
+                "position": [
+                  -0.9764271149747268,
+                  0.38400012728841515,
+                  1.2455067038536072
+                ],
+                "angle": 0
+              }
+            ],
+            "wheelSpin": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "steeringAngle": 0,
+            "steeringCenter": [
+              -0.0001739906181140218,
+              -0.017369799182082913,
+              0.979597573203084
+            ],
+            "steeringMarker": [
+              -0.00017433241382829303,
+              0.0060442684860587525,
+              0.979557541738703
+            ]
+          },
+          "terrainMesh": {
+            "detailStep_m": 4,
+            "channelStep_m": 1,
+            "corridorRoadStep_m": 4,
+            "roadRefinementRadius_m": 32,
+            "adaptive": false
+          },
+          "diagnostics": {
+            "trees": 15000,
+            "shrubs": 3000,
+            "treeGroups": 81,
+            "buildingParts": 3472,
+            "buildings": 264,
+            "parkingLots": 24,
+            "paths": 136,
+            "steps": 26,
+            "busStops": 94,
+            "shelters": 20,
+            "lamps": 97,
+            "roadTerrainClearanceMin": 0.21327181800896078,
+            "waterTerrainGapMax": 0.0350000000000108,
+            "buildingFootingMax": 0,
+            "terrainTriangles": 517026,
+            "refinedRoadCells": 771
+          },
+          "graphics": {
+            "quality": "standard",
+            "budget": {
+              "pixelRatio": 1.5,
+              "shadowSize": 1024
+            },
+            "shadowUpdates": 1,
+            "treeRepresentation": "stable-instanced-cluster-cards",
+            "canopyInstances": 15000,
+            "pixelRatio": 1,
+            "textureSource": "original deterministic Canvas rasters"
+          }
+        }
+      }
+    }
+  ]
+}

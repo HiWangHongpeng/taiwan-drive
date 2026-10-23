@@ -19,7 +19,16 @@ export function step(car:Car,c:Controls,route:Point[],dt:number){const near=near
  const prev=car.speed;car.speed=clamp(car.speed+force*dt,-6,24);if((!c.throttle&&!c.brake||c.throttle&&c.brake)&&prev*car.speed<0)car.speed=0;if(c.brake&&prev>0&&car.speed<0){car.speed=0;}
  if(c.throttle&&c.brake&&Math.abs(car.speed)<.2)car.speed=0;if(c.brake&&!c.throttle&&car.reverseHold<=.45&&Math.abs(car.speed)<.2)car.speed=0;
  const angle=steering(c,dt)*0.5/(1+Math.abs(car.speed)/10),yawRate=clamp(car.speed/2.6*Math.tan(angle),-5/Math.max(1,Math.abs(car.speed)),5/Math.max(1,Math.abs(car.speed)));car.yaw+=yawRate*dt;car.x+=Math.sin(car.yaw)*car.speed*dt;car.z+=Math.cos(car.yaw)*car.speed*dt;car.travel+=Math.abs(car.speed)*dt;
- const after=nearest(route,car.x,car.z);car.y=after.y;if(after.distance>3.7){const k=(after.distance-3.7)*0.12;car.x+=(after.x-car.x)*k;car.z+=(after.z-car.z)*k;if(Math.abs(car.speed)>2&&near.distance<=3.75)car.collisions++;car.speed*=Math.max(0,1-1.8*dt);}
+ const after=nearest(route,car.x,car.z);
+ // Soft verge contact: exponentially timed, capped normal displacement. No centreline steering.
+ // Resistance ramps continuously from zero instead of toggling at a hard boundary.
+ const penetration=Math.max(0,after.distance-3.7);
+ if(penetration>0){const push=Math.min(penetration*(1-Math.exp(-8*dt)),2*dt),ratio=push/after.distance;
+  car.x+=(after.x-car.x)*ratio;car.z+=(after.z-car.z)*ratio;
+  if(Math.abs(car.speed)>2&&near.distance<=3.7)car.collisions++;
+  car.speed*=Math.exp(-1.8*Math.min(1,(Math.max(0,near.distance-3.7)+penetration)/1.2)*dt);
+ }
+ car.y=penetration>0?nearest(route,car.x,car.z).y:after.y;
 }
 export function finish(car:Car,route:Point[]){const p=route.at(-1)!;return Math.hypot(car.x-p[0],car.z-p[2])<35&&Math.abs(car.speed)<0.4;}
 export const SAVE_KEY='island-drive:save:v1';

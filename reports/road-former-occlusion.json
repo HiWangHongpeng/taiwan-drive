@@ -1,0 +1,216 @@
+{
+  "method": "Isolated readonly View fixture near the actual former maximum occlusion coordinate, not a journey or Game state mutation. Fixture advances to the first source vertex at/after the requested progress, so its car pose is reported explicitly.",
+  "target": [
+    3395.71,
+    -816.12
+  ],
+  "nearest": {
+    "distance": 0,
+    "direction": 0,
+    "progress": 3824.524744272569
+  },
+  "query": "direction=0&metres=3824.524744272569&view=environment",
+  "snapshot": {
+    "method": "Isolated View fixture; source map coordinates; estimated camera; not Game or driving evidence",
+    "car": {
+      "x": 3395.71,
+      "y": 12.6888,
+      "z": -816.12,
+      "yaw": 1.1952366368835807,
+      "speed": 0,
+      "travel": 0,
+      "collisions": 0,
+      "reverseHold": 0
+    },
+    "metres": 3824.524744272569,
+    "contacts": [
+      {
+        "x": 3397.228072866063,
+        "y": 12.76039863333402,
+        "z": -816.570320700329,
+        "surface_y": 12.760398508548956,
+        "gap_m": 1.247850640595516e-7,
+        "suspension_m": 0.0006842733012833446
+      },
+      {
+        "x": 3396.5104554076474,
+        "y": 12.760393011197486,
+        "z": -814.7548344550754,
+        "surface_y": 12.760393136044488,
+        "gap_m": -1.248470020698278e-7,
+        "suspension_m": -0.0006846129572372073
+      },
+      {
+        "x": 3394.626291650686,
+        "y": 12.720670512237614,
+        "z": -817.6036492279102,
+        "surface_y": 12.720670643496012,
+        "gap_m": -1.3125839792849092e-7,
+        "suspension_m": -0.0006799934393220686
+      },
+      {
+        "x": 3393.905812724846,
+        "y": 12.723426143495532,
+        "z": -815.7763400914888,
+        "surface_y": 12.723426012128861,
+        "gap_m": 1.3136667043056605e-7,
+        "suspension_m": 0.0006805543648424339
+      }
+    ],
+    "stats": {
+      "constructionMs": 8091.5,
+      "renderTimes": [
+        1401.3999999985099
+      ],
+      "frameDiagnostics": [
+        {
+          "x": 3395.71,
+          "z": -816.12,
+          "dt": 0.016666666666666666,
+          "lod_ms": 0,
+          "render_ms": 1398.7000000029802,
+          "total_ms": 1401.3999999985099,
+          "shadow_update": true,
+          "calls": 326,
+          "triangles": 417442
+        }
+      ],
+      "info": {
+        "render": {
+          "frame": 29,
+          "calls": 326,
+          "triangles": 417442,
+          "points": 0,
+          "lines": 256
+        },
+        "memory": {
+          "geometries": 306,
+          "textures": 24
+        }
+      },
+      "instances": 33000,
+      "instanceGroups": 156,
+      "submittedInstances": 14212,
+      "meshes": 1339,
+      "vehicle": {
+        "loaded": true,
+        "active": true,
+        "contacts": [
+          {
+            "x": 3397.228072866063,
+            "y": 12.76039863333402,
+            "z": -816.570320700329,
+            "surface_y": 12.760398508548956,
+            "gap_m": 1.247850640595516e-7,
+            "suspension_m": 0.0006842733012833446
+          },
+          {
+            "x": 3396.5104554076474,
+            "y": 12.760393011197486,
+            "z": -814.7548344550754,
+            "surface_y": 12.760393136044488,
+            "gap_m": -1.248470020698278e-7,
+            "suspension_m": -0.0006846129572372073
+          },
+          {
+            "x": 3394.626291650686,
+            "y": 12.720670512237614,
+            "z": -817.6036492279102,
+            "surface_y": 12.720670643496012,
+            "gap_m": -1.3125839792849092e-7,
+            "suspension_m": -0.0006799934393220686
+          },
+          {
+            "x": 3393.905812724846,
+            "y": 12.723426143495532,
+            "z": -815.7763400914888,
+            "surface_y": 12.723426012128861,
+            "gap_m": 1.3136667043056605e-7,
+            "suspension_m": 0.0006805543648424339
+          }
+        ],
+        "triangles": 111561,
+        "meshes": 45,
+        "dashboard": {
+          "speed": 0,
+          "gear": "D"
+        },
+        "wheelRadius": 0.38400009518171924,
+        "frontWheels": [
+          {
+            "position": [
+              0.9757409920580492,
+              0.3846843684830026,
+              1.2472187876701355
+            ],
+            "angle": 0
+          },
+          {
+            "position": [
+              -0.9764271149747268,
+              0.38331542261983725,
+              1.2455067038536072
+            ],
+            "angle": 0
+          }
+        ],
+        "wheelSpin": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "steeringAngle": 0,
+        "steeringCenter": [
+          -0.00022065638523375842,
+          -0.016349889537159993,
+          0.9795712756086997
+        ],
+        "steeringMarker": [
+          -0.0002314562036834018,
+          0.007049101671992742,
+          0.9795265421677757
+        ]
+      },
+      "terrainMesh": {
+        "detailStep_m": 4,
+        "channelStep_m": 1,
+        "corridorRoadStep_m": 4,
+        "roadRefinementRadius_m": 32,
+        "adaptive": false
+      },
+      "diagnostics": {
+        "trees": 15000,
+        "shrubs": 3000,
+        "treeGroups": 81,
+        "buildingParts": 3472,
+        "buildings": 264,
+        "parkingLots": 24,
+        "paths": 136,
+        "steps": 26,
+        "busStops": 94,
+        "shelters": 20,
+        "lamps": 97,
+        "roadTerrainClearanceMin": 0.21327181800896078,
+        "waterTerrainGapMax": 0.0350000000000108,
+        "buildingFootingMax": 0,
+        "terrainTriangles": 517026,
+        "refinedRoadCells": 771
+      },
+      "graphics": {
+        "quality": "standard",
+        "budget": {
+          "pixelRatio": 1.5,
+          "shadowSize": 1024
+        },
+        "shadowUpdates": 1,
+        "treeRepresentation": "stable-instanced-cluster-cards",
+        "canopyInstances": 15000,
+        "pixelRatio": 1,
+        "textureSource": "original deterministic Canvas rasters"
+      }
+    }
+  },
+  "frozen_files_unchanged": true,
+  "errors": []
+}
