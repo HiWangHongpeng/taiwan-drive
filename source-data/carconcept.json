@@ -4,8 +4,8 @@
   "source_sha256": "c272098089d78c5cd9fd9f24ff50ee8acf8d932c55f2d55fc10adb6c8998966b",
   "source_bytes": 11778688,
   "output": "public/models/carconcept.glb",
-  "output_sha256": "430709bcdaf690d07f2dad9b37c482666bfcdac0c819b786dd73c14b61ee5140",
-  "output_bytes": 5631824,
+  "output_sha256": "788e856fdf6e4976fde2c55973cba2162044b0e001d61145bc175696d7e73a44",
+  "output_bytes": 5530408,
   "triangles": 111549,
   "mesh_groups": 10,
   "draw_primitives": 44,
@@ -83,22 +83,6 @@
         128
       ],
       "bytes": 1652
-    },
-    {
-      "mime": "image/webp",
-      "size": [
-        1024,
-        1024
-      ],
-      "bytes": 8508
-    },
-    {
-      "mime": "image/webp",
-      "size": [
-        1024,
-        1024
-      ],
-      "bytes": 69120
     },
     {
       "mime": "image/webp",
@@ -186,6 +170,7 @@
     "Baked original coordinate transforms to Y-up/+Z-forward; centered model and grounded its actual vertices",
     "Removed source front-wheel showcase yaw; spin axles are now +X, calipers remain outside spin groups",
     "Kept a distinct steering wheel and complete interior; neutralized 15 degree showcase steering pose; removed steering emblem mesh and logo-bearing plate texture; removed the decorative fixed-zero display texture for a live original Canvas instrument",
+    "Removed wordmark-bearing tyre-side colour/normal maps and replaced them with unbranded rough rubber; this corrects an omission discovered during close-up contact review",
     "Joined compatible primitives per body/wheel/steering group; welded and simplified at ratio .5, error .001, borders locked",
     "Capped textures at 1024, WebP quality90; no transmission scene pass or optional iridescent variants"
   ],

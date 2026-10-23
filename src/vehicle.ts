@@ -58,7 +58,7 @@ export function makeVehicle(contact:T.Texture,environment:T.Texture|null=null){
   for(const [material,geometries]of buckets){const geometry=mergeGeometries(geometries);if(geometry)add(geometry,material,0,0,0,parent);for(const g of geometries)g.dispose();}
  }
  batch(group);for(const wheel of wheels)batch(wheel);
- const shadow=add(new T.PlaneGeometry(3,5.3),new T.MeshBasicMaterial({map:contact,transparent:true,depthWrite:false,opacity:.65,polygonOffset:true,polygonOffsetFactor:-1}),0,.008,0);
+ const shadow=add(new T.PlaneGeometry(3,5.3),new T.MeshBasicMaterial({map:contact,transparent:true,depthWrite:false,opacity:.65,polygonOffset:true,polygonOffsetFactor:-1}),0,.018,0);
  shadow.rotation.x=-Math.PI/2;shadow.castShadow=false;shadow.receiveShadow=false;
  return{group,wheels,frontWheels};
 }

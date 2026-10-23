@@ -47,3 +47,15 @@ __pycache__/
 !/reports/perf-asset-original.json
 !/reports/perf-asset-concept.json
 !/reports/driving-asset-trial.json
+
+!/reports/COMFORT.md
+!/reports/comfort-summary.json
+!/reports/comfort-contact-audit.json
+!/reports/comfort-terrain-rejected.json
+!/reports/rolling-rejected-final.json
+!/reports/comfort-before-checkpoints.json
+!/reports/comfort-after-checkpoints.json
+!/reports/rolling-before.json
+!/reports/rolling-after.json
+!/reports/rolling-after-first.json
+!/reports/driving-comfort.json

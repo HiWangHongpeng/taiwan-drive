@@ -20,7 +20,7 @@ test('shipped GLB is valid, self-contained, attributed and retains independent g
  }}
  expect(bounds.min.y).toBeGreaterThan(-.002);expect(bounds.getSize(new T.Vector3()).z).toBeGreaterThan(4.2);expect(bounds.getSize(new T.Vector3()).z).toBeLessThan(4.6);
  for(const name of ['WheelFrontL','WheelFrontR','WheelRearL','WheelRearR']){const wheel=nodes.find(n=>n.getName()===name)!;expect(wheel).toBeDefined();expect(wheel.getTranslation()[1]).toBeCloseTo(.384,2);expect(wheel.listChildren().map(n=>n.getName()).sort()).toEqual([`${name}Brake`,`${name}Spin`].sort());if(name.includes('Front'))expect(wheel.getTranslation()[2]).toBeGreaterThan(1);else expect(wheel.getTranslation()[2]).toBeLessThan(-1);}
- expect(nodes.find(n=>n.getName()==='Steering')).toBeDefined();expect(doc.getRoot().listMaterials().find(m=>m.getName()==='License')!.getBaseColorTexture()).toBeNull();
+ expect(nodes.find(n=>n.getName()==='Steering')).toBeDefined();expect(doc.getRoot().listMaterials().find(m=>m.getName()==='License')!.getBaseColorTexture()).toBeNull();const side=doc.getRoot().listMaterials().find(m=>m.getName()==='Tireside')!;expect(side.getBaseColorTexture()).toBeNull();expect(side.getNormalTexture()).toBeNull();
  expect(doc.getRoot().listTextures().every(t=>Math.max(...t.getSize()!)<=1024)).toBe(true);
  expect(fs.readFileSync('public/credits/carconcept.txt','utf8')).toContain('Eric Chadwick');
  const b=JSON.parse(bytes.subarray(20,20+bytes.readUInt32LE(12)).toString());expect(b.images.every((i:{uri?:string})=>!i.uri)).toBe(true);

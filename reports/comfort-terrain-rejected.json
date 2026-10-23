@@ -1,0 +1,32 @@
+{
+  "method": "Isolated math-only module audit. Same source Ground.height and OSM classification; compare actual new adaptive triangles against prior regular 4m/1m-channel submitted triangles on a 4m grid offset by2m, across the entire 1800x1300m DETAIL rectangle. Display triangulation only, no DEM/route changes. This is sampled, not a proof at every continuous point.",
+  "stats": {
+    "coarse8mCells": 24384,
+    "channel4mCellsRefinedTo1m": 3746,
+    "leafCells": 129288,
+    "triangles": 286697,
+    "maxMergedHeightError_m": 0.02999999999996561
+  },
+  "missing_samples": 0,
+  "all": {
+    "count": 146250,
+    "max_m": 8.992860292380382,
+    "p95_m": 0.0070399349975573955
+  },
+  "within20mOfStreams": {
+    "count": 5138,
+    "max_m": 8.992860292380382,
+    "p95_m": 0.02796007690429292
+  },
+  "outside20mOfStreams": {
+    "count": 141112,
+    "max_m": 0.04193678125002265,
+    "p95_m": 0.00646342773437425
+  },
+  "within9mOfRoad": {
+    "count": 2310,
+    "max_m": 0.024696713442889262,
+    "p95_m": 5.742492099614083e-7
+  },
+  "world_sha256": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d"
+}

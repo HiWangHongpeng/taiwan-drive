@@ -1,0 +1,540 @@
+{
+  "before": {
+    "public/credits/carconcept.txt": "92050533456ba6cdb86af7eadd33bce0c5fbd246184ba90c7f5c5f7ec4ac3b4a",
+    "public/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "public/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "public/models/carconcept.glb": "430709bcdaf690d07f2dad9b37c482666bfcdac0c819b786dd73c14b61ee5140",
+    "scripts/comfort-checkpoints.mjs": "4305b37080d486c110a891cebd3efa43f32adb5e6a98bc44fe9247a0830a17e0",
+    "src/core.ts": "894b1d1b415ac6adaf58e8eda7f85a1c3b637c8eee812401fa9a19531c69d13a",
+    "src/facilities.ts": "1afcd937102b41fcaa4270e03f63262a85fa8841e3f52a03c78ce30dda591cc5",
+    "src/geography.ts": "b7331dcb4e73fea544c3440dcd26803077951b495b8d6cfab3c34db0bdbeb73e",
+    "src/imported-vehicle.ts": "7846ba4518d995a270587f9366d826ccc048ff4fcaf6c632b3c244eb312fb576",
+    "src/main.ts": "3b87012c72f7cace5ac99aad03f946d727e159fd97f7f45b1f4ee907aebdd7ce",
+    "src/road-surface.ts": "ca9f2d3c86dd1407f157a217a44127d83c2a2422279a24a9db15438f526d2a0b",
+    "src/scene.ts": "b89988850bfbc1a37a4296d4be463c0e20e101c6ccc33f118d07e3204c616d8a",
+    "src/startup.ts": "2af7b0a695713c1aab569969b49148005f82a3fbf7e44d66eaa55f08c40e0dbd",
+    "src/style.css": "53dad1deb0fe6adebbb930d25628e9948d5ae4920e8fd9c48e98f48567270e25",
+    "src/surfaces.ts": "ea655a82fcc0e7438b812c419b18759b0c1d5cf84fc945267157f254197bc7ee",
+    "src/vehicle-grounding.ts": "105a25c85cad1aa64c28fb0e9dc44cd8e5225f734121fe33b27d172301871d72",
+    "src/vehicle.ts": "bbae8a671d81d4d8e857892f8f34ef6cb14061f25374d9407abede139261babf",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "tests/fixtures/scene.html": "33d79e842f17469058972f2c0ba9fea812cb61de5724b81b19ad8e6c76d7be36"
+  },
+  "after": {
+    "public/credits/carconcept.txt": "92050533456ba6cdb86af7eadd33bce0c5fbd246184ba90c7f5c5f7ec4ac3b4a",
+    "public/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "public/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "public/models/carconcept.glb": "430709bcdaf690d07f2dad9b37c482666bfcdac0c819b786dd73c14b61ee5140",
+    "scripts/comfort-checkpoints.mjs": "4305b37080d486c110a891cebd3efa43f32adb5e6a98bc44fe9247a0830a17e0",
+    "src/core.ts": "894b1d1b415ac6adaf58e8eda7f85a1c3b637c8eee812401fa9a19531c69d13a",
+    "src/facilities.ts": "1afcd937102b41fcaa4270e03f63262a85fa8841e3f52a03c78ce30dda591cc5",
+    "src/geography.ts": "b7331dcb4e73fea544c3440dcd26803077951b495b8d6cfab3c34db0bdbeb73e",
+    "src/imported-vehicle.ts": "7846ba4518d995a270587f9366d826ccc048ff4fcaf6c632b3c244eb312fb576",
+    "src/main.ts": "3b87012c72f7cace5ac99aad03f946d727e159fd97f7f45b1f4ee907aebdd7ce",
+    "src/road-surface.ts": "ca9f2d3c86dd1407f157a217a44127d83c2a2422279a24a9db15438f526d2a0b",
+    "src/scene.ts": "b89988850bfbc1a37a4296d4be463c0e20e101c6ccc33f118d07e3204c616d8a",
+    "src/startup.ts": "2af7b0a695713c1aab569969b49148005f82a3fbf7e44d66eaa55f08c40e0dbd",
+    "src/style.css": "53dad1deb0fe6adebbb930d25628e9948d5ae4920e8fd9c48e98f48567270e25",
+    "src/surfaces.ts": "ea655a82fcc0e7438b812c419b18759b0c1d5cf84fc945267157f254197bc7ee",
+    "src/vehicle-grounding.ts": "105a25c85cad1aa64c28fb0e9dc44cd8e5225f734121fe33b27d172301871d72",
+    "src/vehicle.ts": "bbae8a671d81d4d8e857892f8f34ef6cb14061f25374d9407abede139261babf",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "tests/fixtures/scene.html": "33d79e842f17469058972f2c0ba9fea812cb61de5724b81b19ad8e6c76d7be36"
+  },
+  "unchanged": true,
+  "errors": [],
+  "images": [
+    {
+      "path": "reports/visual/comfort-before-tyres.jpg",
+      "query": "metres=500&view=side",
+      "snapshot": {
+        "method": "Isolated View fixture; source map coordinates; estimated camera; not Game or driving evidence",
+        "car": {
+          "x": 480.055,
+          "y": 15.0675,
+          "z": -103.202,
+          "yaw": 1.6806776239433856,
+          "speed": 0,
+          "travel": 0,
+          "collisions": 0,
+          "reverseHold": 0
+        },
+        "metres": 503.23237702699555,
+        "contacts": [
+          {
+            "x": 481.1854740941718,
+            "y": 15.062845535742058,
+            "z": -104.30838158935899,
+            "surface_y": 15.051767814721867,
+            "gap_m": 0.011077721020191333,
+            "suspension_m": 0
+          },
+          {
+            "x": 481.3978507523187,
+            "y": 15.062947956018766,
+            "z": -102.36779935870464,
+            "surface_y": 15.051866435644044,
+            "gap_m": 0.011081520374721876,
+            "suspension_m": 0
+          },
+          {
+            "x": 478.4068359222612,
+            "y": 15.23042899173856,
+            "z": -104.00888952652672,
+            "surface_y": 15.215428240557431,
+            "gap_m": 0.015000751181128535,
+            "suspension_m": 0
+          },
+          {
+            "x": 478.62223274069606,
+            "y": 15.23042899173856,
+            "z": -102.05651699146827,
+            "surface_y": 15.21542986133733,
+            "gap_m": 0.01499913040122891,
+            "suspension_m": 0
+          }
+        ],
+        "stats": {
+          "constructionMs": 5971.5,
+          "renderTimes": [
+            903.2999999970198
+          ],
+          "frameDiagnostics": [
+            {
+              "x": 480.055,
+              "z": -103.202,
+              "dt": 0.016666666666666666,
+              "lod_ms": 2.199999999254942,
+              "render_ms": 898.8999999985099,
+              "total_ms": 903.2999999970198,
+              "shadow_update": true,
+              "calls": 448,
+              "triangles": 596084
+            }
+          ],
+          "info": {
+            "render": {
+              "frame": 29,
+              "calls": 204,
+              "triangles": 717497,
+              "points": 0,
+              "lines": 32
+            },
+            "memory": {
+              "geometries": 539,
+              "textures": 27
+            }
+          },
+          "instances": 24000,
+          "instanceGroups": 185,
+          "submittedInstances": 19138,
+          "meshes": 1336,
+          "vehicle": {
+            "loaded": true,
+            "active": true,
+            "triangles": 111561,
+            "meshes": 45,
+            "dashboard": {
+              "speed": 0,
+              "gear": "D"
+            },
+            "wheelRadius": 0.38400009518171924,
+            "frontWheels": [
+              {
+                "position": [
+                  0.9757409920580492,
+                  0.38400009518171924,
+                  1.2472187876701355
+                ],
+                "angle": 0
+              },
+              {
+                "position": [
+                  -0.9764271149747268,
+                  0.38400003557707446,
+                  1.2455067038536072
+                ],
+                "angle": 0
+              }
+            ],
+            "wheelSpin": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "steeringAngle": 0,
+            "steeringCenter": [
+              -0.13545615279184506,
+              0.029885002494997964,
+              0.9654564962083415
+            ],
+            "steeringMarker": [
+              -0.14349378591390852,
+              0.08492953052715069,
+              0.9652660719036145
+            ]
+          },
+          "diagnostics": {
+            "trees": 11000,
+            "shrubs": 2000,
+            "treeGroups": 67,
+            "buildingParts": 3472,
+            "buildings": 264,
+            "parkingLots": 24,
+            "paths": 136,
+            "steps": 26,
+            "busStops": 94,
+            "shelters": 20,
+            "lamps": 97,
+            "roadTerrainClearanceMin": 0.009577385913026149,
+            "waterTerrainGapMax": 0.0350000000000108,
+            "buildingFootingMax": 0,
+            "terrainTriangles": 480018
+          },
+          "graphics": {
+            "quality": "standard",
+            "budget": {
+              "pixelRatio": 1.5,
+              "shadowSize": 1024,
+              "treeDetail": 150
+            },
+            "shadowUpdates": 1,
+            "nearTrees": 176,
+            "farTrees": 10824,
+            "pixelRatio": 1,
+            "textureSource": "original deterministic Canvas rasters"
+          }
+        }
+      }
+    },
+    {
+      "path": "reports/visual/comfort-before-environment.jpg",
+      "query": "metres=500&view=environment",
+      "snapshot": {
+        "method": "Isolated View fixture; source map coordinates; estimated camera; not Game or driving evidence",
+        "car": {
+          "x": 480.055,
+          "y": 15.0675,
+          "z": -103.202,
+          "yaw": 1.6806776239433856,
+          "speed": 0,
+          "travel": 0,
+          "collisions": 0,
+          "reverseHold": 0
+        },
+        "metres": 503.23237702699555,
+        "contacts": [
+          {
+            "x": 481.1854740941718,
+            "y": 15.062845535742058,
+            "z": -104.30838158935899,
+            "surface_y": 15.051767814721867,
+            "gap_m": 0.011077721020191333,
+            "suspension_m": 0
+          },
+          {
+            "x": 481.3978507523187,
+            "y": 15.062947956018766,
+            "z": -102.36779935870464,
+            "surface_y": 15.051866435644044,
+            "gap_m": 0.011081520374721876,
+            "suspension_m": 0
+          },
+          {
+            "x": 478.4068359222612,
+            "y": 15.23042899173856,
+            "z": -104.00888952652672,
+            "surface_y": 15.215428240557431,
+            "gap_m": 0.015000751181128535,
+            "suspension_m": 0
+          },
+          {
+            "x": 478.62223274069606,
+            "y": 15.23042899173856,
+            "z": -102.05651699146827,
+            "surface_y": 15.21542986133733,
+            "gap_m": 0.01499913040122891,
+            "suspension_m": 0
+          }
+        ],
+        "stats": {
+          "constructionMs": 7952.5,
+          "renderTimes": [
+            792.8999999985099
+          ],
+          "frameDiagnostics": [
+            {
+              "x": 480.055,
+              "z": -103.202,
+              "dt": 0.016666666666666666,
+              "lod_ms": 1.699999999254942,
+              "render_ms": 789.6999999992549,
+              "total_ms": 792.8999999985099,
+              "shadow_update": true,
+              "calls": 448,
+              "triangles": 596084
+            }
+          ],
+          "info": {
+            "render": {
+              "frame": 29,
+              "calls": 448,
+              "triangles": 620863,
+              "points": 0,
+              "lines": 768
+            },
+            "memory": {
+              "geometries": 441,
+              "textures": 27
+            }
+          },
+          "instances": 24000,
+          "instanceGroups": 185,
+          "submittedInstances": 14781,
+          "meshes": 1336,
+          "vehicle": {
+            "loaded": true,
+            "active": true,
+            "triangles": 111561,
+            "meshes": 45,
+            "dashboard": {
+              "speed": 0,
+              "gear": "D"
+            },
+            "wheelRadius": 0.38400009518171924,
+            "frontWheels": [
+              {
+                "position": [
+                  0.9757409920580492,
+                  0.38400009518171924,
+                  1.2472187876701355
+                ],
+                "angle": 0
+              },
+              {
+                "position": [
+                  -0.9764271149747268,
+                  0.38400003557707446,
+                  1.2455067038536072
+                ],
+                "angle": 0
+              }
+            ],
+            "wheelSpin": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "steeringAngle": 0,
+            "steeringCenter": [
+              -0.0001731342063714851,
+              -0.021614662213088234,
+              0.9796975940725338
+            ],
+            "steeringMarker": [
+              -0.00017332010501847723,
+              0.0018138444044466047,
+              0.9796757437212184
+            ]
+          },
+          "diagnostics": {
+            "trees": 11000,
+            "shrubs": 2000,
+            "treeGroups": 67,
+            "buildingParts": 3472,
+            "buildings": 264,
+            "parkingLots": 24,
+            "paths": 136,
+            "steps": 26,
+            "busStops": 94,
+            "shelters": 20,
+            "lamps": 97,
+            "roadTerrainClearanceMin": 0.009577385913026149,
+            "waterTerrainGapMax": 0.0350000000000108,
+            "buildingFootingMax": 0,
+            "terrainTriangles": 480018
+          },
+          "graphics": {
+            "quality": "standard",
+            "budget": {
+              "pixelRatio": 1.5,
+              "shadowSize": 1024,
+              "treeDetail": 150
+            },
+            "shadowUpdates": 1,
+            "nearTrees": 176,
+            "farTrees": 10824,
+            "pixelRatio": 1,
+            "textureSource": "original deterministic Canvas rasters"
+          }
+        }
+      }
+    },
+    {
+      "path": "reports/visual/comfort-before-rail.jpg",
+      "query": "metres=450&view=rail",
+      "snapshot": {
+        "method": "Isolated View fixture; source map coordinates; estimated camera; not Game or driving evidence",
+        "car": {
+          "x": 428.388,
+          "y": 17.3672,
+          "z": -105.048,
+          "yaw": 1.4915338189420584,
+          "speed": 0,
+          "travel": 0,
+          "collisions": 0,
+          "reverseHold": 0
+        },
+        "metres": 451.3682112550675,
+        "contacts": [
+          {
+            "x": 429.70798898384743,
+            "y": 17.39934779835941,
+            "z": -105.92196881022846,
+            "surface_y": 17.384787262061092,
+            "gap_m": 0.014560536298318993,
+            "suspension_m": 0
+          },
+          {
+            "x": 429.55171128920585,
+            "y": 17.3993996993063,
+            "z": -103.97606528517622,
+            "surface_y": 17.384844932348496,
+            "gap_m": 0.014554766957804333,
+            "suspension_m": 0
+          },
+          {
+            "x": 426.91887771549494,
+            "y": 17.484317942281518,
+            "z": -106.15054747986584,
+            "surface_y": 17.470862489039952,
+            "gap_m": 0.013455453241565607,
+            "suspension_m": 0
+          },
+          {
+            "x": 426.7633518006357,
+            "y": 17.484317942281518,
+            "z": -104.19249589861228,
+            "surface_y": 17.470869131819303,
+            "gap_m": 0.013448810462215022,
+            "suspension_m": 0
+          }
+        ],
+        "stats": {
+          "constructionMs": 7837.300000000745,
+          "renderTimes": [
+            832.5
+          ],
+          "frameDiagnostics": [
+            {
+              "x": 428.388,
+              "z": -105.048,
+              "dt": 0.016666666666666666,
+              "lod_ms": 1.300000000745058,
+              "render_ms": 829.3000000007451,
+              "total_ms": 832.5,
+              "shadow_update": true,
+              "calls": 453,
+              "triangles": 684820
+            }
+          ],
+          "info": {
+            "render": {
+              "frame": 29,
+              "calls": 186,
+              "triangles": 540736,
+              "points": 0,
+              "lines": 32
+            },
+            "memory": {
+              "geometries": 475,
+              "textures": 27
+            }
+          },
+          "instances": 24000,
+          "instanceGroups": 185,
+          "submittedInstances": 18496,
+          "meshes": 1336,
+          "vehicle": {
+            "loaded": true,
+            "active": true,
+            "triangles": 111561,
+            "meshes": 45,
+            "dashboard": {
+              "speed": 0,
+              "gear": "D"
+            },
+            "wheelRadius": 0.38400009518171924,
+            "frontWheels": [
+              {
+                "position": [
+                  0.9757409920580492,
+                  0.38400009518171924,
+                  1.2472187876701355
+                ],
+                "angle": 0
+              },
+              {
+                "position": [
+                  -0.9764271149747268,
+                  0.38400003557707446,
+                  1.2455067038536072
+                ],
+                "angle": 0
+              }
+            ],
+            "wheelSpin": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "steeringAngle": 0,
+            "steeringCenter": [
+              -0.15292743742856255,
+              0.06220977495234816,
+              0.9525088762363043
+            ],
+            "steeringMarker": [
+              -0.16085533271892807,
+              0.11592174122442175,
+              0.9523714711542071
+            ]
+          },
+          "diagnostics": {
+            "trees": 11000,
+            "shrubs": 2000,
+            "treeGroups": 67,
+            "buildingParts": 3472,
+            "buildings": 264,
+            "parkingLots": 24,
+            "paths": 136,
+            "steps": 26,
+            "busStops": 94,
+            "shelters": 20,
+            "lamps": 97,
+            "roadTerrainClearanceMin": 0.009577385913026149,
+            "waterTerrainGapMax": 0.0350000000000108,
+            "buildingFootingMax": 0,
+            "terrainTriangles": 480018
+          },
+          "graphics": {
+            "quality": "standard",
+            "budget": {
+              "pixelRatio": 1.5,
+              "shadowSize": 1024,
+              "treeDetail": 150
+            },
+            "shadowUpdates": 1,
+            "nearTrees": 171,
+            "farTrees": 10829,
+            "pixelRatio": 1,
+            "textureSource": "original deterministic Canvas rasters"
+          }
+        }
+      }
+    }
+  ]
+}

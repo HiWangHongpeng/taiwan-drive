@@ -1,0 +1,690 @@
+{
+  "date_utc": "2026-10-23T11:43:48.582677+00:00",
+  "scope": "Tyre support and contact shadows; fixed-step presentation interpolation; original hillside/foliage/asphalt/W-beam improvements. Original terrain mesh, world and physics retained. Adaptive terrain candidate rejected.",
+  "base_commit": "e06ac4487e0cdf3ab7ed1a76f33e6657c024e7dc",
+  "frozen_src_public_dist_sha256": {
+    "dist/assets/index-BEu9jlj3.css": "76699c185ed68dc12c77424b130eccaf7196d2392e41ee1032009cf61603984a",
+    "dist/assets/index-DzLFrFiN.js": "24107ce5ff1737772e5ad0b98ca60d22d39ec17f4b16de027e795686cf96e704",
+    "dist/credits/carconcept.txt": "4e2a8d3b2834f5ad49678eed485c3271aa89a7500f127a5fa15b7332ef2ae22f",
+    "dist/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "dist/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "dist/index.html": "10c8a2e72820865a652fa1a98ba2c9a64acc997e0ec13773720cfaeb9da28170",
+    "dist/models/carconcept.glb": "788e856fdf6e4976fde2c55973cba2162044b0e001d61145bc175696d7e73a44",
+    "public/credits/carconcept.txt": "4e2a8d3b2834f5ad49678eed485c3271aa89a7500f127a5fa15b7332ef2ae22f",
+    "public/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "public/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "public/models/carconcept.glb": "788e856fdf6e4976fde2c55973cba2162044b0e001d61145bc175696d7e73a44",
+    "src/core.ts": "894b1d1b415ac6adaf58e8eda7f85a1c3b637c8eee812401fa9a19531c69d13a",
+    "src/facilities.ts": "0cb5c619a8f9f0794a20ddc32388a9f8740db89883cb475e2560ac80df529f79",
+    "src/geography.ts": "b7331dcb4e73fea544c3440dcd26803077951b495b8d6cfab3c34db0bdbeb73e",
+    "src/imported-vehicle.ts": "7846ba4518d995a270587f9366d826ccc048ff4fcaf6c632b3c244eb312fb576",
+    "src/main.ts": "fdd8122526df680ac41f8d38fe06f85f3d10a9d34b2c9fc0b3bbc935b66d14b1",
+    "src/presentation.ts": "c2be1ea7d50b778f08258ec52019fdc1318785080a1bab6acd4c4ed577afe397",
+    "src/road-surface.ts": "ca9f2d3c86dd1407f157a217a44127d83c2a2422279a24a9db15438f526d2a0b",
+    "src/scene.ts": "35813927673f00209818cfcdd026a14f24a06671fb3472fe7d164649c9c53ea1",
+    "src/startup.ts": "2af7b0a695713c1aab569969b49148005f82a3fbf7e44d66eaa55f08c40e0dbd",
+    "src/style.css": "53dad1deb0fe6adebbb930d25628e9948d5ae4920e8fd9c48e98f48567270e25",
+    "src/surfaces.ts": "6b32ccff44a6df2ea229dae5652711979879018017c8c38fda01be22f5ff88ed",
+    "src/vehicle-grounding.ts": "105a25c85cad1aa64c28fb0e9dc44cd8e5225f734121fe33b27d172301871d72",
+    "src/vehicle.ts": "225b7e0d1e4fae189faf7bb2aba6fd568716e6f347576c1221fcf06b5a068ce4",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  "asset": {
+    "source_url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/15cd02d304e54cb42a4db4eefe719f76190f4b68/Models/CarConcept/glTF-Binary/CarConcept.glb",
+    "upstream_revision": "15cd02d304e54cb42a4db4eefe719f76190f4b68",
+    "source_sha256": "c272098089d78c5cd9fd9f24ff50ee8acf8d932c55f2d55fc10adb6c8998966b",
+    "source_bytes": 11778688,
+    "output": "public/models/carconcept.glb",
+    "output_sha256": "788e856fdf6e4976fde2c55973cba2162044b0e001d61145bc175696d7e73a44",
+    "output_bytes": 5530408,
+    "triangles": 111549,
+    "mesh_groups": 10,
+    "draw_primitives": 44,
+    "material_count": 23,
+    "source_material_count": 29,
+    "textures": [
+      {
+        "mime": "image/webp",
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 38378
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 20082
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 231478
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          512,
+          128
+        ],
+        "bytes": 5900
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          64,
+          32
+        ],
+        "bytes": 716
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          32,
+          32
+        ],
+        "bytes": 146
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          128,
+          128
+        ],
+        "bytes": 10088
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          128,
+          128
+        ],
+        "bytes": 1078
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          128,
+          128
+        ],
+        "bytes": 1652
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          512,
+          128
+        ],
+        "bytes": 6464
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          512,
+          128
+        ],
+        "bytes": 1044
+      }
+    ],
+    "meta": {
+      "source": "CarConcept / Eric Chadwick / Darmstadt Graphics Group GmbH",
+      "license": "CC-BY-4.0",
+      "forward": "+Z",
+      "steeringAxis": [
+        3.157534086957554e-08,
+        0.36938930580609786,
+        -0.9292747391143742
+      ],
+      "steeringCenter": [
+        0.0017354152016663031,
+        0.6419823322079348,
+        0.6907484714471943
+      ],
+      "neutralSteeringCorrection": 0.26179913599677684,
+      "wheelRadius": 0.38400009518171924,
+      "eye": [
+        0,
+        0.94,
+        0.04
+      ],
+      "lookAt": [
+        0,
+        0.94,
+        30
+      ],
+      "wheels": [
+        {
+          "name": "WheelFrontL",
+          "center": [
+            0.9757409920580492,
+            0.38400009518171924,
+            1.2472187876701355
+          ],
+          "removed_source_yaw_radians": -0.5235987789078733
+        },
+        {
+          "name": "WheelFrontR",
+          "center": [
+            -0.9764271149747268,
+            0.38400003557707446,
+            1.2455067038536072
+          ],
+          "removed_source_yaw_radians": -0.5235987841961749
+        },
+        {
+          "name": "WheelRearL",
+          "center": [
+            0.9827614655382736,
+            0.38400003557707507,
+            -1.552524149417877
+          ],
+          "removed_source_yaw_radians": 0
+        },
+        {
+          "name": "WheelRearR",
+          "center": [
+            -0.9814570317380324,
+            0.38400003557707507,
+            -1.552524149417877
+          ],
+          "removed_source_yaw_radians": 0
+        }
+      ]
+    },
+    "processing": [
+      "Baked original coordinate transforms to Y-up/+Z-forward; centered model and grounded its actual vertices",
+      "Removed source front-wheel showcase yaw; spin axles are now +X, calipers remain outside spin groups",
+      "Kept a distinct steering wheel and complete interior; neutralized 15 degree showcase steering pose; removed steering emblem mesh and logo-bearing plate texture; removed the decorative fixed-zero display texture for a live original Canvas instrument",
+      "Removed wordmark-bearing tyre-side colour/normal maps and replaced them with unbranded rough rubber; this corrects an omission discovered during close-up contact review",
+      "Joined compatible primitives per body/wheel/steering group; welded and simplified at ratio .5, error .001, borders locked",
+      "Capped textures at 1024, WebP quality90; no transmission scene pass or optional iridescent variants"
+    ],
+    "estimated": "Camera placement, visual ride height, light/material adaptation and source simplification are game estimates, not a surveyed Taiwanese production car"
+  },
+  "unit_tests": {
+    "passed": 21,
+    "failed": 0
+  },
+  "build": {
+    "passed": true,
+    "bundle_warning": "Minified JS exceeds500kB"
+  },
+  "full_browser_regression": {
+    "stats": {
+      "startTime": "2026-10-23T11:20:38.201Z",
+      "duration": 542675.3979999999,
+      "expected": 20,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "cases": [
+      {
+        "file": "baseline.spec.ts",
+        "title": "keyboard W/S brakes, reverses and brakes with W+S; views and return remain clickable",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 49404
+          }
+        ]
+      },
+      {
+        "file": "baseline.spec.ts",
+        "title": "invalid import preserves good save; export and reload use unchanged v1 schema",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 31325
+          }
+        ]
+      },
+      {
+        "file": "baseline.spec.ts",
+        "title": "endpoint uses Esc pause and clickable completion after a labeled save checkpoint",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 18276
+          }
+        ]
+      },
+      {
+        "file": "comfort.spec.ts",
+        "title": "moving tyres stay on rendered asphalt; interpolation, both directions and reset remain safe",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 30001
+          }
+        ]
+      },
+      {
+        "file": "graphics.spec.ts",
+        "title": "graphics quality persists independently; static shadows cache and stable tree instances remain complete",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 28229
+          }
+        ]
+      },
+      {
+        "file": "graphics.spec.ts",
+        "title": "stable canopy geometry stays complete on both route checkpoint transitions; invalid graphics preferences fall back safely",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 13738
+          }
+        ]
+      },
+      {
+        "file": "graphics.spec.ts",
+        "title": "switching shadow algorithms recompiles every receiving material",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 41130
+          }
+        ]
+      },
+      {
+        "file": "imported-vehicle.spec.ts",
+        "title": "real imported wheels and steering marker follow keyboard input; model switching preserves the car and save",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 29634
+          }
+        ]
+      },
+      {
+        "file": "imported-vehicle.spec.ts",
+        "title": "an unavailable model falls back to the original car and leaves keyboard driving usable",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 17059
+          }
+        ]
+      },
+      {
+        "file": "keyboard-safety.spec.ts",
+        "title": "moving mouse and all canvas buttons cannot supply driving inputs or capture pointer",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 25639
+          }
+        ]
+      },
+      {
+        "file": "keyboard-safety.spec.ts",
+        "title": "keyboard blur/hidden safety clears held keys and requires explicit resume",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 17028
+          }
+        ]
+      },
+      {
+        "file": "keyboard-safety.spec.ts",
+        "title": "existing v1 save loads unchanged and paused, then keyboard driving and autosave continue",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 35423
+          }
+        ]
+      },
+      {
+        "file": "layout.spec.ts",
+        "title": "desktop cockpit HUD is clear; 320px keyboard menu controls and help remain readable",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 43109
+          }
+        ]
+      },
+      {
+        "file": "production.spec.ts",
+        "title": "production loads its static world under /taiwan-drive/ without debug hooks",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 19802
+          }
+        ]
+      },
+      {
+        "file": "startup.spec.ts",
+        "title": "production can start and drive when audio constructor fails",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 15512
+          }
+        ]
+      },
+      {
+        "file": "startup.spec.ts",
+        "title": "production can start and drive when audio resume fails",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 17460
+          }
+        ]
+      },
+      {
+        "file": "startup.spec.ts",
+        "title": "map failure offers a working reload and preserves the saved raw value",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 11825
+          }
+        ]
+      },
+      {
+        "file": "startup.spec.ts",
+        "title": "unavailable WebGL displays an actionable message instead of an endless loading screen",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 2774
+          }
+        ]
+      },
+      {
+        "file": "steering.spec.ts",
+        "title": "keyboard A/D match screen heading and wheel spokes; release progressively centers",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 41265
+          }
+        ]
+      },
+      {
+        "file": "storage-raw.spec.ts",
+        "title": "invalid stored raw survives refresh, autosave intervals and pause until explicit restart",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 51785
+          }
+        ]
+      }
+    ]
+  },
+  "cache_url_targeted_browser_tests": {
+    "startTime": "2026-10-23T11:30:32.277Z",
+    "duration": 71801.806,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "contact_audit": {
+    "method": "Offline reference tyre contact points using actual submitted route ribbon triangles, source GLB wheel centers/radius, both routes at every interior source point. Upper rendered asphalt at overlaps; nearest-profile fallback outside ribbons. Not a rigid-body or pixel/tyre-mesh contact proof.",
+    "poses": 2323,
+    "before": {
+      "count": 9292,
+      "max_m": 0.05156481988307959,
+      "p95_m": 0.01853164607131319
+    },
+    "after": {
+      "count": 9292,
+      "max_m": 5.444830676992751e-06,
+      "p95_m": 5.123970225895391e-08
+    },
+    "max_suspension_m": 0.0016800656747539278,
+    "world_sha256": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d"
+  },
+  "rejected_terrain_audit": {
+    "method": "Isolated math-only module audit. Same source Ground.height and OSM classification; compare actual new adaptive triangles against prior regular 4m/1m-channel submitted triangles on a 4m grid offset by2m, across the entire 1800x1300m DETAIL rectangle. Display triangulation only, no DEM/route changes. This is sampled, not a proof at every continuous point.",
+    "stats": {
+      "coarse8mCells": 24384,
+      "channel4mCellsRefinedTo1m": 3746,
+      "leafCells": 129288,
+      "triangles": 286697,
+      "maxMergedHeightError_m": 0.02999999999996561
+    },
+    "missing_samples": 0,
+    "all": {
+      "count": 146250,
+      "max_m": 8.992860292380382,
+      "p95_m": 0.0070399349975573955
+    },
+    "within20mOfStreams": {
+      "count": 5138,
+      "max_m": 8.992860292380382,
+      "p95_m": 0.02796007690429292
+    },
+    "outside20mOfStreams": {
+      "count": 141112,
+      "max_m": 0.04193678125002265,
+      "p95_m": 0.00646342773437425
+    },
+    "within9mOfRoad": {
+      "count": 2310,
+      "max_m": 0.024696713442889262,
+      "p95_m": 5.742492099614083e-07
+    },
+    "world_sha256": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d"
+  },
+  "performance": {
+    "before": {
+      "method": "Fresh context, real W/S/A/D/Esc plus UI settings, readonly snapshot pursuit, no Game writes/imports. 1280x800 DPR1 standard, Chromium154 SwiftShader. Test-harness WebGL draw/rAF interception counts all passes, including cached-shadow refreshes; renderer.info alone excludes shadow passes. Fixed real elapsed budget; different progress is reported, not hidden. Instrumented JS wall time is not GPU timing or player FPS. All frames retained.",
+      "real_elapsed_s": 90.111299069,
+      "travel_m": 189.01118351716337,
+      "collisions": 0,
+      "all_frame_times_ms": {
+        "count": 94,
+        "median": 999.9500000000044,
+        "p95": 1266.6000000000058,
+        "max": 9438.800000000745
+      },
+      "all_pass_draw_calls": {
+        "count": 94,
+        "median": 433.0,
+        "p95": 520,
+        "max": 522
+      },
+      "all_pass_triangles": {
+        "count": 94,
+        "median": 718069.5,
+        "p95": 1042867,
+        "max": 1126121
+      },
+      "renderer_info": {
+        "render": {
+          "frame": 123,
+          "calls": 441,
+          "triangles": 681986,
+          "points": 0,
+          "lines": 816
+        },
+        "memory": {
+          "geometries": 504,
+          "textures": 29
+        }
+      },
+      "shadow_updates": 22,
+      "scene_construction_ms": 6644.199999999255,
+      "hashes_unchanged": true,
+      "errors": []
+    },
+    "after": {
+      "method": "Fresh context, real W/S/A/D/Esc plus UI settings, readonly snapshot pursuit, no Game writes/imports. 1280x800 DPR1 standard, Chromium154 SwiftShader. Test-harness WebGL draw/rAF interception counts all passes, including cached-shadow refreshes; renderer.info alone excludes shadow passes. Fixed real elapsed budget; different progress is reported, not hidden. Instrumented JS wall time is not GPU timing or player FPS. All frames retained.",
+      "real_elapsed_s": 90.12053717500001,
+      "travel_m": 189.3152166670399,
+      "collisions": 0,
+      "all_frame_times_ms": {
+        "count": 94,
+        "median": 991.6499999999996,
+        "p95": 1600,
+        "max": 10211
+      },
+      "all_pass_draw_calls": {
+        "count": 94,
+        "median": 454.5,
+        "p95": 544,
+        "max": 549
+      },
+      "all_pass_triangles": {
+        "count": 94,
+        "median": 678238.0,
+        "p95": 982243,
+        "max": 1067579
+      },
+      "renderer_info": {
+        "render": {
+          "frame": 123,
+          "calls": 463,
+          "triangles": 637998,
+          "points": 0,
+          "lines": 816
+        },
+        "memory": {
+          "geometries": 530,
+          "textures": 27
+        }
+      },
+      "shadow_updates": 16,
+      "scene_construction_ms": 6205.900000002235,
+      "hashes_unchanged": true,
+      "errors": []
+    },
+    "after-first": {
+      "method": "Fresh context, real W/S/A/D/Esc plus UI settings, readonly snapshot pursuit, no Game writes/imports. 1280x800 DPR1 standard, Chromium154 SwiftShader. Test-harness WebGL draw/rAF interception counts all passes, including cached-shadow refreshes; renderer.info alone excludes shadow passes. Fixed real elapsed budget; different progress is reported, not hidden. Instrumented JS wall time is not GPU timing or player FPS. All frames retained.",
+      "real_elapsed_s": 90.08055984199999,
+      "travel_m": 194.07061077039515,
+      "collisions": 0,
+      "all_frame_times_ms": {
+        "count": 97,
+        "median": 966.5999999999985,
+        "p95": 1283.3999999999942,
+        "max": 11579.199999997765
+      },
+      "all_pass_draw_calls": {
+        "count": 97,
+        "median": 455,
+        "p95": 545,
+        "max": 549
+      },
+      "all_pass_triangles": {
+        "count": 97,
+        "median": 603002,
+        "p95": 865692,
+        "max": 945095
+      },
+      "renderer_info": {
+        "render": {
+          "frame": 126,
+          "calls": 466,
+          "triangles": 597952,
+          "points": 0,
+          "lines": 816
+        },
+        "memory": {
+          "geometries": 534,
+          "textures": 29
+        }
+      },
+      "shadow_updates": 16,
+      "scene_construction_ms": 6981.599999997765,
+      "hashes_unchanged": true,
+      "errors": []
+    },
+    "rejected-final": {
+      "method": "Fresh context, real W/S/A/D/Esc plus UI settings, readonly snapshot pursuit, no Game writes/imports. 1280x800 DPR1 standard, Chromium154 SwiftShader. Test-harness WebGL draw/rAF interception counts all passes, including cached-shadow refreshes; renderer.info alone excludes shadow passes. Fixed real elapsed budget; different progress is reported, not hidden. Instrumented JS wall time is not GPU timing or player FPS. All frames retained.",
+      "real_elapsed_s": 90.091200793,
+      "travel_m": 193.77144425556813,
+      "collisions": 0,
+      "all_frame_times_ms": {
+        "count": 96,
+        "median": 966.5999999999913,
+        "p95": 1850,
+        "max": 11650.80000000149
+      },
+      "all_pass_draw_calls": {
+        "count": 96,
+        "median": 455.0,
+        "p95": 545,
+        "max": 547
+      },
+      "all_pass_triangles": {
+        "count": 96,
+        "median": 603002.0,
+        "p95": 865692,
+        "max": 945095
+      },
+      "renderer_info": {
+        "render": {
+          "frame": 125,
+          "calls": 467,
+          "triangles": 599103,
+          "points": 0,
+          "lines": 816
+        },
+        "memory": {
+          "geometries": 532,
+          "textures": 27
+        }
+      },
+      "shadow_updates": 16,
+      "scene_construction_ms": 7148.800000000745,
+      "hashes_unchanged": true,
+      "errors": []
+    }
+  },
+  "visual_checkpoints": {
+    "unchanged": true,
+    "errors": [],
+    "images": [
+      "reports/visual/comfort-after-tyres.jpg",
+      "reports/visual/comfort-after-environment.jpg",
+      "reports/visual/comfort-after-rail.jpg"
+    ]
+  },
+  "fresh_keyboard_segment": null,
+  "deployment": null,
+  "limitations": [
+    "No claimed desktop GPU/player FPS or human handling acceptance",
+    "Fresh full5.41/5.43km journeys not rerun",
+    "Reference tyre contacts are not full tyre-mesh or rigid-body collision proof",
+    "Original procedural environment, not photogrammetry or real species/surveyed facilities",
+    "Rejected terrain candidate measurements must not be used as final release results"
+  ]
+}

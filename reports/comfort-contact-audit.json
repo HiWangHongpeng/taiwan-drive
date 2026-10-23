@@ -1,0 +1,16 @@
+{
+  "method": "Offline reference tyre contact points using actual submitted route ribbon triangles, source GLB wheel centers/radius, both routes at every interior source point. Upper rendered asphalt at overlaps; nearest-profile fallback outside ribbons. Not a rigid-body or pixel/tyre-mesh contact proof.",
+  "poses": 2323,
+  "before": {
+    "count": 9292,
+    "max_m": 0.05156481988307959,
+    "p95_m": 0.01853164607131319
+  },
+  "after": {
+    "count": 9292,
+    "max_m": 0.000005444830676992751,
+    "p95_m": 5.123970225895391e-8
+  },
+  "max_suspension_m": 0.0016800656747539278,
+  "world_sha256": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d"
+}

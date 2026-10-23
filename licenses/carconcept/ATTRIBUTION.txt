@@ -2,6 +2,6 @@ CarConcept — modified game asset
 Model and textures: Eric Chadwick, Darmstadt Graphics Group GmbH, 2024.
 License: Creative Commons Attribution 4.0 International (CC BY 4.0).
 Source: https://github.com/KhronosGroup/glTF-Sample-Assets/tree/15cd02d304e54cb42a4db4eefe719f76190f4b68/Models/CarConcept
-Changes by Taiwan Drive: baked coordinate transforms; centered and grounded geometry; removed original front-wheel showcase yaw; retained independent wheel spin, calipers and steering; removed the steering emblem and logo-bearing plate texture; simplified and joined meshes; capped textures at 1024 WebP; adapted glass and real-time material budgets; original steering marker and contact shadow.
+Changes by Taiwan Drive: baked coordinate transforms; centered and grounded geometry; removed original front-wheel showcase yaw; retained independent wheel spin, calipers and steering; removed the steering emblem, logo-bearing plate texture and wordmark-bearing tyre-side colour/normal maps; simplified and joined meshes; capped textures at 1024 WebP; adapted glass and real-time material budgets; original steering marker and contact shadow.
 Khronos logos/trademarks are excluded from the upstream CC license. The logo-bearing texture and emblem are not included in this derivative. This model is a fictional concept-car trial, not a surveyed Taiwanese sedan.
 Rebuild and exact hashes: scripts/build-vehicle-asset.mjs and source-data/carconcept.json.
