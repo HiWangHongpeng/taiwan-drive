@@ -1,0 +1,547 @@
+{
+  "date_utc": "2026-10-23T10:24:37.974123+00:00",
+  "scope": "CarConcept asset and complete 3D interior trial; world/core physics unchanged; no full journey claim",
+  "base_commit": "36a6cc7f666f2096b0c997a82fce96c84d4f6d95",
+  "source_asset": {
+    "source_url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/15cd02d304e54cb42a4db4eefe719f76190f4b68/Models/CarConcept/glTF-Binary/CarConcept.glb",
+    "upstream_revision": "15cd02d304e54cb42a4db4eefe719f76190f4b68",
+    "source_sha256": "c272098089d78c5cd9fd9f24ff50ee8acf8d932c55f2d55fc10adb6c8998966b",
+    "source_bytes": 11778688,
+    "output": "public/models/carconcept.glb",
+    "output_sha256": "430709bcdaf690d07f2dad9b37c482666bfcdac0c819b786dd73c14b61ee5140",
+    "output_bytes": 5631824,
+    "triangles": 111549,
+    "mesh_groups": 10,
+    "draw_primitives": 44,
+    "material_count": 23,
+    "source_material_count": 29,
+    "textures": [
+      {
+        "mime": "image/webp",
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 38378
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 20082
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 231478
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          512,
+          128
+        ],
+        "bytes": 5900
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          64,
+          32
+        ],
+        "bytes": 716
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          32,
+          32
+        ],
+        "bytes": 146
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          128,
+          128
+        ],
+        "bytes": 10088
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          128,
+          128
+        ],
+        "bytes": 1078
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          128,
+          128
+        ],
+        "bytes": 1652
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 8508
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 69120
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          512,
+          128
+        ],
+        "bytes": 6464
+      },
+      {
+        "mime": "image/webp",
+        "size": [
+          512,
+          128
+        ],
+        "bytes": 1044
+      }
+    ],
+    "meta": {
+      "source": "CarConcept / Eric Chadwick / Darmstadt Graphics Group GmbH",
+      "license": "CC-BY-4.0",
+      "forward": "+Z",
+      "steeringAxis": [
+        3.157534086957554e-08,
+        0.36938930580609786,
+        -0.9292747391143742
+      ],
+      "steeringCenter": [
+        0.0017354152016663031,
+        0.6419823322079348,
+        0.6907484714471943
+      ],
+      "neutralSteeringCorrection": 0.26179913599677684,
+      "wheelRadius": 0.38400009518171924,
+      "eye": [
+        0,
+        0.94,
+        0.04
+      ],
+      "lookAt": [
+        0,
+        0.94,
+        30
+      ],
+      "wheels": [
+        {
+          "name": "WheelFrontL",
+          "center": [
+            0.9757409920580492,
+            0.38400009518171924,
+            1.2472187876701355
+          ],
+          "removed_source_yaw_radians": -0.5235987789078733
+        },
+        {
+          "name": "WheelFrontR",
+          "center": [
+            -0.9764271149747268,
+            0.38400003557707446,
+            1.2455067038536072
+          ],
+          "removed_source_yaw_radians": -0.5235987841961749
+        },
+        {
+          "name": "WheelRearL",
+          "center": [
+            0.9827614655382736,
+            0.38400003557707507,
+            -1.552524149417877
+          ],
+          "removed_source_yaw_radians": 0
+        },
+        {
+          "name": "WheelRearR",
+          "center": [
+            -0.9814570317380324,
+            0.38400003557707507,
+            -1.552524149417877
+          ],
+          "removed_source_yaw_radians": 0
+        }
+      ]
+    },
+    "processing": [
+      "Baked original coordinate transforms to Y-up/+Z-forward; centered model and grounded its actual vertices",
+      "Removed source front-wheel showcase yaw; spin axles are now +X, calipers remain outside spin groups",
+      "Kept a distinct steering wheel and complete interior; neutralized 15 degree showcase steering pose; removed steering emblem mesh and logo-bearing plate texture; removed the decorative fixed-zero display texture for a live original Canvas instrument",
+      "Joined compatible primitives per body/wheel/steering group; welded and simplified at ratio .5, error .001, borders locked",
+      "Capped textures at 1024, WebP quality90; no transmission scene pass or optional iridescent variants"
+    ],
+    "estimated": "Camera placement, visual ride height, light/material adaptation and source simplification are game estimates, not a surveyed Taiwanese production car"
+  },
+  "frozen_src_public_dist_sha256": {
+    "dist/assets/index-BEu9jlj3.css": "76699c185ed68dc12c77424b130eccaf7196d2392e41ee1032009cf61603984a",
+    "dist/assets/index-DiMYE6rf.js": "e89fe35ce3de7fd8090e15b8c0640c32fb77829e4b5ba4aba86d4fc4f755396e",
+    "dist/credits/carconcept.txt": "92050533456ba6cdb86af7eadd33bce0c5fbd246184ba90c7f5c5f7ec4ac3b4a",
+    "dist/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "dist/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "dist/index.html": "29fd106c144bc8387abcb91adb4fbcd957000625ae20bc0c104ea0384ff5808e",
+    "dist/models/carconcept.glb": "430709bcdaf690d07f2dad9b37c482666bfcdac0c819b786dd73c14b61ee5140",
+    "public/credits/carconcept.txt": "92050533456ba6cdb86af7eadd33bce0c5fbd246184ba90c7f5c5f7ec4ac3b4a",
+    "public/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "public/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "public/models/carconcept.glb": "430709bcdaf690d07f2dad9b37c482666bfcdac0c819b786dd73c14b61ee5140",
+    "src/core.ts": "894b1d1b415ac6adaf58e8eda7f85a1c3b637c8eee812401fa9a19531c69d13a",
+    "src/facilities.ts": "1afcd937102b41fcaa4270e03f63262a85fa8841e3f52a03c78ce30dda591cc5",
+    "src/geography.ts": "b7331dcb4e73fea544c3440dcd26803077951b495b8d6cfab3c34db0bdbeb73e",
+    "src/imported-vehicle.ts": "7846ba4518d995a270587f9366d826ccc048ff4fcaf6c632b3c244eb312fb576",
+    "src/main.ts": "3b87012c72f7cace5ac99aad03f946d727e159fd97f7f45b1f4ee907aebdd7ce",
+    "src/scene.ts": "be157f55f27e34e6a8f80f0c0f8bd21be64a547f589a0c637b5d57d10ee211b9",
+    "src/startup.ts": "2af7b0a695713c1aab569969b49148005f82a3fbf7e44d66eaa55f08c40e0dbd",
+    "src/style.css": "53dad1deb0fe6adebbb930d25628e9948d5ae4920e8fd9c48e98f48567270e25",
+    "src/surfaces.ts": "ea655a82fcc0e7438b812c419b18759b0c1d5cf84fc945267157f254197bc7ee",
+    "src/vehicle.ts": "bbae8a671d81d4d8e857892f8f34ef6cb14061f25374d9407abede139261babf",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  "validation": {
+    "numErrors": 0,
+    "numWarnings": 0,
+    "numInfos": 0,
+    "numHints": 0,
+    "messages": [],
+    "truncated": false
+  },
+  "unit_tests": {
+    "passed": 17,
+    "failed": 0
+  },
+  "build": {
+    "passed": true,
+    "js_kb": 666.18,
+    "js_gzip_kb": 179.94,
+    "warning": "Minified JS chunk exceeds 500kB"
+  },
+  "playwright": {
+    "stats": {
+      "startTime": "2026-10-23T10:11:06.779Z",
+      "duration": 493994.75899999996,
+      "expected": 19,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "cases": [
+      {
+        "file": "baseline.spec.ts",
+        "title": "keyboard W/S brakes, reverses and brakes with W+S; views and return remain clickable",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 47168
+          }
+        ]
+      },
+      {
+        "file": "baseline.spec.ts",
+        "title": "invalid import preserves good save; export and reload use unchanged v1 schema",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 28014
+          }
+        ]
+      },
+      {
+        "file": "baseline.spec.ts",
+        "title": "endpoint uses Esc pause and clickable completion after a labeled save checkpoint",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 16386
+          }
+        ]
+      },
+      {
+        "file": "graphics.spec.ts",
+        "title": "graphics quality persists independently; static shadows cache and near/far trees remain a partition",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 33515
+          }
+        ]
+      },
+      {
+        "file": "graphics.spec.ts",
+        "title": "LOD stays complete on both route checkpoint transitions; invalid graphics preferences fall back safely",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 12359
+          }
+        ]
+      },
+      {
+        "file": "graphics.spec.ts",
+        "title": "switching shadow algorithms recompiles every receiving material",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 41183
+          }
+        ]
+      },
+      {
+        "file": "imported-vehicle.spec.ts",
+        "title": "real imported wheels and steering marker follow keyboard input; model switching preserves the car and save",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 27392
+          }
+        ]
+      },
+      {
+        "file": "imported-vehicle.spec.ts",
+        "title": "an unavailable model falls back to the original car and leaves keyboard driving usable",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 15122
+          }
+        ]
+      },
+      {
+        "file": "keyboard-safety.spec.ts",
+        "title": "moving mouse and all canvas buttons cannot supply driving inputs or capture pointer",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 25140
+          }
+        ]
+      },
+      {
+        "file": "keyboard-safety.spec.ts",
+        "title": "keyboard blur/hidden safety clears held keys and requires explicit resume",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 15411
+          }
+        ]
+      },
+      {
+        "file": "keyboard-safety.spec.ts",
+        "title": "existing v1 save loads unchanged and paused, then keyboard driving and autosave continue",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 33670
+          }
+        ]
+      },
+      {
+        "file": "layout.spec.ts",
+        "title": "desktop cockpit HUD is clear; 320px keyboard menu controls and help remain readable",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 44378
+          }
+        ]
+      },
+      {
+        "file": "production.spec.ts",
+        "title": "production loads its static world under /taiwan-drive/ without debug hooks",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 18501
+          }
+        ]
+      },
+      {
+        "file": "startup.spec.ts",
+        "title": "production can start and drive when audio constructor fails",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 17875
+          }
+        ]
+      },
+      {
+        "file": "startup.spec.ts",
+        "title": "production can start and drive when audio resume fails",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 16754
+          }
+        ]
+      },
+      {
+        "file": "startup.spec.ts",
+        "title": "map failure offers a working reload and preserves the saved raw value",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 9694
+          }
+        ]
+      },
+      {
+        "file": "startup.spec.ts",
+        "title": "unavailable WebGL displays an actionable message instead of an endless loading screen",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 2724
+          }
+        ]
+      },
+      {
+        "file": "steering.spec.ts",
+        "title": "keyboard A/D match screen heading and wheel spokes; release progressively centers",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 38547
+          }
+        ]
+      },
+      {
+        "file": "storage-raw.spec.ts",
+        "title": "invalid stored raw survives refresh, autosave intervals and pause until explicit restart",
+        "status": "expected",
+        "results": [
+          {
+            "status": "passed",
+            "duration_ms": 47801
+          }
+        ]
+      }
+    ]
+  },
+  "performance": {
+    "original": {
+      "conditions": "1280x800 deviceScaleFactor1 Chromium154 SwiftShader antialias enabled, paused start camera, optional model chosen through real UI after ready; both models reside in memory, 45s sampling after ready; all initial/slow frames retained, no FPS claim",
+      "readyMs": 9634,
+      "frameTimesSummary": {
+        "count": 59,
+        "median": 750,
+        "p95": 1516.5999999999985,
+        "max": 8852.700000000745
+      },
+      "renderTimesSummary": {
+        "count": 61,
+        "median": 4.699999999254942,
+        "p95": 26.100000001490116,
+        "max": 820.6999999992549
+      },
+      "hashes_unchanged": true,
+      "errors": [],
+      "renderer_info": {
+        "render": {
+          "frame": 88,
+          "calls": 391,
+          "triangles": 597348,
+          "points": 0,
+          "lines": 832
+        },
+        "memory": {
+          "geometries": 440,
+          "textures": 29
+        }
+      }
+    },
+    "concept": {
+      "conditions": "1280x800 deviceScaleFactor1 Chromium154 SwiftShader antialias enabled, paused start camera, optional model chosen through real UI after ready; both models reside in memory, 45s sampling after ready; all initial/slow frames retained, no FPS claim",
+      "readyMs": 10252,
+      "frameTimesSummary": {
+        "count": 51,
+        "median": 900,
+        "p95": 1666.6000000000058,
+        "max": 9522.39999999851
+      },
+      "renderTimesSummary": {
+        "count": 53,
+        "median": 8.700000002980232,
+        "p95": 23.599999997764826,
+        "max": 760
+      },
+      "hashes_unchanged": true,
+      "errors": [],
+      "renderer_info": {
+        "render": {
+          "frame": 80,
+          "calls": 417,
+          "triangles": 707097,
+          "points": 0,
+          "lines": 832
+        },
+        "memory": {
+          "geometries": 440,
+          "textures": 29
+        }
+      }
+    }
+  },
+  "checkpoints": {
+    "method": "First a fresh-spawn real W input cockpit check. Remaining images are validated save-import checkpoints, real model/view menu controls, held W+S to remain stopped; not continuous route driving. Same exterior camera, 1440x900 DPR1; separate 960 cockpit and 320 menu.",
+    "unchanged": true,
+    "errors": [],
+    "images": [
+      "reports/visual/asset-cockpit-driving.jpg",
+      "reports/visual/asset-original-exterior.jpg",
+      "reports/visual/asset-concept-exterior.jpg",
+      "reports/visual/asset-concept-500m.jpg",
+      "reports/visual/asset-concept-cockpit.jpg",
+      "reports/visual/asset-concept-cockpit-960.jpg",
+      "reports/visual/asset-menu.jpg"
+    ]
+  },
+  "fresh_keyboard_segment": null,
+  "deployment": null,
+  "limitations": [
+    "Desktop GPU performance/human handling unverified for the new model",
+    "5.41km outbound and 5.43km return not rerun for this asset trial",
+    "Poly Haven environment assets not acquired or integrated",
+    "Checkpoints use validated save imports and are not continuous driving"
+  ]
+}

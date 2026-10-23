@@ -1,6 +1,6 @@
 # 地圖與資產來源帳本
 
-畫面升級：`src/surfaces.ts` 的瀝青／地表／混凝土／牆面顆粒、天空雲層、海面法線、樹葉卡片與接觸陰影均為本專案以固定種子的 Canvas 原創生成；無下載照片紋理或新外部資產。`src/vehicle.ts` 為重新編寫的原創小轎車，窗框、輪圈、車燈、尺寸與材質均為視覺估算。普通檔以彩色貼圖、選擇性環境反射、緩存近景靜態陰影及近遠樹冠細節控制成本；精細檔增加凹凸貼圖和逐幀車影。原始 OSM、world.json、地形高度及植被位置／排除條件未更改。歐卡僅作質感目標，未複製其模型、貼圖或代碼；這些原創程序資產不等同照片實測素材或歐卡級資產。
+畫面升級：`src/surfaces.ts` 的瀝青／地表／混凝土／牆面顆粒、天空雲層、海面法線、樹葉卡片與接觸陰影均為本專案以固定種子的 Canvas 原創生成；這些環境材質仍無外部照片紋理；下述 CarConcept 車輛是本次新增的外部資產。`src/vehicle.ts` 為重新編寫的原創小轎車，窗框、輪圈、車燈、尺寸與材質均為視覺估算。普通檔以彩色貼圖、選擇性環境反射、緩存近景靜態陰影及近遠樹冠細節控制成本；精細檔增加凹凸貼圖和逐幀車影。原始 OSM、world.json、地形高度及植被位置／排除條件未更改。歐卡僅作質感目標，未複製其模型、貼圖或代碼；這些原創程序資產不等同照片實測素材或歐卡級資產。
 
 取得日期：2026-10-22 UTC（檔案來源日期）。本輪從僅有 README 的乾淨倉庫獨立實作，未繼承舊任務源碼或測試；未讀取工作電腦。
 
@@ -10,7 +10,7 @@
 | 地形 | https://elevation-tiles-prod.s3.amazonaws.com/skadi/N25/N25E121.hgt.gz | Mapzen/Joerd Skadi 聚合高程。大端有號 16 bit，3601² 點，非現場量測。SRTM/GMTED2010 terrain data courtesy of the U.S. Geological Survey；global ETOPO1 terrain data U.S. NOAA。上游 attribution 將這些資料列為 public domain；不得將 Joerd 的程式 MIT 授權誤當所有高程來源授權。已保存上游 attribution、data-sources 文件。單一 HGT 沒有逐像素來源遮罩，不能證實每個點只來自 SRTM。 |
 | 高程授權依據 | https://raw.githubusercontent.com/tilezen/joerd/master/docs/attribution.md 、https://raw.githubusercontent.com/tilezen/joerd/master/docs/data-sources.md | 本輪真實 GET 成功；離線副本在 source-data/。來源文件談及境外版權文字，完整保留上游說明；本遊戲採上述 USGS/NOAA 署名，不以高程作真實導航。 |
 | 視覺照片參考 | https://commons.wikimedia.org/wiki/File:Baisha_Bay,_New_Taipei_20230525.jpg | 本輪 GET HTML 核實 HC Lin、2023-05-25、CC BY 2.0（https://creativecommons.org/licenses/by/2.0/）。只作描述層次參考，沒有下載圖片或做紋理，不代表最新現場。Python 首次請求 403，curl 明確 User-Agent 後 200，並非 CONNECT 被拒。 |
-| 車、方向盤、簡化儀表台、路牌、燈杆、電線杆、護欄、樹木、站牌候車棚 | src/scene.ts、DOM/CSS | 本輪原創程序模型；未下載 Kenney，也沒有宣稱已接入外部真實模型。建築輪廓來自 OSM。所有設施的外觀是簡化，非現場復刻。 |
+| 車、方向盤、簡化儀表台、路牌、燈杆、電線杆、護欄、樹木、站牌候車棚 | src/scene.ts、DOM/CSS | 原創轎車、DOM備用駕駛艙與環境設施為本專案程序模型；概念車及3D內飾改用下列CC BY資產。未下載 Kenney。建築輪廓來自 OSM。所有設施的外觀是簡化，非現場復刻。 |
 | 引擎與路噪 | src/main.ts Web Audio | 本輪原創連續合成聲；使用者點擊開始後啟用，可調音量至 0。無付費音樂或 API。 |
 | 程式依賴 | package-lock.json | Three.js、Vite、TypeScript、Vitest、Playwright 等；保留套件版本與授權，見 THIRD_PARTY.json。 |
 | 參考方向 | Slow Roads | 只參考慢速自駕與低多邊形方向；未存取或複製其源碼、模型或紋理。未使用 Google／Apple 圖像或 3D Tiles。 |
@@ -45,3 +45,13 @@
 德茂站點 3437585110、3437585111 原標籤均為 public_transport=platform，後者 shelter=yes，並非 stop_position。模型因估算路面／棚體原點重疊而向外退讓 1.8m／3.4m；棚體長軸改為沿路，腿距中心線約6.073m（距估算路緣約2.27m），原始 OSM 點／座標不變，詳細對照在 stop-placement.json。其他站點同樣保留來源點並逐項記錄視覺擺放。沒有現場棚體位置測量。
 
 高程統計取樣範圍澄清：上列相對平滑剖面1.661m／0.851m與低坡0.450m／0.000048m是估算中點剖面，不代表每條實際車道。完整逐點只讀審計（elevation-full-audit.json）顯示：去程／返程對原始雙線DEM+0.2m最大9.532／9.176m、p95 5.102／5.293m；對各自約250m平滑DEM最大3.274／2.172m、p95 2.132／1.725m。各自原低於2%坡段變更最大2.264／2.172m、p95 1.726／1.664m，包含共用橫向剖面和局部修整差異，不能說所有低坡車道都幾乎未變。沒有全局振幅縮放。這份後續審計沒有修改遊戲或數據。
+
+## 2026-10-23 高精度車輛試裝
+
+- 資產：CarConcept，模型與貼圖 Eric Chadwick / Darmstadt Graphics Group GmbH（2024）；上游由 Unity Fan 的 public-domain 概念車改編。模型與紋理為 **CC BY 4.0**，Khronos 標識另有條款。已移除帶標識的車牌貼圖與方向盤徽標，保留完整署名／改作說明／許可全文，見 `licenses/carconcept/` 和靜態包 `credits/carconcept.txt`。遊戲幫助內亦有署名、來源、許可與本地全文連結。
+- 固定來源：https://github.com/KhronosGroup/glTF-Sample-Assets/tree/15cd02d304e54cb42a4db4eefe719f76190f4b68/Models/CarConcept 。實際GET核對該revision的GLB，11,778,688 bytes、SHA256 `c272098089d78c5cd9fd9f24ff50ee8acf8d932c55f2d55fc10adb6c8998966b`。不是下載站預覽圖、抽取遊戲資產或Google／Apple地圖模型。
+- 用 `npm run assets:car` 從固定來源重建，保留原GLB SHA；原始大檔只在忽略的雲端快取，處理後GLB及完整清單入庫。`curl`沿用環境代理和TLS驗證。精確面數、檔案大小、貼圖尺寸、前軸示範轉角、方向盤中性角、座艙估算眼點和前後SHA在 `source-data/carconcept.json`。
+- 轉為Y-up／+Z朝前，按實際頂點接地並居中；四輪各分打輪／滾動／固定卡鉗，校正上游前輪及方向盤展示姿態。網格合併並以鎖邊、ratio0.5、error0.001簡化；貼圖最高1024 WebP quality90。保留真實3D內飾，新增本專案原創即時速度／擋位Canvas儀表和方向盤標記，沒有保留裝飾固定0速度貼圖。
+- 標準檔使用普通PBR材質，精細檔保留車漆clearcoat；玻璃改透明混合，停用額外整景透射pass。此為估算的遊戲渲染適配，不是原材質的完整物理再現。座艙眼點／75度視角及視覺車高為估算，未改核心車速、軸距或路線物理。
+- 此車為虛構概念跑車試裝，不能宣稱臺灣小轎車或現場車款重建。菜單可切回原創轎車，v1駕駛存檔不保存車款。GLB或貼圖載入失敗會回退原車；所有運行資產都從靜態站點本地相對路徑取得。
+- Poly Haven 海岸樹、岩石、建築與設施仍只是候選；下載網域不在目前雲端白名單，未擴權或聲稱取得。現有OSM、地形、樹位、排除條件和設施位置均未改，沒有為此次美術試裝新增地塊或裝飾建築。

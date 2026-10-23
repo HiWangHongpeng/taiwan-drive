@@ -1,0 +1,193 @@
+{
+  "source_url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/15cd02d304e54cb42a4db4eefe719f76190f4b68/Models/CarConcept/glTF-Binary/CarConcept.glb",
+  "upstream_revision": "15cd02d304e54cb42a4db4eefe719f76190f4b68",
+  "source_sha256": "c272098089d78c5cd9fd9f24ff50ee8acf8d932c55f2d55fc10adb6c8998966b",
+  "source_bytes": 11778688,
+  "output": "public/models/carconcept.glb",
+  "output_sha256": "430709bcdaf690d07f2dad9b37c482666bfcdac0c819b786dd73c14b61ee5140",
+  "output_bytes": 5631824,
+  "triangles": 111549,
+  "mesh_groups": 10,
+  "draw_primitives": 44,
+  "material_count": 23,
+  "source_material_count": 29,
+  "textures": [
+    {
+      "mime": "image/webp",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 38378
+    },
+    {
+      "mime": "image/webp",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 20082
+    },
+    {
+      "mime": "image/webp",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 231478
+    },
+    {
+      "mime": "image/webp",
+      "size": [
+        512,
+        128
+      ],
+      "bytes": 5900
+    },
+    {
+      "mime": "image/webp",
+      "size": [
+        64,
+        32
+      ],
+      "bytes": 716
+    },
+    {
+      "mime": "image/webp",
+      "size": [
+        32,
+        32
+      ],
+      "bytes": 146
+    },
+    {
+      "mime": "image/webp",
+      "size": [
+        128,
+        128
+      ],
+      "bytes": 10088
+    },
+    {
+      "mime": "image/webp",
+      "size": [
+        128,
+        128
+      ],
+      "bytes": 1078
+    },
+    {
+      "mime": "image/webp",
+      "size": [
+        128,
+        128
+      ],
+      "bytes": 1652
+    },
+    {
+      "mime": "image/webp",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 8508
+    },
+    {
+      "mime": "image/webp",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 69120
+    },
+    {
+      "mime": "image/webp",
+      "size": [
+        512,
+        128
+      ],
+      "bytes": 6464
+    },
+    {
+      "mime": "image/webp",
+      "size": [
+        512,
+        128
+      ],
+      "bytes": 1044
+    }
+  ],
+  "meta": {
+    "source": "CarConcept / Eric Chadwick / Darmstadt Graphics Group GmbH",
+    "license": "CC-BY-4.0",
+    "forward": "+Z",
+    "steeringAxis": [
+      3.157534086957554e-8,
+      0.36938930580609786,
+      -0.9292747391143742
+    ],
+    "steeringCenter": [
+      0.0017354152016663031,
+      0.6419823322079348,
+      0.6907484714471943
+    ],
+    "neutralSteeringCorrection": 0.26179913599677684,
+    "wheelRadius": 0.38400009518171924,
+    "eye": [
+      0,
+      0.94,
+      0.04
+    ],
+    "lookAt": [
+      0,
+      0.94,
+      30
+    ],
+    "wheels": [
+      {
+        "name": "WheelFrontL",
+        "center": [
+          0.9757409920580492,
+          0.38400009518171924,
+          1.2472187876701355
+        ],
+        "removed_source_yaw_radians": -0.5235987789078733
+      },
+      {
+        "name": "WheelFrontR",
+        "center": [
+          -0.9764271149747268,
+          0.38400003557707446,
+          1.2455067038536072
+        ],
+        "removed_source_yaw_radians": -0.5235987841961749
+      },
+      {
+        "name": "WheelRearL",
+        "center": [
+          0.9827614655382736,
+          0.38400003557707507,
+          -1.552524149417877
+        ],
+        "removed_source_yaw_radians": 0
+      },
+      {
+        "name": "WheelRearR",
+        "center": [
+          -0.9814570317380324,
+          0.38400003557707507,
+          -1.552524149417877
+        ],
+        "removed_source_yaw_radians": 0
+      }
+    ]
+  },
+  "processing": [
+    "Baked original coordinate transforms to Y-up/+Z-forward; centered model and grounded its actual vertices",
+    "Removed source front-wheel showcase yaw; spin axles are now +X, calipers remain outside spin groups",
+    "Kept a distinct steering wheel and complete interior; neutralized 15 degree showcase steering pose; removed steering emblem mesh and logo-bearing plate texture; removed the decorative fixed-zero display texture for a live original Canvas instrument",
+    "Joined compatible primitives per body/wheel/steering group; welded and simplified at ratio .5, error .001, borders locked",
+    "Capped textures at 1024, WebP quality90; no transmission scene pass or optional iridescent variants"
+  ],
+  "estimated": "Camera placement, visual ride height, light/material adaptation and source simplification are game estimates, not a surveyed Taiwanese production car"
+}

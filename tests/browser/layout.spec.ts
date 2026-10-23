@@ -4,6 +4,7 @@ test('desktop cockpit HUD is clear; 320px keyboard menu controls and help remain
  for(const [width,height]of[[1440,900],[960,600]]){
   await page.setViewportSize({width,height});await page.locator('#resume').click();await page.waitForTimeout(1000);
   const dash=await page.locator('#cockpit').boundingBox(),hud=await page.locator('footer').boundingBox(),map=await page.locator('#map').boundingBox();expect(hud!.y+hud!.height).toBeLessThan(dash!.y);expect(map!.y+map!.height).toBeLessThan(dash!.y);
+  const vehicle=await page.evaluate(()=>(window as any).__drive.snapshot(true).stats.vehicle);if(vehicle.active){const markerY=(1-vehicle.steeringMarker[1])*height/2;expect(hud!.y+hud!.height).toBeLessThan(markerY-40);expect(map!.y+map!.height).toBeLessThan(markerY-40);await expect(page.locator('body')).toHaveClass(/detailed-cockpit/);}
   await page.screenshot({path:`reports/keyboard-cockpit-${width}.png`});await page.locator('#pause').click();
  }
  await page.setViewportSize({width:320,height:568});await expect(page.locator('#mode')).toHaveCount(0);

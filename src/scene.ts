@@ -4,6 +4,7 @@ import {Ground,DETAIL,CORRIDOR,contains,bounds,densify,type Bounds} from './geog
 import {lamp} from './facilities';
 import {Surfaces,qualityBudget,type Quality} from './surfaces';
 import {makeVehicle} from './vehicle';
+import {loadImportedVehicle} from './imported-vehicle';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
 
 type Bucket={material:T.Material;positions:number[];normals:number[];colors:number[];uvs:number[];castShadow:boolean;receiveShadow:boolean};
@@ -16,8 +17,10 @@ export class View {
  private readonly motionQuery=matchMedia('(prefers-reduced-motion: reduce)');
  private treeLods:TreeLod[]=[];private lodX=Infinity;private lodZ=Infinity;
  readonly ground:Ground;cockpit=false;readonly stopPlacements:ReturnType<Ground['busPlacement']>[]=[];
- private materials=new Map<string,T.MeshStandardMaterial>();private wheels:T.Group[]=[];
- private frontWheels:T.Group[]=[];private cullable:T.Mesh[]=[];
+ private materials=new Map<string,T.MeshStandardMaterial>();private wheels:T.Object3D[]=[];
+ private frontWheels:T.Object3D[]=[];private cullable:T.Mesh[]=[];
+ private original:ReturnType<typeof makeVehicle>;private imported?:Awaited<ReturnType<typeof loadImportedVehicle>>;private concept=true;
+ private cameraMode='';
  private constructionMs=0;private renderTimes:number[]=[];private submittedInstances=0;
  readonly diagnostics={trees:0,shrubs:0,treeGroups:0,buildingParts:0,buildings:0,parkingLots:0,paths:0,steps:0,busStops:0,shelters:0,lamps:0,roadTerrainClearanceMin:Infinity,waterTerrainGapMax:0,buildingFootingMax:0,terrainTriangles:0};
  constructor(container:HTMLElement,readonly world:World,quality:Quality='standard'){
@@ -31,7 +34,7 @@ export class View {
   this.renderer.shadowMap.type=T.PCFSoftShadowMap;this.renderer.shadowMap.autoUpdate=false;
   const sea=new T.Mesh(new T.PlaneGeometry(26000,26000),this.surfaces.sea());sea.rotation.x=-Math.PI/2;sea.position.y=.15;sea.userData.unbatched=true;this.scene.add(sea);
   this.terrain();this.roads();this.parking();this.buildings();this.pathsAndStreams();this.stops();this.vegetation();this.roadside();
-  this.batchSpatially();const car=makeVehicle(this.surfaces.contact,this.surfaces.environment);this.vehicle=car.group;this.wheels=car.wheels;this.frontWheels=car.frontWheels;this.scene.add(this.vehicle);this.setQuality(quality);this.constructionMs=performance.now()-start;
+  this.batchSpatially();this.original=makeVehicle(this.surfaces.contact,this.surfaces.environment);this.vehicle=new T.Group();this.vehicle.add(this.original.group);this.wheels=this.original.wheels;this.frontWheels=this.original.frontWheels;this.scene.add(this.vehicle);this.setQuality(quality);this.constructionMs=performance.now()-start;
   addEventListener('resize',()=>this.resize());this.resize();
  }
  private mat(color:string,vertexColors=false){const key=color+vertexColors;let material=this.materials.get(key);if(!material){material=this.surfaces.material(color,vertexColors);this.materials.set(key,material);}return material;}
@@ -120,8 +123,12 @@ export class View {
   this.sun.shadow.mapSize.set(budget.shadowSize||512,budget.shadowSize||512);
   const camera=this.sun.shadow.camera;camera.left=camera.bottom=-100;camera.right=camera.top=100;camera.updateProjectionMatrix();
   this.vehicle.traverse(o=>{if(o instanceof T.Mesh)o.castShadow=quality==='high'&&!o.material.transparent;});
+  this.imported?.setQuality(quality);
   this.shadowCell='';this.lodX=Infinity;this.resize();
  }
+ async loadVehicle(){this.imported=await loadImportedVehicle(`${import.meta.env.BASE_URL}models/carconcept.glb`,this.surfaces.contact,this.surfaces.environment);this.vehicle.add(this.imported.group);this.imported.setQuality(this.quality);this.selectVehicle(true);}
+ selectVehicle(concept:boolean){this.concept=concept;const imported=concept&&this.imported;this.original.group.visible=!imported;if(this.imported)this.imported.group.visible=Boolean(imported);this.wheels=imported?imported.wheels:this.original.wheels;this.frontWheels=imported?imported.frontWheels:this.original.frontWheels;this.shadowCell='';}
+ vehicleSnapshot(){const imported=this.imported,active=Boolean(imported&&this.concept);return{loaded:Boolean(imported),active,triangles:imported?.triangles,meshes:imported?.meshes,cockpitCameraError:active&&this.cockpit?this.camera.position.distanceTo(this.vehicle.localToWorld(imported!.eye.clone())):undefined,dashboard:imported?.dashboard(),wheelRadius:imported?.wheelRadius,frontWheels:this.frontWheels.map(w=>({position:w.position.toArray(),angle:w.rotation.y})),wheelSpin:this.wheels.map(w=>w.rotation.x),steeringAngle:active?imported!.steering.quaternion.angleTo(new T.Quaternion()):0,steeringCenter:active?imported!.steering.getWorldPosition(new T.Vector3()).project(this.camera).toArray():undefined,steeringMarker:active?imported!.marker.getWorldPosition(new T.Vector3()).project(this.camera).toArray():undefined};}
  private updateTreeLod(x:number,z:number){
   if(Math.hypot(x-this.lodX,z-this.lodZ)<24)return;
   this.lodX=x;this.lodZ=z;const radius=qualityBudget(this.quality).treeDetail;
@@ -134,7 +141,7 @@ export class View {
   }
   this.shadowCell='';
  }
- performanceSnapshot(){let meshes=0,instances=0,instanceGroups=0;this.scene.traverse(o=>{if(o instanceof T.Mesh)meshes++;if(o instanceof T.InstancedMesh){instances+=o.count;instanceGroups++;}});return{constructionMs:this.constructionMs,renderTimes:this.renderTimes,info:{render:{...this.renderer.info.render},memory:{...this.renderer.info.memory}},instances,instanceGroups,submittedInstances:this.submittedInstances,meshes,diagnostics:this.diagnostics,graphics:{quality:this.quality,budget:qualityBudget(this.quality),shadowUpdates:this.shadowUpdates,nearTrees:this.treeLods.reduce((n,c)=>n+c.near.count,0),farTrees:this.treeLods.reduce((n,c)=>n+c.far.count,0),pixelRatio:this.renderer.getPixelRatio(),textureSource:'original deterministic Canvas rasters'}};}
+ performanceSnapshot(){let meshes=0,instances=0,instanceGroups=0;this.scene.traverse(o=>{if(o instanceof T.Mesh)meshes++;if(o instanceof T.InstancedMesh){instances+=o.count;instanceGroups++;}});return{constructionMs:this.constructionMs,renderTimes:this.renderTimes,info:{render:{...this.renderer.info.render},memory:{...this.renderer.info.memory}},instances,instanceGroups,submittedInstances:this.submittedInstances,meshes,vehicle:this.vehicleSnapshot(),diagnostics:this.diagnostics,graphics:{quality:this.quality,budget:qualityBudget(this.quality),shadowUpdates:this.shadowUpdates,nearTrees:this.treeLods.reduce((n,c)=>n+c.near.count,0),farTrees:this.treeLods.reduce((n,c)=>n+c.far.count,0),pixelRatio:this.renderer.getPixelRatio(),textureSource:'original deterministic Canvas rasters'}};}
  screenPoint(p:Point){return new T.Vector3(p[0],p[1],p[2]).project(this.camera).toArray();}
  private resize(){this.camera.aspect=innerWidth/innerHeight;this.camera.updateProjectionMatrix();this.renderer.setSize(innerWidth,innerHeight);}
  render(car:Car,dt:number,steer=0){const start=performance.now();
@@ -142,7 +149,11 @@ export class View {
   const cell=`${Math.floor(car.x/16)},${Math.floor(car.z/16)}`;
   if(this.renderer.shadowMap.enabled&&(cell!==this.shadowCell||this.quality==='high')){const x=Math.floor(car.x/16)*16,z=Math.floor(car.z/16)*16;this.sun.position.set(x-110,car.y+180,z-100);this.sun.target.position.set(x,car.y,z);this.renderer.shadowMap.needsUpdate=true;this.shadowCell=cell;this.shadowUpdates++;}
 this.vehicle.position.set(car.x,car.y+.1,car.z);this.vehicle.rotation.order='YXZ';this.vehicle.rotation.y=car.yaw;const n=this.ground.road.nearest(car.x,car.z);this.vehicle.rotation.x=-Math.atan2(n.b[1]-n.a[1],Math.hypot(n.b[0]-n.a[0],n.b[2]-n.a[2]))*Math.cos(car.yaw-Math.atan2(n.b[0]-n.a[0],n.b[2]-n.a[2]));this.vehicle.visible=!this.cockpit;
-  this.frontWheels.forEach(w=>{w.rotation.y=steer*.35;});this.wheels.forEach(w=>{w.rotation.x-=car.speed*dt/.34;});const heading=car.yaw,target=this.cockpit?new T.Vector3(car.x,car.y+1.42,car.z):new T.Vector3(car.x-Math.sin(heading)*8.5,car.y+4.2,car.z-Math.cos(heading)*8.5);this.camera.position.lerp(target,this.motionQuery.matches?1:1-Math.exp(-6*dt));this.camera.lookAt(car.x+Math.sin(heading)*(this.cockpit?30:8),car.y+(this.cockpit?1.3:.95),car.z+Math.cos(heading)*(this.cockpit?30:8));
+  const imported=this.concept&&this.imported;this.vehicle.visible=!this.cockpit||Boolean(imported);if(imported){this.vehicle.position.y=car.y+.07;imported.steering.quaternion.setFromAxisAngle(imported.steeringAxis,steer*2.4);imported.updateDashboard(car.speed,dt);}
+  document.body.classList.toggle('detailed-cockpit',this.cockpit&&Boolean(imported));const fov=this.cockpit&&imported?75:65;if(this.camera.fov!==fov){this.camera.fov=fov;this.camera.updateProjectionMatrix();}
+  this.frontWheels.forEach(w=>{w.rotation.y=steer*.35;});this.wheels.forEach(w=>{w.rotation.x+=car.speed*dt/(imported?imported.wheelRadius:.34);});this.vehicle.updateMatrixWorld(true);
+  const heading=car.yaw,target=this.cockpit?(imported?this.vehicle.localToWorld(imported.eye.clone()):new T.Vector3(car.x,car.y+1.42,car.z)):new T.Vector3(car.x-Math.sin(heading)*8.5,car.y+4.2,car.z-Math.cos(heading)*8.5),cameraMode=this.cockpit?(imported?'imported':'original'):'chase';if(this.cockpit||this.cameraMode!==cameraMode){this.camera.position.copy(target);this.cameraMode=cameraMode;}else this.camera.position.lerp(target,this.motionQuery.matches?1:1-Math.exp(-6*dt));
+  if(this.cockpit&&imported)this.camera.lookAt(this.vehicle.localToWorld(imported.lookAt.clone()));else this.camera.lookAt(car.x+Math.sin(heading)*(this.cockpit?30:8),car.y+(this.cockpit?1.3:.95),car.z+Math.cos(heading)*(this.cockpit?30:8));
   for(const m of this.cullable){const sphere=m instanceof T.InstancedMesh?m.boundingSphere:m.geometry.boundingSphere;if(sphere)m.visible=this.camera.position.distanceTo(sphere.center)<=2200+sphere.radius;}
   this.submittedInstances=0;this.renderer.render(this.scene,this.camera);if(import.meta.env.DEV)this.renderTimes.push(performance.now()-start);
  }

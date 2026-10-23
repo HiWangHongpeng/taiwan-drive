@@ -1,0 +1,491 @@
+{
+  "method": "First a fresh-spawn real W input cockpit check. Remaining images are validated save-import checkpoints, real model/view menu controls, held W+S to remain stopped; not continuous route driving. Same exterior camera, 1440x900 DPR1; separate 960 cockpit and 320 menu.",
+  "before": {
+    "dist/assets/index-BEu9jlj3.css": "76699c185ed68dc12c77424b130eccaf7196d2392e41ee1032009cf61603984a",
+    "dist/assets/index-DiMYE6rf.js": "e89fe35ce3de7fd8090e15b8c0640c32fb77829e4b5ba4aba86d4fc4f755396e",
+    "dist/credits/carconcept.txt": "92050533456ba6cdb86af7eadd33bce0c5fbd246184ba90c7f5c5f7ec4ac3b4a",
+    "dist/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "dist/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "dist/index.html": "29fd106c144bc8387abcb91adb4fbcd957000625ae20bc0c104ea0384ff5808e",
+    "dist/models/carconcept.glb": "430709bcdaf690d07f2dad9b37c482666bfcdac0c819b786dd73c14b61ee5140",
+    "public/credits/carconcept.txt": "92050533456ba6cdb86af7eadd33bce0c5fbd246184ba90c7f5c5f7ec4ac3b4a",
+    "public/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "public/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "public/models/carconcept.glb": "430709bcdaf690d07f2dad9b37c482666bfcdac0c819b786dd73c14b61ee5140",
+    "scripts/asset-checkpoints.mjs": "196bb2bc555911a54b3543288076d06a336ec61f40351f196f0913069791e11e",
+    "src/core.ts": "894b1d1b415ac6adaf58e8eda7f85a1c3b637c8eee812401fa9a19531c69d13a",
+    "src/facilities.ts": "1afcd937102b41fcaa4270e03f63262a85fa8841e3f52a03c78ce30dda591cc5",
+    "src/geography.ts": "b7331dcb4e73fea544c3440dcd26803077951b495b8d6cfab3c34db0bdbeb73e",
+    "src/imported-vehicle.ts": "7846ba4518d995a270587f9366d826ccc048ff4fcaf6c632b3c244eb312fb576",
+    "src/main.ts": "3b87012c72f7cace5ac99aad03f946d727e159fd97f7f45b1f4ee907aebdd7ce",
+    "src/scene.ts": "be157f55f27e34e6a8f80f0c0f8bd21be64a547f589a0c637b5d57d10ee211b9",
+    "src/startup.ts": "2af7b0a695713c1aab569969b49148005f82a3fbf7e44d66eaa55f08c40e0dbd",
+    "src/style.css": "53dad1deb0fe6adebbb930d25628e9948d5ae4920e8fd9c48e98f48567270e25",
+    "src/surfaces.ts": "ea655a82fcc0e7438b812c419b18759b0c1d5cf84fc945267157f254197bc7ee",
+    "src/vehicle.ts": "bbae8a671d81d4d8e857892f8f34ef6cb14061f25374d9407abede139261babf",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  "after": {
+    "dist/assets/index-BEu9jlj3.css": "76699c185ed68dc12c77424b130eccaf7196d2392e41ee1032009cf61603984a",
+    "dist/assets/index-DiMYE6rf.js": "e89fe35ce3de7fd8090e15b8c0640c32fb77829e4b5ba4aba86d4fc4f755396e",
+    "dist/credits/carconcept.txt": "92050533456ba6cdb86af7eadd33bce0c5fbd246184ba90c7f5c5f7ec4ac3b4a",
+    "dist/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "dist/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "dist/index.html": "29fd106c144bc8387abcb91adb4fbcd957000625ae20bc0c104ea0384ff5808e",
+    "dist/models/carconcept.glb": "430709bcdaf690d07f2dad9b37c482666bfcdac0c819b786dd73c14b61ee5140",
+    "public/credits/carconcept.txt": "92050533456ba6cdb86af7eadd33bce0c5fbd246184ba90c7f5c5f7ec4ac3b4a",
+    "public/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "public/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "public/models/carconcept.glb": "430709bcdaf690d07f2dad9b37c482666bfcdac0c819b786dd73c14b61ee5140",
+    "scripts/asset-checkpoints.mjs": "196bb2bc555911a54b3543288076d06a336ec61f40351f196f0913069791e11e",
+    "src/core.ts": "894b1d1b415ac6adaf58e8eda7f85a1c3b637c8eee812401fa9a19531c69d13a",
+    "src/facilities.ts": "1afcd937102b41fcaa4270e03f63262a85fa8841e3f52a03c78ce30dda591cc5",
+    "src/geography.ts": "b7331dcb4e73fea544c3440dcd26803077951b495b8d6cfab3c34db0bdbeb73e",
+    "src/imported-vehicle.ts": "7846ba4518d995a270587f9366d826ccc048ff4fcaf6c632b3c244eb312fb576",
+    "src/main.ts": "3b87012c72f7cace5ac99aad03f946d727e159fd97f7f45b1f4ee907aebdd7ce",
+    "src/scene.ts": "be157f55f27e34e6a8f80f0c0f8bd21be64a547f589a0c637b5d57d10ee211b9",
+    "src/startup.ts": "2af7b0a695713c1aab569969b49148005f82a3fbf7e44d66eaa55f08c40e0dbd",
+    "src/style.css": "53dad1deb0fe6adebbb930d25628e9948d5ae4920e8fd9c48e98f48567270e25",
+    "src/surfaces.ts": "ea655a82fcc0e7438b812c419b18759b0c1d5cf84fc945267157f254197bc7ee",
+    "src/vehicle.ts": "bbae8a671d81d4d8e857892f8f34ef6cb14061f25374d9407abede139261babf",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  "unchanged": true,
+  "errors": [],
+  "notes": [
+    {
+      "name": "fresh-cockpit-input",
+      "method": "Fresh spawn and real W input, no import yet; only a short input check, not a route journey",
+      "path": "reports/visual/asset-cockpit-driving.jpg",
+      "car": {
+        "x": 5.1044270644820156,
+        "y": 10.156732677024058,
+        "z": -90.4054547233365,
+        "yaw": 2.3618601519491116,
+        "speed": 5.471845149025337,
+        "travel": 4.496480600628262,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "vehicle": {
+        "loaded": true,
+        "active": true,
+        "triangles": 111561,
+        "meshes": 45,
+        "cockpitCameraError": 0,
+        "dashboard": {
+          "speed": 20,
+          "gear": "D"
+        },
+        "wheelRadius": 0.38400009518171924,
+        "frontWheels": [
+          {
+            "position": [
+              0.9757409920580492,
+              0.38400009518171924,
+              1.2472187876701355
+            ],
+            "angle": 0
+          },
+          {
+            "position": [
+              -0.9764271149747268,
+              0.38400003557707446,
+              1.2455067038536072
+            ],
+            "angle": 0
+          }
+        ],
+        "wheelSpin": [
+          13.00123776731404,
+          13.00123776731404,
+          13.00123776731404,
+          13.00123776731404
+        ],
+        "steeringAngle": 0,
+        "steeringCenter": [
+          -0.002172149861321815,
+          -0.5968268897472135,
+          0.6926923670308639
+        ],
+        "steeringMarker": [
+          -0.0020754190475051576,
+          -0.2947479470002337,
+          0.7063789255486991
+        ]
+      }
+    },
+    {
+      "name": "original-exterior",
+      "path": "reports/visual/asset-original-exterior.jpg",
+      "width": 1440,
+      "height": 900,
+      "distance": 0,
+      "car": {
+        "x": 1.943,
+        "y": 10.2314,
+        "z": -87.208,
+        "yaw": 2.3618601519491116,
+        "speed": 0,
+        "travel": 0,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "info": {
+        "render": {
+          "frame": 69,
+          "calls": 391,
+          "triangles": 597348,
+          "points": 0,
+          "lines": 832
+        },
+        "memory": {
+          "geometries": 455,
+          "textures": 29
+        }
+      },
+      "vehicle": {
+        "loaded": true,
+        "active": false,
+        "triangles": 111561,
+        "meshes": 45,
+        "dashboard": {
+          "speed": 20,
+          "gear": "D"
+        },
+        "wheelRadius": 0.38400009518171924,
+        "frontWheels": [
+          {
+            "position": [
+              -0.89,
+              0.35,
+              1.31
+            ],
+            "angle": 0
+          },
+          {
+            "position": [
+              0.89,
+              0.35,
+              1.31
+            ],
+            "angle": 0
+          }
+        ],
+        "wheelSpin": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "steeringAngle": 0
+      }
+    },
+    {
+      "name": "concept-exterior",
+      "path": "reports/visual/asset-concept-exterior.jpg",
+      "width": 1440,
+      "height": 900,
+      "distance": 0,
+      "car": {
+        "x": 1.943,
+        "y": 10.2314,
+        "z": -87.208,
+        "yaw": 2.3618601519491116,
+        "speed": 0,
+        "travel": 0,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "info": {
+        "render": {
+          "frame": 93,
+          "calls": 417,
+          "triangles": 707097,
+          "points": 0,
+          "lines": 832
+        },
+        "memory": {
+          "geometries": 455,
+          "textures": 29
+        }
+      },
+      "vehicle": {
+        "loaded": true,
+        "active": true,
+        "triangles": 111561,
+        "meshes": 45,
+        "dashboard": {
+          "speed": 0,
+          "gear": "D"
+        },
+        "wheelRadius": 0.38400009518171924,
+        "frontWheels": [
+          {
+            "position": [
+              0.9757409920580492,
+              0.38400009518171924,
+              1.2472187876701355
+            ],
+            "angle": 0
+          },
+          {
+            "position": [
+              -0.9764271149747268,
+              0.38400003557707446,
+              1.2455067038536072
+            ],
+            "angle": 0
+          }
+        ],
+        "wheelSpin": [
+          13.00123776731404,
+          13.00123776731404,
+          13.00123776731404,
+          13.00123776731404
+        ],
+        "steeringAngle": 0,
+        "steeringCenter": [
+          -0.00017544371251004582,
+          -0.26776535355197856,
+          0.9794262871153523
+        ],
+        "steeringMarker": [
+          -0.00017536454070739963,
+          -0.24386557543677725,
+          0.9794355755112754
+        ]
+      }
+    },
+    {
+      "name": "concept-500m",
+      "path": "reports/visual/asset-concept-500m.jpg",
+      "width": 1440,
+      "height": 900,
+      "distance": 503.23237702699555,
+      "car": {
+        "x": 480.055,
+        "y": 15.0675,
+        "z": -103.202,
+        "yaw": 1.6806776239433856,
+        "speed": 0,
+        "travel": 0,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "info": {
+        "render": {
+          "frame": 116,
+          "calls": 448,
+          "triangles": 596084,
+          "points": 0,
+          "lines": 768
+        },
+        "memory": {
+          "geometries": 549,
+          "textures": 29
+        }
+      },
+      "vehicle": {
+        "loaded": true,
+        "active": true,
+        "triangles": 111561,
+        "meshes": 45,
+        "dashboard": {
+          "speed": 0,
+          "gear": "D"
+        },
+        "wheelRadius": 0.38400009518171924,
+        "frontWheels": [
+          {
+            "position": [
+              0.9757409920580492,
+              0.38400009518171924,
+              1.2472187876701355
+            ],
+            "angle": 0
+          },
+          {
+            "position": [
+              -0.9764271149747268,
+              0.38400003557707446,
+              1.2455067038536072
+            ],
+            "angle": 0
+          }
+        ],
+        "wheelSpin": [
+          13.00123776731404,
+          13.00123776731404,
+          13.00123776731404,
+          13.00123776731404
+        ],
+        "steeringAngle": 0,
+        "steeringCenter": [
+          -0.00017486524679381465,
+          -0.27094703863027547,
+          0.9794942416372623
+        ],
+        "steeringMarker": [
+          -0.00017467253680059886,
+          -0.24701601382390234,
+          0.9795168678695849
+        ]
+      }
+    },
+    {
+      "name": "concept-cockpit",
+      "path": "reports/visual/asset-concept-cockpit.jpg",
+      "width": 1440,
+      "height": 900,
+      "distance": 503.23237702699555,
+      "car": {
+        "x": 480.055,
+        "y": 15.0675,
+        "z": -103.202,
+        "yaw": 1.6806776239433856,
+        "speed": 0,
+        "travel": 0,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "info": {
+        "render": {
+          "frame": 141,
+          "calls": 446,
+          "triangles": 586380,
+          "points": 0,
+          "lines": 768
+        },
+        "memory": {
+          "geometries": 549,
+          "textures": 29
+        }
+      },
+      "vehicle": {
+        "loaded": true,
+        "active": true,
+        "triangles": 111561,
+        "meshes": 45,
+        "cockpitCameraError": 0,
+        "dashboard": {
+          "speed": 0,
+          "gear": "D"
+        },
+        "wheelRadius": 0.38400009518171924,
+        "frontWheels": [
+          {
+            "position": [
+              0.9757409920580492,
+              0.38400009518171924,
+              1.2472187876701355
+            ],
+            "angle": 0
+          },
+          {
+            "position": [
+              -0.9764271149747268,
+              0.38400003557707446,
+              1.2455067038536072
+            ],
+            "angle": 0
+          }
+        ],
+        "wheelSpin": [
+          13.00123776731404,
+          13.00123776731404,
+          13.00123776731404,
+          13.00123776731404
+        ],
+        "steeringAngle": 0,
+        "steeringCenter": [
+          -0.002172149861330756,
+          -0.5968268897472194,
+          0.6926923670308571
+        ],
+        "steeringMarker": [
+          -0.0020754190475050275,
+          -0.29474794700020845,
+          0.7063789255487174
+        ]
+      }
+    },
+    {
+      "name": "concept-cockpit-960",
+      "path": "reports/visual/asset-concept-cockpit-960.jpg",
+      "width": 960,
+      "height": 600,
+      "distance": 503.23237702699555,
+      "car": {
+        "x": 480.0551624171694,
+        "y": 15.067490208225182,
+        "z": -103.2020179187839,
+        "yaw": 1.6806776239433856,
+        "speed": 0,
+        "travel": 0.0001634026307685486,
+        "collisions": 0,
+        "reverseHold": 0
+      },
+      "info": {
+        "render": {
+          "frame": 164,
+          "calls": 446,
+          "triangles": 586380,
+          "points": 0,
+          "lines": 768
+        },
+        "memory": {
+          "geometries": 549,
+          "textures": 29
+        }
+      },
+      "vehicle": {
+        "loaded": true,
+        "active": true,
+        "triangles": 111561,
+        "meshes": 45,
+        "cockpitCameraError": 0,
+        "dashboard": {
+          "speed": 0,
+          "gear": "D"
+        },
+        "wheelRadius": 0.38400009518171924,
+        "frontWheels": [
+          {
+            "position": [
+              0.9757409920580492,
+              0.38400009518171924,
+              1.2472187876701355
+            ],
+            "angle": 0
+          },
+          {
+            "position": [
+              -0.9764271149747268,
+              0.38400003557707446,
+              1.2455067038536072
+            ],
+            "angle": 0
+          }
+        ],
+        "wheelSpin": [
+          13.001664145948014,
+          13.001664145948014,
+          13.001664145948014,
+          13.001664145948014
+        ],
+        "steeringAngle": 0,
+        "steeringCenter": [
+          -0.0021721498613303763,
+          -0.5968268897471152,
+          0.6926923670309109
+        ],
+        "steeringMarker": [
+          -0.002075419047513525,
+          -0.29474794700020845,
+          0.7063789255487174
+        ]
+      }
+    }
+  ]
+}

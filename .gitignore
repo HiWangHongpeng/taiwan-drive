@@ -40,3 +40,10 @@ __pycache__/
 !/reports/driving-visual-outbound.json
 !/reports/driving-visual-keyboard-final.json
 !/reports/visual/final-complete.png
+
+!/reports/ASSET-TRIAL.md
+!/reports/asset-summary.json
+!/reports/asset-checkpoints.json
+!/reports/perf-asset-original.json
+!/reports/perf-asset-concept.json
+!/reports/driving-asset-trial.json
