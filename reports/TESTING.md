@@ -1,3 +1,5 @@
+> 歷史證據：以下結果綁定提交 `78b66d6` 的雙模式版本，包含純鼠標駕駛。不能代表移除鼠標駕駛後的目前版本；目前結果見 [KEYBOARD.md](KEYBOARD.md)。舊運行哈希和原始旅程 JSON 保留不改，原腳本見該歷史提交。
+
 # 新版回歸執行記錄
 
 本頁記錄真實執行結果；舊去程報告不代表新版。機器為雲端 Node24.19.0/npm11.9.0/Python3.12.14、系統Chromium154、SwiftShader；官方computer/browser工具不可用。全程Playwright workers=1。

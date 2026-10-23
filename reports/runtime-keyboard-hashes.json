@@ -1,0 +1,31 @@
+{
+  "label": "Keyboard-only runtime frozen before fresh-context outbound keyboard drive",
+  "created_at": "2026-10-23T11:05:04.092474+08:00",
+  "aggregation": "sha256(sorted path + NUL + file sha256 + newline), per directory",
+  "files": {
+    "dist/assets/index-CHEPl8sx.js": "f06e80982ff82a237c26b88976181e18e7028ea297c4c046cfc94ea6ddb63bce",
+    "dist/assets/index-lRcPzaLO.css": "4b62f5b147f623a7e4fc54ea4b3501831dd3b7f5e13d283e5c7d11eb9a5ff998",
+    "dist/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "dist/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "dist/index.html": "c799dc151dbd42074ba690022904b33bdcd5c0ea1e470385722bfe2a71cc4223",
+    "index.html": "c6d1a98b4f0564b65f009a568431f3696a8b362b3b8b3c549d732fb629a5992c",
+    "package-lock.json": "f033149cf473cad5bd37aa644dd5100162a858ba7fd89cb678a9ec263c06afab",
+    "public/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "public/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "scripts/drive-outbound-final.mjs": "5cba015ab25a94bf14278fb78376dc452002561b6ffe682e1b36fc197fded06d",
+    "scripts/drive-return.mjs": "aff00a7b814eee697e0bc77900eddbc8f28ef0230d8dae2d063710b191072953",
+    "scripts/drive.mjs": "e7449000c722521aafc3039be4d75d7d01b84eb7d23dad3404c8314e2395449b",
+    "src/core.ts": "894b1d1b415ac6adaf58e8eda7f85a1c3b637c8eee812401fa9a19531c69d13a",
+    "src/facilities.ts": "1afcd937102b41fcaa4270e03f63262a85fa8841e3f52a03c78ce30dda591cc5",
+    "src/geography.ts": "b7331dcb4e73fea544c3440dcd26803077951b495b8d6cfab3c34db0bdbeb73e",
+    "src/main.ts": "ecd6cdd7c589d807d8a7c9129114b821cea1c530468043e4f541c292c9a8eb38",
+    "src/scene.ts": "2b6ae8d6b5fe4dfea6e9fdbc23d72de5a70443578060769552bf5f16aa1abc05",
+    "src/style.css": "1ebb8967828fc71b016b33a2bf0a7333477c352fc0f52c180140999a4a29eb11",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "vite.config.ts": "5ca16f013a0420937d84b2780f84cbb276903eb1a4470f764637592e344b3eb0"
+  },
+  "source_sha256": "77f583c833d8542a49f139779594101a7906dc503a52185a7c9b7051a2a98a83",
+  "data_sha256": "979674a224739c4f6da8cf115f4e96274cbec526aa008cd961fa399dd426b430",
+  "dist_sha256": "9d0a03fa2a3aa5eb5754f04c02319f46287162a366ef7605bf9007262c4a240a",
+  "world_sha256": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d"
+}

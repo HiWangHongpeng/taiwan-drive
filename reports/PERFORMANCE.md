@@ -1,3 +1,5 @@
+> 歷史證據：以下結果綁定提交 `78b66d6` 的雙模式版本，包含純鼠標駕駛。不能代表移除鼠標駕駛後的目前版本；目前結果見 [KEYBOARD.md](KEYBOARD.md)。舊運行哈希和原始旅程 JSON 保留不改，原腳本見該歷史提交。
+
 # 渲染診斷
 
 受限於 Chromium 154、SwiftShader 軟體 WebGL。所有比較使用 1280×800、DPR 1、抗鋸齒開啟、暫停起點視角，ready 後觀察 45 秒；保留初始生成及全部慢幀，不換算玩家 FPS。CPU render 是同步 JS 提交耗時，沒有 GPU 計時查詢，不能當 GPU frame time。

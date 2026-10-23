@@ -1,0 +1,6 @@
+{
+  "nativeTabPaused": false,
+  "lifecyclePaused": false,
+  "handlerFallbackUsed": true,
+  "scope": "Headless tab/lifecycle attempt plus isolated DOM-event handler regression where needed; no claim of all OS native focus coverage."
+}

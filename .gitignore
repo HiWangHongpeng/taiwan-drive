@@ -25,3 +25,9 @@ __pycache__/
 !/reports/perf-chunk512-fog.json
 !/reports/perf-final-revised.json
 !/reports/runtime-hashes.json
+
+!/reports/KEYBOARD.md
+!/reports/runtime-keyboard-hashes.json
+!/reports/driving-keyboard-outbound.json
+!/reports/keyboard-focus.json
+!/reports/keyboard-outbound-interrupted.json

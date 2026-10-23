@@ -7,7 +7,7 @@ type Bucket={material:T.Material;positions:number[];normals:number[];colors:numb
 export class View {
  readonly scene=new T.Scene();readonly camera=new T.PerspectiveCamera(65,1,.1,5500);
  readonly renderer=new T.WebGLRenderer({antialias:true});readonly vehicle=new T.Group();
- readonly ground:Ground;cockpit=false;look=0;lookPitch=0;readonly stopPlacements:ReturnType<Ground['busPlacement']>[]=[];
+ readonly ground:Ground;cockpit=false;readonly stopPlacements:ReturnType<Ground['busPlacement']>[]=[];
  private materials=new Map<string,T.MeshStandardMaterial>();private wheels:T.Group[]=[];
  private frontWheels:T.Group[]=[];private cullable:T.Mesh[]=[];
  private constructionMs=0;private renderTimes:number[]=[];private submittedInstances=0;
@@ -94,7 +94,7 @@ export class View {
  screenPoint(p:Point){return new T.Vector3(p[0],p[1],p[2]).project(this.camera).toArray();}
  private resize(){this.camera.aspect=innerWidth/innerHeight;this.camera.updateProjectionMatrix();this.renderer.setSize(innerWidth,innerHeight);}
  render(car:Car,dt:number,steer=0){const start=performance.now();this.vehicle.position.set(car.x,car.y+.1,car.z);this.vehicle.rotation.order='YXZ';this.vehicle.rotation.y=car.yaw;const n=this.ground.road.nearest(car.x,car.z);this.vehicle.rotation.x=-Math.atan2(n.b[1]-n.a[1],Math.hypot(n.b[0]-n.a[0],n.b[2]-n.a[2]))*Math.cos(car.yaw-Math.atan2(n.b[0]-n.a[0],n.b[2]-n.a[2]));this.vehicle.visible=!this.cockpit;
-  this.frontWheels.forEach(w=>{w.rotation.y=steer*.35;});this.wheels.forEach(w=>{w.rotation.x-=car.speed*dt/.34;});const heading=car.yaw+this.look,target=this.cockpit?new T.Vector3(car.x,car.y+1.42,car.z):new T.Vector3(car.x-Math.sin(heading)*8.5,car.y+4.2+this.lookPitch*8,car.z-Math.cos(heading)*8.5);this.camera.position.lerp(target,matchMedia('(prefers-reduced-motion: reduce)').matches?1:1-Math.exp(-6*dt));this.camera.lookAt(car.x+Math.sin(heading)*(this.cockpit?30:8),car.y+(this.cockpit?1.3+this.lookPitch*12:.95),car.z+Math.cos(heading)*(this.cockpit?30:8));
+  this.frontWheels.forEach(w=>{w.rotation.y=steer*.35;});this.wheels.forEach(w=>{w.rotation.x-=car.speed*dt/.34;});const heading=car.yaw,target=this.cockpit?new T.Vector3(car.x,car.y+1.42,car.z):new T.Vector3(car.x-Math.sin(heading)*8.5,car.y+4.2,car.z-Math.cos(heading)*8.5);this.camera.position.lerp(target,matchMedia('(prefers-reduced-motion: reduce)').matches?1:1-Math.exp(-6*dt));this.camera.lookAt(car.x+Math.sin(heading)*(this.cockpit?30:8),car.y+(this.cockpit?1.3:.95),car.z+Math.cos(heading)*(this.cockpit?30:8));
   for(const m of this.cullable){const sphere=m instanceof T.InstancedMesh?m.boundingSphere:m.geometry.boundingSphere;if(sphere)m.visible=this.camera.position.distanceTo(sphere.center)<=2200+sphere.radius;}
   this.submittedInstances=0;this.renderer.render(this.scene,this.camera);if(import.meta.env.DEV)this.renderTimes.push(performance.now()-start);
  }
