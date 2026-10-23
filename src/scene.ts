@@ -113,6 +113,8 @@ export class View {
  setQuality(quality:Quality){
   this.quality=quality;this.surfaces.setQuality(quality);const budget=qualityBudget(quality);
   this.renderer.shadowMap.type=quality==='high'?T.PCFSoftShadowMap:T.VSMShadowMap;this.sun.shadow.blurSamples=4;this.sun.shadow.radius=2;this.renderer.setPixelRatio(Math.min(devicePixelRatio,budget.pixelRatio));
+  // Shadow sampler defines are compiled into every receiving shader, including unmapped materials.
+  this.scene.traverse(o=>{if(o instanceof T.Mesh)for(const material of Array.isArray(o.material)?o.material:[o.material])material.needsUpdate=true;});
   this.renderer.shadowMap.enabled=budget.shadowSize>0;this.sun.castShadow=budget.shadowSize>0;
   if(this.sun.shadow.map){this.sun.shadow.map.dispose();this.sun.shadow.map=null;}if(this.sun.shadow.mapPass){this.sun.shadow.mapPass.dispose();this.sun.shadow.mapPass=null;}
   this.sun.shadow.mapSize.set(budget.shadowSize||512,budget.shadowSize||512);

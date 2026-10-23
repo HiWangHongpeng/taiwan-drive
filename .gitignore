@@ -38,3 +38,4 @@ __pycache__/
 !/reports/visual/*.jpg
 !/reports/visual-summary.json
 !/reports/driving-visual-outbound.json
+!/reports/driving-visual-keyboard-final.json

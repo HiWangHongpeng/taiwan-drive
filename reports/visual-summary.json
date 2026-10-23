@@ -1,32 +1,5 @@
 {
   "baseline_commit": "e7753d14f7e55cde8d72e23c4e6a88d77559725a",
-  "current_runtime_sha256": {
-    "src/core.ts": "894b1d1b415ac6adaf58e8eda7f85a1c3b637c8eee812401fa9a19531c69d13a",
-    "src/facilities.ts": "1afcd937102b41fcaa4270e03f63262a85fa8841e3f52a03c78ce30dda591cc5",
-    "src/geography.ts": "b7331dcb4e73fea544c3440dcd26803077951b495b8d6cfab3c34db0bdbeb73e",
-    "src/main.ts": "a9bbbf4ae06a9f2409e9ab617c5fec8757b603cd3ec68dc255c28f45be3a46b3",
-    "src/scene.ts": "aed47e7d8f44f3eb8c634da8ee98d65f7b648f2e3e22218b1b27fc18c1f55bdb",
-    "src/startup.ts": "2af7b0a695713c1aab569969b49148005f82a3fbf7e44d66eaa55f08c40e0dbd",
-    "src/style.css": "11635508db83fe87b6b920905505dd0d0318815808e858129c4843a726ee5fed",
-    "src/surfaces.ts": "ea655a82fcc0e7438b812c419b18759b0c1d5cf84fc945267157f254197bc7ee",
-    "src/vehicle.ts": "bbae8a671d81d4d8e857892f8f34ef6cb14061f25374d9407abede139261babf",
-    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
-    "public/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
-    "public/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
-    "dist/assets/index-DdPMok6c.css": "01550a8f855264a4535a690ce832b43c6082a8697d497bae05fa2c22a977b182",
-    "dist/assets/index-DqOH9O2E.js": "ca2b7be46fb4226358749089da7141d3b600d75b861a54a2415ab39d42834294",
-    "dist/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
-    "dist/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
-    "dist/index.html": "39d0a20a804d1de04e60e9ff83a03d60c21be0f8a8a4b697ada2a7ac01f6ba28"
-  },
-  "regression": {
-    "startTime": "2026-10-23T06:47:00.114Z",
-    "duration": 360060.507,
-    "expected": 16,
-    "skipped": 0,
-    "unexpected": 0,
-    "flaky": 0
-  },
   "cases": [
     {
       "label": "visual-before",
@@ -1416,5 +1389,85 @@
     "Only visual-standard-final and visual-low describe the final runtime. Earlier uncommitted candidates are diagnostic evidence, without a full frozen source manifest.",
     "Same 1280x800 DPR1 static paused 45s sampling. Low changes the real graphics menu after ready; its retained initial frames include standard setup.",
     "Screenshots use labeled validated-save checkpoints. They do not prove continuous driving."
-  ]
+  ],
+  "visual_preview_commit": "af2081e2c72d5a0dab51a498c278e23af430de12",
+  "visual_preview_runtime_sha256": {
+    "src/core.ts": "894b1d1b415ac6adaf58e8eda7f85a1c3b637c8eee812401fa9a19531c69d13a",
+    "src/facilities.ts": "1afcd937102b41fcaa4270e03f63262a85fa8841e3f52a03c78ce30dda591cc5",
+    "src/geography.ts": "b7331dcb4e73fea544c3440dcd26803077951b495b8d6cfab3c34db0bdbeb73e",
+    "src/main.ts": "a9bbbf4ae06a9f2409e9ab617c5fec8757b603cd3ec68dc255c28f45be3a46b3",
+    "src/scene.ts": "aed47e7d8f44f3eb8c634da8ee98d65f7b648f2e3e22218b1b27fc18c1f55bdb",
+    "src/startup.ts": "2af7b0a695713c1aab569969b49148005f82a3fbf7e44d66eaa55f08c40e0dbd",
+    "src/style.css": "11635508db83fe87b6b920905505dd0d0318815808e858129c4843a726ee5fed",
+    "src/surfaces.ts": "ea655a82fcc0e7438b812c419b18759b0c1d5cf84fc945267157f254197bc7ee",
+    "src/vehicle.ts": "bbae8a671d81d4d8e857892f8f34ef6cb14061f25374d9407abede139261babf",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "public/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "public/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "dist/assets/index-DdPMok6c.css": "01550a8f855264a4535a690ce832b43c6082a8697d497bae05fa2c22a977b182",
+    "dist/assets/index-DqOH9O2E.js": "ca2b7be46fb4226358749089da7141d3b600d75b861a54a2415ab39d42834294",
+    "dist/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "dist/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "dist/index.html": "39d0a20a804d1de04e60e9ff83a03d60c21be0f8a8a4b697ada2a7ac01f6ba28"
+  },
+  "preview_regression": {
+    "startTime": "2026-10-23T06:47:00.114Z",
+    "duration": 360060.507,
+    "expected": 16,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "final_runtime_sha256": {
+    "src/core.ts": "894b1d1b415ac6adaf58e8eda7f85a1c3b637c8eee812401fa9a19531c69d13a",
+    "src/facilities.ts": "1afcd937102b41fcaa4270e03f63262a85fa8841e3f52a03c78ce30dda591cc5",
+    "src/geography.ts": "b7331dcb4e73fea544c3440dcd26803077951b495b8d6cfab3c34db0bdbeb73e",
+    "src/main.ts": "a9bbbf4ae06a9f2409e9ab617c5fec8757b603cd3ec68dc255c28f45be3a46b3",
+    "src/scene.ts": "f6d128ef20a73b9589177e9ff2c47b449c72deba414951ad9cb4feaa7ed25ba9",
+    "src/startup.ts": "2af7b0a695713c1aab569969b49148005f82a3fbf7e44d66eaa55f08c40e0dbd",
+    "src/style.css": "11635508db83fe87b6b920905505dd0d0318815808e858129c4843a726ee5fed",
+    "src/surfaces.ts": "ea655a82fcc0e7438b812c419b18759b0c1d5cf84fc945267157f254197bc7ee",
+    "src/vehicle.ts": "bbae8a671d81d4d8e857892f8f34ef6cb14061f25374d9407abede139261babf",
+    "src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "public/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "public/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "dist/assets/index-CcSt0KO5.js": "c1b268d2bf00e1b2b398be612c3ee561a600c785656cc4525c39c1a5b5093b75",
+    "dist/assets/index-DdPMok6c.css": "01550a8f855264a4535a690ce832b43c6082a8697d497bae05fa2c22a977b182",
+    "dist/data/world.json": "bb67e6cf975d0a29ca6856d6ac23c474b793747e7db4bea676b40ea8774a884d",
+    "dist/favicon.svg": "90ef5457b18a6288aa1adf2b4536aea5ce2b88d9cfdc16e4a3ffa2b4435140f2",
+    "dist/index.html": "f27651a55c854a2c92e94e97cbc96f7ab5f3e47dbd27a7ac6c684c08ddf6baa8"
+  },
+  "shadow_algorithm_regression": {
+    "method": "Test-side WebGL shaderSource/linkProgram/useProgram instrumentation. Only directional shadow samplers in receiver fragments count; depth and blur passes excluded. Two settling frames, then two observed frames. No Game writes or production hooks.",
+    "preview_commit": "af2081e2c72d5a0dab51a498c278e23af430de12",
+    "preview_result": {
+      "status": "failed_as_expected",
+      "quality": "high",
+      "expected": [
+        "pcf-soft"
+      ],
+      "actual": [
+        "vsm",
+        "pcf-soft"
+      ]
+    },
+    "fixed_targeted_result": {
+      "status": "passed",
+      "switches": [
+        "high",
+        "standard",
+        "high",
+        "standard"
+      ],
+      "test_duration_s": 35.5
+    },
+    "initial_test_correction": "The initial broad observer also counted depth/blur program prefixes; narrowed to receivers, then repeated against the unchanged preview checkout and fixed source."
+  },
+  "user_feedback": {
+    "date_asia_shanghai": "2026-10-23",
+    "hardware_description": "普通笔记本或办公电脑",
+    "preview_quality": "standard",
+    "verbatim": "基本顺畅",
+    "interpretation": "Subjective feedback on this device, not an FPS measurement or evidence for all GPUs."
+  }
 }

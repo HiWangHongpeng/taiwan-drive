@@ -28,7 +28,9 @@ if(direction)await page.locator('#return').click();
 // Ordinary settings UI: a slower keyboard ramp gives this software-rendered test controller finer pulses.
 for(const id of ['turn','center']){await page.locator('#'+id).focus();await page.keyboard.press('Home');await page.keyboard.press('ArrowRight');}
 const configured=await snapshot();if(configured.controls.turnRate!==.4||configured.controls.returnRate!==.4)throw Error('Settings UI failed');
-await page.locator('#resume').click();const t0=performance.now();const log=[];let nextLog=0,shot500=false,shot900=false,completed=false,end;
+await page.locator('#resume').click();const t0=performance.now();const log=[],captures=[],captureTimings=[];let nextLog=0,shot500=false,shot900=false,completed=false,end;
+// Do not suspend keyboard feedback while a software-rendered screenshot is captured.
+function capture(mark,progress){const started=performance.now();const row={mark,progress_m:progress,started_elapsed_s:(started-t0)/1000};captureTimings.push(row);captures.push(page.screenshot({path:`reports/${label}-${mark}.png`}).then(()=>{row.duration_ms=performance.now()-started;}).catch(e=>errors.push(`Screenshot ${mark}: ${e}`)));}
 try{
  while(performance.now()-t0<limit*1000){
   const s=await snapshot();if(s.paused)throw Error('Unexpected safety pause');
@@ -43,8 +45,8 @@ try{
   await key('KeyS',car.speed>desiredSpeed+.6);await key('KeyW',car.speed<desiredSpeed-.4);
   const elapsed=(performance.now()-t0)/1000;
   if(elapsed>=nextLog){const row={real_elapsed_s:elapsed,progress_m:p,travel_m:car.travel,speed_mps:car.speed,collisions:car.collisions,lateral_m:s.nearest.distance,steer:s.controls.steer,desired_steer:desired};log.push(row);console.log(JSON.stringify(row));nextLog=elapsed+15;fs.writeFileSync(`reports/${label}-progress.json`,JSON.stringify({before,log},null,2));}
-  if(!shot500&&p>=500){await page.screenshot({path:`reports/${label}-500m.png`});shot500=true;}
-  if(!shot900&&p>=900){await page.screenshot({path:`reports/${label}-900m.png`});shot900=true;}
+  if(!shot500&&p>=500){shot500=true;capture('500m',p);}
+  if(!shot900&&p>=900){shot900=true;capture('900m',p);}
   if(remaining<34&&Math.abs(car.speed)<.35){
    await release();await page.keyboard.press('Escape');await page.waitForFunction(()=>document.querySelector('#menu').open);
    await page.locator('#finish').click();await page.waitForFunction(()=>window.__drive.snapshot().completed&&document.querySelector('#status').textContent.includes('旅程完成'));
@@ -55,7 +57,7 @@ try{
  if(!completed)errors.push('Real elapsed-time budget exhausted before completion');
 }catch(e){errors.push(String(e));}
 end=await snapshot(true);const realElapsed=(performance.now()-t0)/1000;
-await release();if(!end.paused)await page.keyboard.press('Escape');await page.screenshot({path:`reports/${label}-end.png`});
-const after=hashes();const report={method:'Fresh browser context; real page.keyboard W/S/A/D and Esc; normal mouse menu clicks only. Readonly snapshot feedback, no imports, teleports, Game writes or production autopilot. Test-side route tracking is not human handling assessment. Chromium154/SwiftShader headless.',direction,settings:{turnRate:.4,returnRate:.4,cruise_target_mps:12},initial_context_storage,initial_snapshot:loaded,renderer_at_end:end.stats,completed,real_elapsed_s:realElapsed,progress_m:end.nearest.progress,route_length_m:end.nearest.total,travel_m:end.car.travel,collisions:end.car.collisions,final_speed_mps:end.car.speed,simulation_elapsed_s:end.simulationElapsed,game_active_wall_clock_s:end.elapsed,dropped_simulation_time_s:end.droppedSimulationTime,errors,before,after,hashes_unchanged:JSON.stringify(before)===JSON.stringify(after),log,all_frame_times_ms:end.frameTimes};
+await release();if(!end.paused)await page.keyboard.press('Escape');await Promise.all(captures);await page.screenshot({path:`reports/${label}-end.png`});
+const after=hashes();const report={method:'Fresh browser context; real page.keyboard W/S/A/D and Esc; normal mouse menu clicks only. Readonly snapshot feedback, no imports, teleports, Game writes or production autopilot. Test-side route tracking is not human handling assessment. Mid-route screenshots are asynchronous so the controller keeps updating keyboard input. Chromium154/SwiftShader headless.',direction,settings:{turnRate:.4,returnRate:.4,cruise_target_mps:12},initial_context_storage,initial_snapshot:loaded,renderer_at_end:end.stats,completed,real_elapsed_s:realElapsed,progress_m:end.nearest.progress,route_length_m:end.nearest.total,travel_m:end.car.travel,collisions:end.car.collisions,final_speed_mps:end.car.speed,simulation_elapsed_s:end.simulationElapsed,game_active_wall_clock_s:end.elapsed,dropped_simulation_time_s:end.droppedSimulationTime,errors,before,after,hashes_unchanged:JSON.stringify(before)===JSON.stringify(after),log,captureTimings,all_frame_times_ms:end.frameTimes};
 fs.writeFileSync(`reports/driving-${label}.json`,JSON.stringify(report,null,2));console.log('FINAL',JSON.stringify({...report,before:'see report',after:'see report',initial_snapshot:'see report',renderer_at_end:'see report',all_frame_times_ms:'see report',log:'see report'}));
 await browser.close();if(!completed||errors.length||!report.hashes_unchanged)process.exitCode=1;
