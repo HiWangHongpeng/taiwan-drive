@@ -31,3 +31,4 @@ __pycache__/
 !/reports/driving-keyboard-outbound.json
 !/reports/keyboard-focus.json
 !/reports/keyboard-outbound-interrupted.json
+!/reports/STARTUP.md

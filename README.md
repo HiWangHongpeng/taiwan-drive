@@ -6,6 +6,8 @@
 
 推送 `main` 後，GitHub Actions 會自動測試、構建並更新網站；等待 [部署流程](https://github.com/HiWangHongpeng/taiwan-drive/actions/workflows/pages.yml) 成功後刷新遊戲即可。駕駛使用 W/S、A/D，Esc 暫停。
 
+啟動時會分別顯示地圖下載與場景建立；地圖下載超過20秒會提示重試。若無法啟用 WebGL 2，請依畫面提示檢查桌面瀏覽器與硬體加速；音效無法啟用時仍可無聲駕駛。載入失敗可點「重新載入」，不會清除存檔。啟動修復與當前驗證範圍見 [啟動報告](reports/STARTUP.md)。
+
 ## 執行
 
 需要 Node 22.12+（本輪 Node 24.19.0）。
@@ -33,7 +35,7 @@ python3 -m http.server 5174 --bind 127.0.0.1 --directory work/production
 
 ## GitHub Pages 網頁託管
 
-部署流程在 `.github/workflows/pages.yml`：推送 `main` 後以 Node 24、`npm ci`、單元測試和正式構建產生靜態站點，只發布 `dist/` 與來源帳本／依賴許可，不發布原始 OSM／HGT 快取、報告、存檔或私有交付記錄。GitHub Pages 成功啟用和部署後，預期遊玩網址為 https://hiwanghongpeng.github.io/taiwan-drive/ ，不需要本地安裝。Pages 已啟用且首次部署成功；目前部署狀態以 GitHub Actions 為準。
+部署流程在 `.github/workflows/pages.yml`：推送 `main` 後以 Node 24、`npm ci`、單元測試和正式構建產生靜態站點，只發布 `dist/` 與來源帳本／依賴許可，不發布原始 OSM／HGT 快取、報告、存檔或私有交付記錄。發布後再以 Chromium 實際打開線上頁面，驗證點擊開始、W鍵加速與啟動故障處理。GitHub Pages 成功啟用和部署後，預期遊玩網址為 https://hiwanghongpeng.github.io/taiwan-drive/ ，不需要本地安裝。Pages 已啟用且首次部署成功；目前部署與線上驗證狀態以 GitHub Actions 為準。
 
 本專案選擇公開倉庫與公開遊戲網頁，可使用 GitHub Free。首次啟用時先在倉庫 Settings → General → Danger Zone 將可見性設為 Public，再到 Settings → Pages → Build and deployment 選擇 **GitHub Actions**；若首次 workflow 已因尚未啟用 Pages 而失敗，啟用後重跑即可。後續 `main` 推送自動更新。網頁、瀏覽器端 JS 與地圖可由訪客下載；不自動購買或變更帳號方案。
 
