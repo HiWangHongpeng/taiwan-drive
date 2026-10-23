@@ -1,5 +1,5 @@
 {
-  "date_utc": "2026-10-23T11:43:48.582677+00:00",
+  "date_utc": "2026-10-23T11:58:04.851602+00:00",
   "scope": "Tyre support and contact shadows; fixed-step presentation interpolation; original hillside/foliage/asphalt/W-beam improvements. Original terrain mesh, world and physics retained. Adaptive terrain candidate rejected.",
   "base_commit": "e06ac4487e0cdf3ab7ed1a76f33e6657c024e7dc",
   "frozen_src_public_dist_sha256": {
@@ -678,8 +678,63 @@
       "reports/visual/comfort-after-rail.jpg"
     ]
   },
-  "fresh_keyboard_segment": null,
-  "deployment": null,
+  "fresh_keyboard_segment": {
+    "method": "Fresh empty browser context, Vite development build, actual page.keyboard W/S/A/D/Esc plus normal menu clicks. Test-only pursuit via readonly snapshot; no imports, teleport or Game writes. Standard quality 960x600 Chromium154/SwiftShader; turn/center .4 via real settings, target12m/s. All slow frames retained; screenshots asynchronous. This is a stopped 1200m target segment, NOT a finished 5.41km journey.",
+    "segment_completed": true,
+    "journey_completed": false,
+    "real_elapsed_s": 398.44109832299995,
+    "progress_m": 1176.732588744636,
+    "travel_m": 1177.8656409958733,
+    "collisions": 0,
+    "final_speed_mps": 0,
+    "game_active_wall_clock_s": 398.33410000000134,
+    "simulation_elapsed_s": 110.39999999999502,
+    "dropped_simulation_time_s": 287.93399999999957,
+    "refresh_restores_paused": true,
+    "errors": [],
+    "hashes_unchanged": true,
+    "all_frame_times_ms": {
+      "count": 564,
+      "median": 683.4000000000233,
+      "p95": 1033.2999999999956,
+      "max": 11844.600000000744
+    },
+    "raw_sha256": "3b4ddf78a097c3facf897caa5053f01258a074db4861aad6cd06f0b4855af9f4"
+  },
+  "deployment": {
+    "runtime_commit": "7ca50f17746a33d781039c8bf1b4fde8677fc8d0",
+    "url": "https://hiwanghongpeng.github.io/taiwan-drive/",
+    "workflow_run_id": 39948265008,
+    "workflow_url": "https://github.com/HiWangHongpeng/taiwan-drive/actions/runs/39948265008",
+    "build": "success",
+    "deploy": "success",
+    "verify": "success",
+    "online_browser_tests": {
+      "passed": 5,
+      "failed": 0
+    },
+    "browser": "GitHub Actions Ubuntu, Chrome for Testing156, single worker, SwiftShader",
+    "checks": [
+      "Published /taiwan-drive/ starts and accepts real W input",
+      "Versioned model URL?v=2 loads; model and world SHA256 match source files",
+      "Concept selected and no window.__drive",
+      "Audio constructor and resume failures remain playable",
+      "Map failure reload preserves raw save",
+      "WebGL failure is actionable"
+    ],
+    "evidence": "Read completed run/jobs and decoded verify job logs through GitHub connector. Functional CI verification, not human handling or desktop GPU FPS."
+  },
+  "cloud_gpu_availability": {
+    "method": "Separate fresh Chromium154 launched with --no-sandbox only, no forced SwiftShader/ANGLE flags.1x1 standalone WebGL2 availability query, not Game or performance measurement.",
+    "dri_device_directory_present": false,
+    "webgl": {
+      "webgl2": true,
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "vendor": "Google Inc. (Google)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    }
+  },
+  "remaining_validation": "Player-visible stutter is not confirmed resolved; current cloud default Chromium also uses SwiftShader and no /dev/dri is exposed. Need authorized hardware-GPU evidence or human text-only play feedback, without taking work-computer files.",
   "limitations": [
     "No claimed desktop GPU/player FPS or human handling acceptance",
     "Fresh full5.41/5.43km journeys not rerun",
