@@ -1,5 +1,5 @@
 {
-  "date_utc": "2026-10-23T10:24:37.974123+00:00",
+  "date_utc": "2026-10-23T10:32:15.129032+00:00",
   "scope": "CarConcept asset and complete 3D interior trial; world/core physics unchanged; no full journey claim",
   "base_commit": "36a6cc7f666f2096b0c997a82fce96c84d4f6d95",
   "source_asset": {
@@ -536,8 +536,54 @@
       "reports/visual/asset-menu.jpg"
     ]
   },
-  "fresh_keyboard_segment": null,
-  "deployment": null,
+  "fresh_keyboard_segment": {
+    "method": "Fresh empty browser context, Vite development build, actual page.keyboard W/S/A/D/Esc plus normal menu clicks. Test-only pursuit via readonly snapshot; no imports, teleport or Game writes. Standard quality 960x600 Chromium154/SwiftShader; turn/center .4 via real settings, target12m/s. All slow frames retained; screenshots asynchronous. This is a stopped 1200m target segment, NOT a finished 5.41km journey.",
+    "segment_completed": true,
+    "journey_completed": false,
+    "real_elapsed_s": 394.467359583,
+    "progress_m": 1174.4998329525622,
+    "route_length_m": 5410.712305733549,
+    "travel_m": 1175.488095071888,
+    "collisions": 0,
+    "final_speed_mps": 0,
+    "simulation_elapsed_s": 108.16666666666181,
+    "game_active_wall_clock_s": 394.500800000001,
+    "dropped_simulation_time_s": 286.33380000000005,
+    "refresh_restores_paused": true,
+    "errors": [],
+    "hashes_unchanged": true,
+    "frame_times_ms": {
+      "count": 558,
+      "median": 699.9000000000233,
+      "p95": 1050,
+      "max": 8325.8
+    },
+    "raw_report": "reports/driving-asset-trial.json"
+  },
+  "deployment": {
+    "runtime_commit": "64955d1879f3ffb138db6f8ae1356b4dfc928cbf",
+    "url": "https://hiwanghongpeng.github.io/taiwan-drive/",
+    "workflow_run_id": 39939104444,
+    "workflow_url": "https://github.com/HiWangHongpeng/taiwan-drive/actions/runs/39939104444",
+    "build": "success",
+    "deploy": "success",
+    "verify": "success",
+    "browser": "Chrome for Testing 156.0.8078.4, Playwright Chromium v1248, GitHub Actions Ubuntu, single worker, SwiftShader",
+    "online_browser_tests": {
+      "passed": 5,
+      "failed": 0
+    },
+    "checks": [
+      "Published /taiwan-drive/ model and world SHA256 match the source files",
+      "Concept model ready and no window.__drive hook",
+      "Real keyboard W accelerates the published game",
+      "Audio constructor failure remains playable",
+      "Audio resume failure remains playable",
+      "Map failure reload preserves raw save",
+      "WebGL failure displays an actionable error"
+    ],
+    "evidence": "Read completed run/jobs and decoded verify job logs through GitHub connector; five named tests passed. This is functional verification in CI, not desktop GPU or human handling acceptance."
+  },
   "limitations": [
     "Desktop GPU performance/human handling unverified for the new model",
     "5.41km outbound and 5.43km return not rerun for this asset trial",

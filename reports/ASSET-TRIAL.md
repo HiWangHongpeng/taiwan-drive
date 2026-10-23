@@ -36,6 +36,8 @@
 
 驗證範圍包括W/S加速／煞停／倒車／雙鍵煞停、A/D實際畫面轉向、放開回正、車輪與3D方向盤方向、動態儀表、行駛中眼點誤差、失焦／隱藏安全、v1存檔與無效raw保護、終點UI、桌面與320px佈局、三檔畫質，以及GLB失敗回退後仍可駕駛。正式 `/taiwan-drive/` 子路徑檢查實際GLB／地圖／本地許可、無調試掛鉤及真實W輸入。模型選擇不改動車輛狀態或v1存檔格式。
 
+雲端正常fast-forward推送`main`，遊戲發布提交 **`64955d1879f3ffb138db6f8ae1356b4dfc928cbf`**。GitHub Actions的build／deploy／verify全部成功，[執行記錄](https://github.com/HiWangHongpeng/taiwan-drive/actions/runs/39939104444)。線上另以Chrome for Testing156.0.8078.4／單worker／SwiftShader實跑 **5項通過**：公開子路徑模型及world SHA256、概念車就緒、無`__drive`、W加速，以及音效／地圖／WebGL故障處理。這與本地Chromium154.0.8037.57的19項回歸是不同執行，不是桌面GPU性能或人類手感證據。後續僅追加本報告、原始駕駛資料與畫面，不改已發布的src/public/dist。
+
 ## 同條件渲染成本
 
 最終鏡頭修正後實測如下，兩次記錄錯誤均為0、全部src/public/dist和測試腳本前後哈希一致。方法是同一試裝構建、全新BrowserContext、標準檔、1280×800、DPR1、Chromium154／SwiftShader、起點暫停相機，地圖和車輛就緒後觀察45秒。透過真實選單切換模型；兩種模型已同時載入記憶體，並非舊提交與新提交的記憶體比較。保留啟動和全部慢幀，不過濾。
@@ -55,6 +57,15 @@
 
 ## 全新存檔連續片段
 
-畫面已實際查看。現在以凍結的src/public/dist執行穿越首500m及過渡段的鍵盤片段，結果待完成後追加。測試端只透過唯讀snapshot追蹤路線、產生真實page.keyboard輸入和普通選單操作，無匯入／瞬移／Game狀態寫入，沒有生產自動駕駛。目標1200m附近煞停、Esc暫停及刷新恢復；此片段不聲稱完成5.41km旅程。
+全新BrowserContext（cookies／origins皆空），概念車起點travel／speed／collisions皆0，真實W/S/A/D/Esc及普通選單操作，無匯入／瞬移／Game狀態寫入。測試端僅透過唯讀snapshot追蹤路線，不是生產自動駕駛。標準檔960×600、Chromium154／SwiftShader，透過真實range鍵盤操作確認打輪／回正0.4，目標12m/s。影片式人工手感評價不在此測試範圍。
+
+- 真實elapsed **394.467s**；實際累積行駛 **1175.488m**，沿路進度1174.500m。目標1200m前34m範圍內減速，實際在距目標25.5m處煞停，最終速度 **0m/s**、暫停；這是首500m及過渡段片段，**不是完成5.41km整趟**，`journey_completed=false`。
+- 簡化道路邊界碰撞 **0**，記錄錯誤 **0**；不是完整場景剛體碰撞或設施碰撞保證。刷新重新載入後位置／travel一致，保持暫停。
+- 所有src/public/dist及package-lock、index、Vite設定、實際driver共 **26檔** 前後SHA256全部一致；執行期間無熱更新。核心物理、world.json與地圖平面路線仍與36a6cc7相同。
+- 活動牆鐘394.501s、模擬108.167s、被固定步長安全上限丟棄286.334s。保留全部 **558幀**：間隔中位699.9ms、p95 1050ms、最大8325.8ms（含啟動慢幀）。不能稱流暢或當玩家FPS。截圖亦計入觀察，500m截圖非同步耗時3134ms，未停止控制或過濾該慢幀。最後一幀renderer.info為408次繪製／397,126三角形，與起點對照是不同視點，不能當優化比較。
+- [完整原始JSON／所有幀時間與哈希](driving-asset-trial.json)，41,336 bytes、SHA256 `9b1e38abad352195edc7c94d46e9fc18af2ae57ede8c8348af960517755a39d0`。逐項瀏覽器結果／凍結清單／CI及匯總見 [asset-summary.json](asset-summary.json)。
+
+![全新存檔連續駕駛至500m附近](visual/asset-drive-500m.jpg)
+![片段煞停並暫停](visual/asset-drive-stopped.jpg)
 
 本輪未重跑5.41／5.43km兩向整趟。歷史`0ea9546`整趟及使用者「基本順暢」回報屬於原創轎車舊版，不能套用到新增概念車。普通筆電實際效能、人類長時間手感、新車全線車體與路緣接觸仍待實玩；地圖、環境模型與原型碰撞仍有明確精度限制。這次只證明單一免費資產可落地，沒有達到成熟駕駛遊戲的整體資產品質。
