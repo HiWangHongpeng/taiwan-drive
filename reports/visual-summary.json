@@ -1469,5 +1469,258 @@
     "preview_quality": "standard",
     "verbatim": "基本顺畅",
     "interpretation": "Subjective feedback on this device, not an FPS measurement or evidence for all GPUs."
+  },
+  "final_runtime_commit": "0ea954666867ac3ce9c92373dc439023a8e7d7ae",
+  "final_regression": {
+    "unit_tests_passed": 16,
+    "strict_typescript_build_passed": true,
+    "javascript_kb": 571.02,
+    "javascript_gzip_kb": 152.83,
+    "bundle_500kb_warning_retained": true,
+    "playwright_stats": {
+      "startTime": "2026-10-23T07:38:32.576Z",
+      "duration": 392500.563,
+      "expected": 17,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "final_browser_tests": [
+    {
+      "file": "baseline.spec.ts",
+      "title": "keyboard W/S brakes, reverses and brakes with W+S; views and return remain clickable",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 41452
+        }
+      ]
+    },
+    {
+      "file": "baseline.spec.ts",
+      "title": "invalid import preserves good save; export and reload use unchanged v1 schema",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 26710
+        }
+      ]
+    },
+    {
+      "file": "baseline.spec.ts",
+      "title": "endpoint uses Esc pause and clickable completion after a labeled save checkpoint",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 13123
+        }
+      ]
+    },
+    {
+      "file": "graphics.spec.ts",
+      "title": "graphics quality persists independently; static shadows cache and near/far trees remain a partition",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 34640
+        }
+      ]
+    },
+    {
+      "file": "graphics.spec.ts",
+      "title": "LOD stays complete on both route checkpoint transitions; invalid graphics preferences fall back safely",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 13102
+        }
+      ]
+    },
+    {
+      "file": "graphics.spec.ts",
+      "title": "switching shadow algorithms recompiles every receiving material",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 33703
+        }
+      ]
+    },
+    {
+      "file": "keyboard-safety.spec.ts",
+      "title": "moving mouse and all canvas buttons cannot supply driving inputs or capture pointer",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 20112
+        }
+      ]
+    },
+    {
+      "file": "keyboard-safety.spec.ts",
+      "title": "keyboard blur/hidden safety clears held keys and requires explicit resume",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 13932
+        }
+      ]
+    },
+    {
+      "file": "keyboard-safety.spec.ts",
+      "title": "existing v1 save loads unchanged and paused, then keyboard driving and autosave continue",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 31040
+        }
+      ]
+    },
+    {
+      "file": "layout.spec.ts",
+      "title": "desktop cockpit HUD is clear; 320px keyboard menu controls and help remain readable",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 31462
+        }
+      ]
+    },
+    {
+      "file": "production.spec.ts",
+      "title": "production loads its static world under /taiwan-drive/ without debug hooks",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 15700
+        }
+      ]
+    },
+    {
+      "file": "startup.spec.ts",
+      "title": "production can start and drive when audio constructor fails",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 12632
+        }
+      ]
+    },
+    {
+      "file": "startup.spec.ts",
+      "title": "production can start and drive when audio resume fails",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 12657
+        }
+      ]
+    },
+    {
+      "file": "startup.spec.ts",
+      "title": "map failure offers a working reload and preserves the saved raw value",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 11292
+        }
+      ]
+    },
+    {
+      "file": "startup.spec.ts",
+      "title": "unavailable WebGL displays an actionable message instead of an endless loading screen",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 1116
+        }
+      ]
+    },
+    {
+      "file": "steering.spec.ts",
+      "title": "keyboard A/D match screen heading and wheel spokes; release progressively centers",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 33402
+        }
+      ]
+    },
+    {
+      "file": "storage-raw.spec.ts",
+      "title": "invalid stored raw survives refresh, autosave intervals and pause until explicit restart",
+      "status": "expected",
+      "runs": [
+        {
+          "status": "passed",
+          "duration_ms": 44828
+        }
+      ]
+    }
+  ],
+  "published_verification": {
+    "workflow_run_id": 39919224299,
+    "commit": "0ea954666867ac3ce9c92373dc439023a8e7d7ae",
+    "url": "https://github.com/HiWangHongpeng/taiwan-drive/actions/runs/39919224299",
+    "build": "success",
+    "deploy": "success",
+    "verify": "success",
+    "live_tests_passed": 5,
+    "browser": "Playwright Chromium headless shell 156.0.8078.4 on GitHub-hosted Linux with SwiftShader",
+    "scope": "Actual public /taiwan-drive/ page, fresh contexts, production world content hash and no debug hooks, real W input, audio constructor/resume failure, map reload/raw preservation, unavailable WebGL. Not a full journey or human FPS test."
+  },
+  "final_journey": {
+    "completed": true,
+    "direction": 0,
+    "real_elapsed_s": 1136.266408455,
+    "progress_m": 5383.483272735606,
+    "route_length_m": 5410.712305733549,
+    "travel_m": 5388.22095420402,
+    "collisions": 0,
+    "final_speed_mps": 0.2924567731558875,
+    "simulation_elapsed_s": 464.31666666657304,
+    "game_active_wall_clock_s": 1135.6046000000013,
+    "dropped_simulation_time_s": 671.272,
+    "errors": [],
+    "hashes_unchanged": true,
+    "captureTimings": [
+      {
+        "mark": "500m",
+        "progress_m": 502.1031847569037,
+        "started_elapsed_s": 165.935959554,
+        "duration_ms": 2613.263929000008
+      },
+      {
+        "mark": "900m",
+        "progress_m": 900.720331111904,
+        "started_elapsed_s": 256.632376135,
+        "duration_ms": 1851.3434020000277
+      }
+    ],
+    "report": "driving-visual-keyboard-final.json",
+    "report_sha256": "ac44cd5952fda2f89d3eec5faff37e508a641c5d94ed0c841d1d6c93bc7efae3",
+    "raw_frames_count": 2428,
+    "frame_median_ms": 450.0,
+    "frame_p95_nearest_rank_ms": 816.5999999999767,
+    "frame_max_ms": 7183.1,
+    "hashed_file_count": 23,
+    "scope": "Fresh context, actual keyboard input and readonly snapshots in Vite development build; production subdirectory and published build separately tested. Outbound only; return full journey not rerun in this visual revision."
   }
 }
