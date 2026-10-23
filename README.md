@@ -27,6 +27,12 @@ python3 -m http.server 5174 --bind 127.0.0.1 --directory work/production
 
 雲端命令層需要允許網路執行才能 listen localhost；環境 sidecar 代理與 TLS 驗證仍需保留。npm 快取可用 `--cache ./work/npm-cache`，避免寫入不可寫的家目錄。未擴大網域白名單。
 
+## GitHub Pages 網頁託管
+
+部署流程在 `.github/workflows/pages.yml`：推送 `main` 後以 Node 24、`npm ci`、單元測試和正式構建產生靜態站點，只發布 `dist/` 與來源帳本／依賴許可，不發布原始 OSM／HGT 快取、報告、存檔或私有交付記錄。GitHub Pages 成功啟用和部署後，預期遊玩網址為 https://hiwanghongpeng.github.io/taiwan-drive/ ，不需要本地安裝。此網址目前尚未確認上線。
+
+本專案選擇公開倉庫與公開遊戲網頁，可使用 GitHub Free。首次啟用時先在倉庫 Settings → General → Danger Zone 將可見性設為 Public，再到 Settings → Pages → Build and deployment 選擇 **GitHub Actions**；若首次 workflow 已因尚未啟用 Pages 而失敗，啟用後重跑即可。後續 `main` 推送自動更新。網頁、瀏覽器端 JS 與地圖可由訪客下載；不自動購買或變更帳號方案。
+
 ## 操作
 
 W 加速，S 煞停後持續按住倒車；A/D 漸進轉向，放開平順回正。W/S 同按只煞停。選單可調轉向與回正速度。Esc 或畫面上的暫停按鈕開啟選單。視窗失焦、頁面隱藏會清除按住狀態並安全暫停，返回後須明確繼續。駕駛只使用鍵盤；滑鼠可點擊選單、設定及視角按鈕，不能轉向、給油、煞車或環顧，不請求 Pointer Lock。
