@@ -4,6 +4,8 @@
 
 [▶ 線上遊玩 島行 Taiwan Drive](https://hiwanghongpeng.github.io/taiwan-drive/)
 
+目前正由純色低多邊形原型改善為有材質、天空反射、植被細節和陰影的版本。選單新增「省電／標準（一般筆電）／精細（獨立顯卡）」；預設標準，若畫面不順可選省電。歐卡是長期質感方向，目前仍有很大差距，尤其真實感資產、完整3D內飾、道路細節與桌面GPU效能。實際前後畫面與本輪驗證見 [畫質改進報告](reports/VISUALS.md)。
+
 推送 `main` 後，GitHub Actions 會自動測試、構建並更新網站；等待 [部署流程](https://github.com/HiWangHongpeng/taiwan-drive/actions/workflows/pages.yml) 成功後刷新遊戲即可。駕駛使用 W/S、A/D，Esc 暫停。
 
 啟動時會分別顯示地圖下載與場景建立；地圖下載超過20秒會提示重試。若無法啟用 WebGL 2，請依畫面提示檢查桌面瀏覽器與硬體加速；音效無法啟用時仍可無聲駕駛。載入失敗可點「重新載入」，不會清除存檔。啟動修復與當前驗證範圍見 [啟動報告](reports/STARTUP.md)。

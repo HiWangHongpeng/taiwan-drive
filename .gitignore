@@ -32,3 +32,9 @@ __pycache__/
 !/reports/keyboard-focus.json
 !/reports/keyboard-outbound-interrupted.json
 !/reports/STARTUP.md
+!/reports/VISUALS.md
+!/reports/visual/
+/reports/visual/*
+!/reports/visual/*.jpg
+!/reports/visual-summary.json
+!/reports/driving-visual-outbound.json
